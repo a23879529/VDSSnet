@@ -15,7 +15,6 @@ import time
 import dataloader
 import net
 import numpy as np
-from VDSSNet import VDSSNet
 from torchvision import transforms
 
 def weights_init(m):
