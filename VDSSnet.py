@@ -6,6 +6,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import kornia
 import os
 import glob
 import keras
@@ -79,56 +80,60 @@ class SmoothDilatedResidualBlock(nn.Module):
             return nn.ReLU(x+y)
 
 
+
+
 class VDSSNet(nn.Module):
     def __init__(self, x, in_c=15, out_c=3, H, W, only_residual=True):
         super(VDSSNet, self).__init__()
         #x代表input，然後依序為kernel_size, dilated_factor, stride, output_size, type
         #Encoder
-        skip1=self.ssconv1 = SmoothDilatedResidualBlock(x, 5, 1, 1, [64, H, W], 'E') #To up_conv3
+        skip1=self.ssconv1 = SmoothDilatedResidualBlock(x, 5, 1, 1, (64, H, W), 'E') #To up_conv3
 
         # Down_conv1
-        output=self.ssconv2 = SmoothDilatedResidualBlock(skip1, 3, 2, 2, [128, H/2, W/2], 'E')
-        output=self.ssconv3 = SmoothDilatedResidualBlock(output, 3, 2, 1, [128, H/2, W/2], 'E')
-        skip2=self.ssconv4 = SmoothDilatedResidualBlock(output, 3, 2, 1, [128, H/2, W/2], 'E') #To up_conv2
+        output=self.ssconv2 = SmoothDilatedResidualBlock(skip1, 3, 2, 2, (128, H/2, W/2), 'E')
+        output=self.ssconv3 = SmoothDilatedResidualBlock(output, 3, 2, 1, (128, H/2, W/2), 'E')
+        skip2=self.ssconv4 = SmoothDilatedResidualBlock(output, 3, 2, 1, (128, H/2, W/2), 'E') #To up_conv2
 
         # Down_conv2
-        output=self.ssconv5 = SmoothDilatedResidualBlock(skip2, 3, 2, 2, [256, H/4, W/4], 'E')
-        output=self.ssconv6 = SmoothDilatedResidualBlock(output, 3, 2, 1, [256, H/4, W/4], 'E')
-        skip3=self.ssconv7 = SmoothDilatedResidualBlock(output, 3, 2, 1, [256, H/4, W/4], 'E') #To up_conv1
+        output=self.ssconv5 = SmoothDilatedResidualBlock(skip2, 3, 2, 2, (256, H/4, W/4), 'E')
+        output=self.ssconv6 = SmoothDilatedResidualBlock(output, 3, 2, 1, (256, H/4, W/4), 'E')
+        skip3=self.ssconv7 = SmoothDilatedResidualBlock(output, 3, 2, 1, (256, H/4, W/4), 'E') #To up_conv1
 
         #中間層
         # Down_conv3
-        output=self.ssconv8 = SmoothDilatedResidualBlock(skip3, 3, 2, 2, [512, H/8, W/8], 'E')
-        output=self.ssconv9 = SmoothDilatedResidualBlock(output, 3, 2, 1, [512, H/8, W/8], 'E')
-        output=self.ssconv10 = SmoothDilatedResidualBlock(output, 3, 2, 1, [512, H/8, W/8], 'E') #From semantic-segmentation
+        output=self.ssconv8 = SmoothDilatedResidualBlock(skip3, 3, 2, 2, (512, H/8, W/8), 'E')
+        output=self.ssconv9 = SmoothDilatedResidualBlock(output, 3, 2, 1, (512, H/8, W/8), 'E')
+        output=self.ssconv10 = SmoothDilatedResidualBlock(output, 3, 2, 1, (512, H/8, W/8), 'E') #From semantic-segmentation
 
 
         #Decoder
         # Up_conv1  from ssconv7
         #nn.functional.interpolate(input, size=None, scale_factor=None, mode='nearest', align_corners=None)
-        self.upsampling1 = nn.functional.interpolate(output, size=[output.[0], 256, H/4, W/4], scale_factor=1/2, mode='bilinear', align_corners=None)
+        self.upsampling1 = nn.functional.interpolate(output, size=(output.[0], 256, H/4, W/4), scale_factor=1/2, mode='bilinear', align_corners=None)
         self.norm1 = nn.InstanceNorm2d(output_channel_num, affine=True)
         output = nn.LeakyReLU(self.norm1(self.upsampling1(output)))
         output = nn.ReLU(skip3 + output)
-        output=self.ssconv11 = SmoothDilatedResidualBlock(output, 3, 2, 1, [256, H/4, W/4], 'D')
-        output=self.ssconv12 = SmoothDilatedResidualBlock(output, 3, 2, 1, [256, H/4, W/4], 'D')
+        output=self.ssconv11 = SmoothDilatedResidualBlock(output, 3, 2, 1, (256, H/4, W/4), 'D')
+        output=self.ssconv12 = SmoothDilatedResidualBlock(output, 3, 2, 1, (256, H/4, W/4), 'D')
 
 
         # Up_conv2  from ssconv4
-        self.upsampling2 = nn.functional.interpolate(output, size=[output.[0], 128, H/2, W/2], scale_factor=1/2, mode='bilinear', align_corners=None)
+        self.upsampling2 = nn.functional.interpolate(output, size=(output.[0], 128, H/2, W/2), scale_factor=1/2, mode='bilinear', align_corners=None)
         self.norm2 = nn.InstanceNorm2d(output_channel_num, affine=True)
         output = nn.LeakyReLU(self.norm2(self.upsampling2(output)))
         output = nn.ReLU(skip2 + output)
-        output=self.ssconv13 = SmoothDilatedResidualBlock(output, 3, 2, 1, [128, H/2, W/2], 'D')
-        output=self.ssconv14 = SmoothDilatedResidualBlock(output, 3, 2, 1, [128, H/2, W/], 'D')
+        output=self.ssconv13 = SmoothDilatedResidualBlock(output, 3, 2, 1, (128, H/2, W/2), 'D')
+        output=self.ssconv14 = SmoothDilatedResidualBlock(output, 3, 2, 1, (128, H/2, W/), 'D')
 
 
         # Up_conv3  from ssconv1
-        self.upsampling3 = nn.functional.interpolate(output, size=[output.[0], 64, H, W], scale_factor=1/2, mode='bilinear', align_corners=None)
+        self.upsampling3 = nn.functional.interpolate(output, size=(output.[0], 64, H, W), scale_factor=1/2, mode='bilinear', align_corners=None)
         self.norm3 = nn.InstanceNorm2d(output_channel_num, affine=True)
         output = nn.LeakyReLU(self.norm3(self.upsampling3(output)))
         output = nn.ReLU(skip1 + output)
-        output=self.ssconv15 = SmoothDilatedResidualBlock(output, 3, 2, 1, [64, H, W], 'D')
-        output=self.ssconv16 = SmoothDilatedResidualBlock(output, 3, 2, 1, [64, H, W], 'D')
+        output=self.ssconv15 = SmoothDilatedResidualBlock(output, 3, 2, 1, (64, H, W), 'D')
+        output=self.ssconv16 = SmoothDilatedResidualBlock(output, 1, 2, 1, (64, H, W), 'D')
+
+        output=gaussian_blur2d(output, (3, 3), (1.5, 1.5)) #對T-map進行中值濾波
 
         return output
