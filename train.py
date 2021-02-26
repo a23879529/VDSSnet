@@ -15,6 +15,7 @@ import time
 import dataloader
 import net
 import numpy as np
+from VDSSNet import VDSSNet
 from torchvision import transforms
 
 def weights_init(m):
@@ -26,13 +27,27 @@ def weights_init(m):
         m.bias.data.fill_(0)
 
 def train(config):
-    dehaze_net = net.dehaze_net().cuda()
+    dehaze_net = VDSSNet()
     dehaze_net.apply(weights_init)
 
-    train_dataset = dataloader.dehazing_loader(config.orig_images_path,
-                                               config.hazy_images_path)
-    val_dataset = dataloader.dehazing_loader(config.orig_images_path,
-                                             config.hazy_images_path, mode="val")
+    trainDataloader = getLoader(args.dataset,
+                       args.dataroot,
+                       args.batchSize,
+                       args.threads,
+                       mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5),
+                       split='train',
+                       shuffle=True,
+                       seed=args.manualSeed)
+
+    valDataloader = getLoader(args.dataset,
+                          args.valDataroot,
+                          args.valBatchSize,
+                          args.threads,
+                          mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5),
+                          split='val',
+                          shuffle=False,
+                          seed=args.manualSeed)
+
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=config.train_batch_size, shuffle=True,
                                                num_workers=config.num_workers, pin_memory=True)
     val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=config.val_batch_size, shuffle=True,
