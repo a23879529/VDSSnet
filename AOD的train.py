@@ -11,7 +11,7 @@ from torchvision.utils import make_grid
 from tensorboardX import SummaryWriter
 from utils import logger, weight_init
 from config import get_config
-from model import AODnet
+from VDSSNet import VDSSNet
 from data import HazeDataset
 
 
@@ -37,12 +37,12 @@ def save_model(epoch, path, net, optimizer, net_name):
     if not os.path.exists(os.path.join(path, net_name)):
         os.mkdir(os.path.join(path, net_name))
     torch.save({'epoch': epoch, 'state_dict': net.state_dict(), 'optimizer': optimizer.state_dict()},
-               f=os.path.join(path, net_name, '{}_{}.pkl'.format('AOD', epoch)))
+               f=os.path.join(path, net_name, '{}_{}.pkl'.format('VDSS', epoch)))
 
 
 @logger
 def load_network(device):
-    net = AODnet().to(device)
+    net = VDSSNet().to(device)
     net.apply(weight_init)
     return net
 
