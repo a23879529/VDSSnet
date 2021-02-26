@@ -6,6 +6,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import kornia
 import os
 import glob
 import keras
@@ -46,94 +47,93 @@ class ShareSepConv(nn.Module):
 
 # 改进的膨脹卷積
 class SmoothDilatedResidualBlock(nn.Module):
-    def __init__(self, channel_num, dilation=1, group=1):
+    #x代表input，然後依序為kernel_size, dilated_factor, stride, output_size
+    def __init__(self, x, kernel_size, dilated_factor, stride, output_size, type, group=1): #group可以試試看>1的數字，聽說效果會比=1好
         super(SmoothDilatedResidualBlock, self).__init__()
+        if len(x) == 3:
+            input_channel_num = x[0]
+        else:
+            input_channel_num = x[1]
+
+        output_channel_num = output_size[0]
+
         # 在膨脹卷積之前先使用SS convolution进行局部信息融合
-        self.pre_conv1 = ShareSepConv(dilation*2-1)
+        self.pre_conv1 = ShareSepConv(kernel_size)
         #膨脹卷積
-        self.conv1 = nn.Conv2d(channel_num, channel_num, 3, 1, padding=dilation, dilation=dilation, groups=group, bias=False)
-        self.norm1 = nn.InstanceNorm2d(channel_num, affine=True)
+        #Conv2d(in_channels, out_channels, kernel_size, stride=1,padding=0, dilation=1, groups=1,bias=True, padding_mode=‘zeros’)
+        self.conv1 = nn.Conv2d(input_channel_num, output_channel_num, kernel_size, stride=stride, padding=dilated_factor, dilated_factor=dilated_factor, groups=group, bias=False)
+        self.norm1 = nn.InstanceNorm2d(output_channel_num, affine=True)
 
-        self.pre_conv2 = ShareSepConv(dilation*2-1)
-        self.conv2 = nn.Conv2d(channel_num, channel_num, 3, 1, padding=dilation, dilation=dilation, groups=group, bias=False)
-        self.norm2 = nn.InstanceNorm2d(channel_num, affine=True)
+        self.pre_conv2 = ShareSepConv(kernel_size)
+        self.conv2 = nn.Conv2d(input_channel_num, output_channel_num, kernel_size, stride=stride, padding=dilated_factor, dilated_factor=dilated_factor, groups=group, bias=False)
+        self.norm2 = nn.InstanceNorm2d(output_channel_num, affine=True)
 
-    def forward(self, x):
+    #def forward(self, x, type):
         # 残差连接
-        y = F.relu(self.norm1(self.conv1(self.pre_conv1(x))))
-        y = self.norm2(self.conv2(self.pre_conv2(y)))
-        return F.relu(x+y)
+        if type == 'E': #LeakyReLU使用在encoder
+            y =nn.LeakyReLU(self.norm1(self.conv1(self.pre_conv1(x))))
+            y = self.norm2(self.conv2(self.pre_conv2(y)))
+            return nn.LeakyReLU(x+y)
+        elif type == 'D': #relu使用在decoder
+            y = nn.ReLU(self.norm1(self.conv1(self.pre_conv1(x))))
+            y = self.norm2(self.conv2(self.pre_conv2(y)))
+            return nn.ReLU(x+y)
 
 
-# 残差网络
-class ResidualBlock(nn.Module):
-    def __init__(self, channel_num, dilation=1, group=1):
-        super(ResidualBlock, self).__init__()
-        self.conv1 = nn.Conv2d(channel_num, channel_num, 3, 1, padding=dilation, dilation=dilation, groups=group, bias=False)
-        self.norm1 = nn.InstanceNorm2d(channel_num, affine=True)
-        self.conv2 = nn.Conv2d(channel_num, channel_num, 3, 1, padding=dilation, dilation=dilation, groups=group, bias=False)
-        self.norm2 = nn.InstanceNorm2d(channel_num, affine=True)
-
-    def forward(self, x):
-        y = F.relu(self.norm1(self.conv1(x)))
-        y = self.norm2(self.conv2(y))
-        return F.relu(x+y)
 
 
 class VDSSNet(nn.Module):
-    def __init__(self, in_c=4, out_c=3, only_residual=True):
+    def __init__(self, x, in_c=15, out_c=3, H, W, only_residual=True):
         super(VDSSNet, self).__init__()
-        # Encoder：三层卷积，通道数64，卷积核大小3*3，stride=1，padding=1
-        self.conv1 = nn.Conv2d(in_c, 64, 3, 1, 1, bias=False)
-        self.norm1 = nn.InstanceNorm2d(64, affine=True) # Instance Normalization
-        self.conv2 = nn.Conv2d(64, 64, 3, 1, 1, bias=False)
-        self.norm2 = nn.InstanceNorm2d(64, affine=True)
-        self.conv3 = nn.Conv2d(64, 64, 3, 2, 1, bias=False)  # stride=2的下采样
-        self.norm3 = nn.InstanceNorm2d(64, affine=True)
- 
-        # 中间层：7层smooth dilated convolution残差块，空洞率r分别为2,2,2,4,4,4,1，通道数64
-        self.res1 = SmoothDilatedResidualBlock(64, dilation=2)
-        self.res2 = SmoothDilatedResidualBlock(64, dilation=2)
-        self.res3 = SmoothDilatedResidualBlock(64, dilation=2)
-        self.res4 = SmoothDilatedResidualBlock(64, dilation=2)
-        self.res5 = SmoothDilatedResidualBlock(64, dilation=2)
-        self.res6 = SmoothDilatedResidualBlock(64, dilation=2)
-        self.res7 = ResidualBlock(64, dilation=1)  # 空洞率为1时分离卷积的卷积核为1*1，没有起到信息融合的作用，因此该层退化为一个普通的残差网络
+        #x代表input，然後依序為kernel_size, dilated_factor, stride, output_size, type
+        #Encoder
+        skip1=self.ssconv1 = SmoothDilatedResidualBlock(x, 5, 1, 1, (64, H, W), 'E') #To up_conv3
 
-        # Gated Fusion Sub-network：学习低,中,高层特征的权重
-        self.gate = nn.Conv2d(64 * 3, 3, 3, 1, 1, bias=True)
+        # Down_conv1
+        output=self.ssconv2 = SmoothDilatedResidualBlock(skip1, 3, 2, 2, (128, H/2, W/2), 'E')
+        output=self.ssconv3 = SmoothDilatedResidualBlock(output, 3, 2, 1, (128, H/2, W/2), 'E')
+        skip2=self.ssconv4 = SmoothDilatedResidualBlock(output, 3, 2, 1, (128, H/2, W/2), 'E') #To up_conv2
 
-        # Decoder：1层反卷积层将feature map上采样到原分辨率+2层卷积层将feature map还原到原图空间
-        self.deconv3 = nn.ConvTranspose2d(64, 64, 4, 2, 1) # stride=2的上采样
-        self.norm4 = nn.InstanceNorm2d(64, affine=True)
-        self.deconv2 = nn.Conv2d(64, 64, 3, 1, 1)
-        self.norm5 = nn.InstanceNorm2d(64, affine=True)
-        self.deconv1 = nn.Conv2d(64, out_c, 1) # 1*1卷积核进行降维
-        self.only_residual = only_residual
+        # Down_conv2
+        output=self.ssconv5 = SmoothDilatedResidualBlock(skip2, 3, 2, 2, (256, H/4, W/4), 'E')
+        output=self.ssconv6 = SmoothDilatedResidualBlock(output, 3, 2, 1, (256, H/4, W/4), 'E')
+        skip3=self.ssconv7 = SmoothDilatedResidualBlock(output, 3, 2, 1, (256, H/4, W/4), 'E') #To up_conv1
 
-    def forward(self, x):
-        # Encoder前向传播，使用relu激活
-        y = F.relu(self.norm1(self.conv1(x)))
-        y = F.relu(self.norm2(self.conv2(y)))
-        y1 = F.relu(self.norm3(self.conv3(y))) # 低层级信息
+        #中間層
+        # Down_conv3
+        output=self.ssconv8 = SmoothDilatedResidualBlock(skip3, 3, 2, 2, (512, H/8, W/8), 'E')
+        output=self.ssconv9 = SmoothDilatedResidualBlock(output, 3, 2, 1, (512, H/8, W/8), 'E')
+        output=self.ssconv10 = SmoothDilatedResidualBlock(output, 3, 2, 1, (512, H/8, W/8), 'E') #From semantic-segmentation
 
-        # 中间层
-        y = self.res1(y1)
-        y = self.res2(y)
-        y = self.res3(y)
-        y2 = self.res4(y) # 中层级信息
-        y = self.res5(y2)
-        y = self.res6(y)
-        y3 = self.res7(y) # 高层级信息
 
-         # Gated Fusion Sub-network
-        gates = self.gate(torch.cat((y1, y2, y3), dim=1)) # 计算低,中,高层特征的权重
-        gated_y = y1 * gates[:, [0], :, :] + y2 * gates[:, [1], :, :] + y3 * gates[:, [2], :, :] # 对低,中,高层特征加权求和
-        y = F.relu(self.norm4(self.deconv3(gated_y)))
-        y = F.relu(self.norm5(self.deconv2(y)))
-        if self.only_residual: # 去雾
-            y = self.deconv1(y)
-        else: # 去雨
-            y = F.relu(self.deconv1(y))
+        #Decoder
+        # Up_conv1  from ssconv7
+        #nn.functional.interpolate(input, size=None, scale_factor=None, mode='nearest', align_corners=None)
+        self.upsampling1 = nn.functional.interpolate(output, size=(output.[0], 256, H/4, W/4), scale_factor=1/2, mode='bilinear', align_corners=None)
+        self.norm1 = nn.InstanceNorm2d(output_channel_num, affine=True)
+        output = nn.LeakyReLU(self.norm1(self.upsampling1(output)))
+        output = nn.ReLU(skip3 + output)
+        output=self.ssconv11 = SmoothDilatedResidualBlock(output, 3, 2, 1, (256, H/4, W/4), 'D')
+        output=self.ssconv12 = SmoothDilatedResidualBlock(output, 3, 2, 1, (256, H/4, W/4), 'D')
 
-        return y
+
+        # Up_conv2  from ssconv4
+        self.upsampling2 = nn.functional.interpolate(output, size=(output.[0], 128, H/2, W/2), scale_factor=1/2, mode='bilinear', align_corners=None)
+        self.norm2 = nn.InstanceNorm2d(output_channel_num, affine=True)
+        output = nn.LeakyReLU(self.norm2(self.upsampling2(output)))
+        output = nn.ReLU(skip2 + output)
+        output=self.ssconv13 = SmoothDilatedResidualBlock(output, 3, 2, 1, (128, H/2, W/2), 'D')
+        output=self.ssconv14 = SmoothDilatedResidualBlock(output, 3, 2, 1, (128, H/2, W/), 'D')
+
+
+        # Up_conv3  from ssconv1
+        self.upsampling3 = nn.functional.interpolate(output, size=(output.[0], 64, H, W), scale_factor=1/2, mode='bilinear', align_corners=None)
+        self.norm3 = nn.InstanceNorm2d(output_channel_num, affine=True)
+        output = nn.LeakyReLU(self.norm3(self.upsampling3(output)))
+        output = nn.ReLU(skip1 + output)
+        output=self.ssconv15 = SmoothDilatedResidualBlock(output, 3, 2, 1, (64, H, W), 'D')
+        output=self.ssconv16 = SmoothDilatedResidualBlock(output, 1, 2, 1, (64, H, W), 'D')
+
+        output=gaussian_blur2d(output, (3, 3), (1.5, 1.5)) #對T-map進行中值濾波
+
+        return output
