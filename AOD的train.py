@@ -95,7 +95,7 @@ def main(cfg):
         for step, (ori_image, haze_image) in enumerate(train_loader):
             count = epoch * train_number + (step + 1)
             ori_image, haze_image = ori_image.to(device), haze_image.to(device)
-            dehaze_image = network(haze_image)
+            dehaze_image = network(x=haze_image,H=haze_image.shape[0], W=haze_image.shape[1])
             loss = criterion(dehaze_image, ori_image)
             optimizer.zero_grad()
             loss.backward()

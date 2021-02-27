@@ -31,16 +31,19 @@ class HazeDataset(torch.utils.data.Dataset):
 
     def get_image_pair_list(self):
         for image in self.image_name_list:
-            image = image.split("/")[-1]
+            image = image.split("\\")[-1]
             key = image.split("_")[0] + "_" + image.split("_")[1] + ".jpg"
+            #print (image, key.split("\\")[-1])
             if key in self.matching_dict.keys():
                 self.matching_dict[key].append(image)
             else:
                 self.matching_dict[key] = []
                 self.matching_dict[key].append(image)
+            #print(self.matching_dict[key])
 
         for key in list(self.matching_dict.keys()):
             for hazy_image in self.matching_dict[key]:
                 self.file_list.append([os.path.join(self.ori_root, key), os.path.join(self.haze_root, hazy_image)])
+                #print(self.file_list)
 
         random.shuffle(self.file_list)

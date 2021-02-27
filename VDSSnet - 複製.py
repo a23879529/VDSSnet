@@ -95,9 +95,9 @@ class VDSSNet(nn.Module):
         self.res1 = SmoothDilatedResidualBlock(64, dilation=2)
         self.res2 = SmoothDilatedResidualBlock(64, dilation=2)
         self.res3 = SmoothDilatedResidualBlock(64, dilation=2)
-        self.res4 = SmoothDilatedResidualBlock(64, dilation=2)
-        self.res5 = SmoothDilatedResidualBlock(64, dilation=2)
-        self.res6 = SmoothDilatedResidualBlock(64, dilation=2)
+        self.res4 = SmoothDilatedResidualBlock(64, dilation=4)
+        self.res5 = SmoothDilatedResidualBlock(64, dilation=4)
+        self.res6 = SmoothDilatedResidualBlock(64, dilation=1)
         self.res7 = ResidualBlock(64, dilation=1)  # 空洞率为1时分离卷积的卷积核为1*1，没有起到信息融合的作用，因此该层退化为一个普通的残差网络
 
         # Gated Fusion Sub-network：学习低,中,高层特征的权重
