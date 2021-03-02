@@ -11,14 +11,17 @@ from PIL import Image
 import torch
 from torch.autograd import Variable
 
+import pytorch_ssim
 from utils import make_dataset, edge_compute
+from VDSSNet import VDSSNet
+from math import log10
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--network', default='VDSSNet')
-parser.add_argument('--task', default='dehaze')
+#parser.add_argument('--network', default='VDSSNet')
+#parser.add_argument('--task', default='dehaze')
 parser.add_argument('--gpu_id', type=int, default=0)
-parser.add_argument('--indir', default='examples/')
-parser.add_argument('--outdir', default='output')
+parser.add_argument('--indir', default='./test_input')
+parser.add_argument('--outdir', default='./test_output')
 opt = parser.parse_args()
 #assert opt.task in ['dehaze']
 
@@ -42,51 +45,71 @@ if not os.path.exists(opt.outdir):
 test_img_paths = make_dataset(opt.indir) # utils.py
 
 # 初始化模型
-if opt.network == 'VDSSNet':
-    from VDSSNet import VDSSNet
-    # 输入通道：3（RGB）；输出通道：3（RGB)
-    #dehaze_net = VDSSNet(in_c=3, out_c=3, only_residual=opt.only_residual)
-    dehaze_net = VDSSNet()
-else:
-    print('network structure %s not supported' % opt.network)
-    raise ValueError
-
-# GPU or CPU
-if opt.use_cuda:
-    torch.cuda.set_device(opt.gpu_id)
-    dehaze_net.cuda()
-else:
-    dehaze_net.float()
+# 输入通道：3（RGB）；输出通道：3（RGB)
+#dehaze_net = VDSSNet(in_c=3, out_c=3, only_residual=opt.only_residual)
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+dehaze_net = VDSSNet().to(device)
 
 # 加载参数
 dehaze_net.load_state_dict(torch.load(opt.model, map_location='cpu'))
 dehaze_net.eval()
 
+#psnr 與 ssim初始化
+total_psnr = 0
+total_ssim = 0
+
+criterion = nn.MSELoss(size_average=True).cuda()
+
+
 # 处理输入
 for img_path in test_img_paths:
     img = Image.open(img_path).convert('RGB')
     im_w, im_h = img.size
-    if im_w % 4 != 0 or im_h % 4 != 0:
-        img = img.resize((int(im_w // 4 * 4), int(im_h // 4 * 4))) 
+    #if im_w % 4 != 0 or im_h % 4 != 0:
+    #    img = img.resize((int(im_w // 4 * 4), int(im_h // 4 * 4)))
+    #縮放倍率
+    zoom = round(im_w/240)
+    if zoom < 1:
+        zoom = 1
+    #等比縮放
+    img =  img.resize((int(im_w / zoom), int(im_h / zoom)))
     img = np.array(img).astype('float')
     img_data = torch.from_numpy(img.transpose((2, 0, 1))).float() # (坐标x，坐标y，通道)->(通道，坐标x，坐标y)
-    edge_data = edge_compute(img_data) # 计算边缘信息
-    in_data = torch.cat((img_data, edge_data), dim=0).unsqueeze(0) - 128  # 数据中心化 [0,255]->[-128,127]
-    in_data = in_data.cuda() if opt.use_cuda else in_data.float()
+    #edge_data = edge_compute(img_data) # 计算边缘信息
+    #in_data = torch.cat((img_data, edge_data), dim=0).unsqueeze(0) - 128  # 数据中心化 [0,255]->[-128,127]
+    #in_data = in_data.cuda() if opt.use_cuda else in_data.float()
 
-    with torch.no_grad():
-        pred = dehaze_net(Variable(in_data))
+    #with torch.no_grad():
+    #    pred = dehaze_net(Variable(in_data))
 
     # round：四舍五入 clamp：大于或小于阈值时被截断(input, min, max, out=None)
     #if opt.only_residual: # 去雾图像=原图+预测值（残差）
-    out_img_data = (pred.data[0].cpu().float() + img_data).round().clamp(0, 255)
+    #out_img_data = (pred.data[0].cpu().float() + img_data).round().clamp(0, 255)
+
+    img_orig = img_orig.cuda()
+    img_haze = img_haze.cuda()
+    #print (img_haze.shape)
+    clean_image = dehaze_net(img_haze)
+
+    torchvision.utils.save_image(torch.cat((img_haze, clean_image, img_orig), 0),
+                                         config.sample_output_folder + str(iter_val + 1) + ".jpg")
 
     # 保存图片
     out_img = Image.fromarray(out_img_data.numpy().astype(np.uint8).transpose(1, 2, 0))
     out_img.save(os.path.join(opt.outdir, os.path.splitext(os.path.basename(img_path))[0] + '_%s.png' % opt.task))
     
-#------------------------以下可以從Frame變成Video-----------------------
+    mse = criterion2(clean_image, img_orig)
+    psnr = 10 * log10(1 / mse)
+    #psnr = pytorch_ssim.ssim(clean_image, img_orig)
+    ssim = pytorch_ssim.ssim(clean_image, img_orig)
+    ssim = ssim[0]
+    total_psnr += psnr
+    total_ssim += ssim
+
+print("Average PSNR = %.3f" % (total_psnr / len(test_img_paths)), "  Averge SSIM = %.3f" % (total_ssim / len(test_img_paths)))
     
+#------------------------以下可以從Frame變成Video-----------------------
+"""
 import os
 import cv2
 import numpy as np
@@ -111,6 +134,6 @@ for i in range(len(img_array)):
     out.write(img_array[i])
 out.release()
 print("Done!Done!")
-
+"""
 
 
