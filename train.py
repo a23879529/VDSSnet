@@ -16,6 +16,7 @@ import numpy as np
 from VDSSnet import VDSSNet
 from torchvision import transforms
 from data import HazeDataset
+from  loss import FFT
 
 def weights_init(m):
     classname = m.__class__.__name__
@@ -31,7 +32,7 @@ def train(config):
     dehaze_net.apply(weights_init)
 
     data_transform = transforms.Compose([
-        transforms.Resize([480, 640]),
+        transforms.Resize([240, 320]),
         transforms.ToTensor()
     ])
 
@@ -43,21 +44,24 @@ def train(config):
     val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=config.val_batch_size, shuffle=True,
                                              num_workers=config.num_workers, pin_memory=True)
 
-    criterion = nn.MSELoss().cuda()
+    criterion = nn.L1Loss().cuda()
+    criterion1 = FFT().cuda()
+
     optimizer = torch.optim.Adam(dehaze_net.parameters(), lr=config.lr, weight_decay=config.weight_decay)
 
     dehaze_net.train()
 
     for epoch in range(config.num_epochs):
-        print("----------------  epoch: ", epoch)
+        #print("epoch: ", epoch)
         for iteration, (img_orig, img_haze) in enumerate(train_loader):
+            #print("----------------  iteration: ", iteration)
 
             img_orig = img_orig.cuda()
             img_haze = img_haze.cuda()
             #print (img_haze.shape)
             clean_image = dehaze_net(img_haze)
 
-            loss = criterion(clean_image, img_orig)
+            loss = 0.5 * criterion(clean_image, img_orig) + 0.5 * criterion1(clean_image, img_orig) #L1_loss + FFT_loss 倍率都為0.5
 
             optimizer.zero_grad()
             loss.backward()
@@ -65,15 +69,17 @@ def train(config):
             optimizer.step()
 
             if ((iteration + 1) % config.display_iter) == 0:
-                print("Loss at iteration", iteration + 1, ":", loss.item())
+                #print("Loss at iteration", iteration + 1, ":", loss.item())
+                print("epoch: ", epoch, "  Loss at iteration", iteration + 1, ":", loss.item())
             if ((iteration + 1) % config.snapshot_iter) == 0:
                 torch.save(dehaze_net.state_dict(), config.snapshots_folder + "Epoch" + str(epoch) + '.pth')
 
         # Validation Stage
         for iter_val, (img_orig, img_haze) in enumerate(val_loader):
+            #print("----------------  iter_val: ", iter_val)
             img_orig = img_orig.cuda()
             img_haze = img_haze.cuda()
-
+            #print (img_haze.shape)
             clean_image = dehaze_net(img_haze)
 
             torchvision.utils.save_image(torch.cat((img_haze, clean_image, img_orig), 0),
@@ -87,19 +93,19 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 	
 	# Input Parameters
-    parser.add_argument('--ori_data_path', type=str, default='C:\\Users\\田鼠\\Desktop\\1',  help='Origin image path')
-    parser.add_argument('--haze_data_path', type=str, default='C:\\Users\\田鼠\\Desktop\\2',  help='Haze image path')
-    parser.add_argument('--val_ori_data_path', type=str, default='C:\\Users\\田鼠\\Desktop\\3',  help='Validation origin image path')
-    parser.add_argument('--val_haze_data_path', type=str, default='C:\\Users\\田鼠\\Desktop\\4',  help='Validation haze image path')
+    parser.add_argument('--ori_data_path', type=str, default='C:\\Users\\田鼠\\Desktop\\image',  help='Origin image path')
+    parser.add_argument('--haze_data_path', type=str, default='C:\\Users\\田鼠\\Desktop\\data',  help='Haze image path')
+    parser.add_argument('--val_ori_data_path', type=str, default='C:\\Users\\田鼠\\Desktop\\V_GT',  help='Validation origin image path')
+    parser.add_argument('--val_haze_data_path', type=str, default='C:\\Users\\田鼠\\Desktop\\V_h',  help='Validation haze image path')
     parser.add_argument('--lr', type=float, default=0.0001)
     parser.add_argument('--weight_decay', type=float, default=0.0001) # default 0.0001
     parser.add_argument('--grad_clip_norm', type=float, default=0.1)
     parser.add_argument('--num_epochs', type=int, default=30)
     parser.add_argument('--train_batch_size', type=int, default=8) #原本是8
-    parser.add_argument('--val_batch_size', type=int, default=8)
+    parser.add_argument('--val_batch_size', type=int, default=4)
     parser.add_argument('--num_workers', type=int, default=4)
-    parser.add_argument('--display_iter', type=int, default=10)
-    parser.add_argument('--snapshot_iter', type=int, default=200)
+    parser.add_argument('--display_iter', type=int, default=10) #原本是10
+    parser.add_argument('--snapshot_iter', type=int, default=200) #原本是200
     parser.add_argument('--snapshots_folder', type=str, default="./snapshots/")
     parser.add_argument('--sample_output_folder', type=str, default="./samples/")
 
