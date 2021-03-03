@@ -17,7 +17,7 @@ import pytorch_ssim
 from VDSSnet import VDSSNet
 from torchvision import transforms
 from data import HazeDataset
-from tools import Smooth_l1_loss
+#from tools import Smooth_l1_loss
 from tools import FFT
 from math import log10
 
@@ -47,7 +47,8 @@ def train(config):
     val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=config.val_batch_size, shuffle=True,
                                              num_workers=config.num_workers, pin_memory=True)
 
-    criterion = nn.L1Loss().cuda()
+    #criterion = nn.L1Loss().cuda()
+    criterion = nn.SmoothL1Loss().cuda()
     criterion1 = FFT().cuda()
     criterion2 = nn.MSELoss(size_average=True).cuda()
 
@@ -64,6 +65,9 @@ def train(config):
             img_haze = img_haze.cuda()
             #print (img_haze.shape)
             clean_image = dehaze_net(img_haze)
+
+            #print(criterion1(clean_image, img_orig))
+            #print(criterion(clean_image, img_orig))
 
             loss = 0.5 * criterion(clean_image, img_orig) + 0.5 * criterion1(clean_image, img_orig) #L1_loss + FFT_loss 倍率都為0.5
 
@@ -82,7 +86,7 @@ def train(config):
                 #print("PSNR: %.3f" % psnr, "  SSIM: %.3f" % ssim)
 
                 #print("Loss at iteration", iteration + 1, ":", loss.item())
-                print("Epoch: ", epoch, "  Loss at iteration", iteration + 1, ":", loss.item(),"  PSNR: %.3f" % psnr, "  SSIM: %.3f" % ssim)
+                print("Epoch: ", epoch, "  Loss at iteration", iteration + 1, ":%.3f" % loss.item(),"  PSNR: %.3f" % psnr, "  SSIM: %.3f" % ssim)
 
             if ((iteration + 1) % config.snapshot_iter) == 0:
                 torch.save(dehaze_net.state_dict(), config.snapshots_folder + "Epoch" + str(epoch + 1) + '.pth')
@@ -119,8 +123,8 @@ if __name__ == "__main__":
     parser.add_argument('--num_workers', type=int, default=4)
     parser.add_argument('--display_iter', type=int, default=50) #原本是10
     parser.add_argument('--snapshot_iter', type=int, default=200) #原本是200
-    parser.add_argument('--snapshots_folder', type=str, default="./snapshots")
-    parser.add_argument('--sample_output_folder', type=str, default="./samples")
+    parser.add_argument('--snapshots_folder', type=str, default="snapshots/")
+    parser.add_argument('--sample_output_folder', type=str, default="samples/")
 
     config = parser.parse_args()
 
