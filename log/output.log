@@ -1,0 +1,1255 @@
+2021-03-08 13:27:18,927 - __main__ - INFO - Start training.
+2021-03-08 13:31:05,836 - __main__ - INFO - Epoch: 0  Loss at iteration50:1.916  PSNR: 6.462  SSIM: 0.100  運行時間為: 226.908639 秒
+2021-03-08 13:34:48,959 - __main__ - INFO - Epoch: 0  Loss at iteration100:1.490  PSNR: 9.358  SSIM: 0.229  運行時間為: 223.123225 秒
+2021-03-08 13:38:34,845 - __main__ - INFO - Epoch: 0  Loss at iteration150:1.533  PSNR: 11.429  SSIM: 0.445  運行時間為: 225.885111 秒
+2021-03-08 13:42:20,362 - __main__ - INFO - Epoch: 0  Loss at iteration200:1.199  PSNR: 12.861  SSIM: 0.624  運行時間為: 225.516929 秒
+2021-03-08 13:42:20,538 - __main__ - INFO - save Epoch1.pth
+2021-03-08 13:46:03,570 - __main__ - INFO - Epoch: 0  Loss at iteration250:1.021  PSNR: 14.237  SSIM: 0.709  運行時間為: 223.208266 秒
+2021-03-08 13:49:47,000 - __main__ - INFO - Epoch: 0  Loss at iteration300:0.875  PSNR: 15.264  SSIM: 0.679  運行時間為: 223.429840 秒
+2021-03-08 13:53:30,543 - __main__ - INFO - Epoch: 0  Loss at iteration350:0.833  PSNR: 17.708  SSIM: 0.766  運行時間為: 223.542392 秒
+2021-03-08 13:57:15,490 - __main__ - INFO - Epoch: 0  Loss at iteration400:0.819  PSNR: 15.167  SSIM: 0.702  運行時間為: 224.947193 秒
+2021-03-08 13:57:15,666 - __main__ - INFO - save Epoch1.pth
+2021-03-08 14:01:00,429 - __main__ - INFO - Epoch: 0  Loss at iteration450:0.702  PSNR: 16.154  SSIM: 0.796  運行時間為: 224.938218 秒
+2021-03-08 14:04:45,056 - __main__ - INFO - Epoch: 0  Loss at iteration500:0.714  PSNR: 17.015  SSIM: 0.764  運行時間為: 224.627376 秒
+2021-03-08 14:08:29,973 - __main__ - INFO - Epoch: 0  Loss at iteration550:0.704  PSNR: 18.705  SSIM: 0.802  運行時間為: 224.915969 秒
+2021-03-08 14:12:14,363 - __main__ - INFO - Epoch: 0  Loss at iteration600:0.663  PSNR: 20.252  SSIM: 0.819  運行時間為: 224.389545 秒
+2021-03-08 14:12:14,534 - __main__ - INFO - save Epoch1.pth
+2021-03-08 14:15:59,028 - __main__ - INFO - Epoch: 0  Loss at iteration650:0.561  PSNR: 16.165  SSIM: 0.728  運行時間為: 224.664671 秒
+2021-03-08 14:19:43,528 - __main__ - INFO - Epoch: 0  Loss at iteration700:0.691  PSNR: 20.395  SSIM: 0.850  運行時間為: 224.500890 秒
+2021-03-08 14:23:27,898 - __main__ - INFO - Epoch: 0  Loss at iteration750:0.566  PSNR: 20.233  SSIM: 0.779  運行時間為: 224.368524 秒
+2021-03-08 14:27:12,017 - __main__ - INFO - Epoch: 0  Loss at iteration800:0.695  PSNR: 17.956  SSIM: 0.788  運行時間為: 224.118775 秒
+2021-03-08 14:27:12,169 - __main__ - INFO - save Epoch1.pth
+2021-03-08 14:30:56,500 - __main__ - INFO - Epoch: 0  Loss at iteration850:0.685  PSNR: 14.946  SSIM: 0.680  運行時間為: 224.482673 秒
+2021-03-08 14:34:41,440 - __main__ - INFO - Epoch: 0  Loss at iteration900:0.599  PSNR: 17.900  SSIM: 0.746  運行時間為: 224.939309 秒
+2021-03-08 14:38:25,939 - __main__ - INFO - Epoch: 0  Loss at iteration950:0.603  PSNR: 17.092  SSIM: 0.742  運行時間為: 224.499404 秒
+2021-03-08 14:42:10,475 - __main__ - INFO - Epoch: 0  Loss at iteration1000:0.634  PSNR: 17.384  SSIM: 0.790  運行時間為: 224.534711 秒
+2021-03-08 14:42:10,657 - __main__ - INFO - save Epoch1.pth
+2021-03-08 14:45:54,678 - __main__ - INFO - Epoch: 0  Loss at iteration1050:0.620  PSNR: 18.740  SSIM: 0.753  運行時間為: 224.202809 秒
+2021-03-08 14:49:38,669 - __main__ - INFO - Epoch: 0  Loss at iteration1100:0.673  PSNR: 16.782  SSIM: 0.650  運行時間為: 223.990427 秒
+2021-03-08 14:53:22,617 - __main__ - INFO - Epoch: 0  Loss at iteration1150:0.549  PSNR: 17.212  SSIM: 0.748  運行時間為: 223.947539 秒
+2021-03-08 14:57:06,934 - __main__ - INFO - Epoch: 0  Loss at iteration1200:0.628  PSNR: 17.948  SSIM: 0.643  運行時間為: 224.317445 秒
+2021-03-08 14:57:07,093 - __main__ - INFO - save Epoch1.pth
+2021-03-08 15:00:51,207 - __main__ - INFO - Epoch: 0  Loss at iteration1250:0.670  PSNR: 17.593  SSIM: 0.753  運行時間為: 224.272454 秒
+2021-03-08 15:04:35,331 - __main__ - INFO - Epoch: 0  Loss at iteration1300:0.579  PSNR: 19.431  SSIM: 0.766  運行時間為: 224.124605 秒
+2021-03-08 15:08:19,468 - __main__ - INFO - Epoch: 0  Loss at iteration1350:0.541  PSNR: 18.756  SSIM: 0.816  運行時間為: 224.135370 秒
+2021-03-08 15:12:03,411 - __main__ - INFO - Epoch: 0  Loss at iteration1400:0.607  PSNR: 16.248  SSIM: 0.743  運行時間為: 223.942986 秒
+2021-03-08 15:12:03,583 - __main__ - INFO - save Epoch1.pth
+2021-03-08 15:15:47,513 - __main__ - INFO - Epoch: 0  Loss at iteration1450:0.662  PSNR: 18.597  SSIM: 0.801  運行時間為: 224.102899 秒
+2021-03-08 15:19:31,927 - __main__ - INFO - Epoch: 0  Loss at iteration1500:0.539  PSNR: 21.602  SSIM: 0.788  運行時間為: 224.412697 秒
+2021-03-08 15:23:16,375 - __main__ - INFO - Epoch: 0  Loss at iteration1550:0.588  PSNR: 17.863  SSIM: 0.780  運行時間為: 224.447526 秒
+2021-03-08 15:27:00,456 - __main__ - INFO - Epoch: 0  Loss at iteration1600:0.603  PSNR: 16.725  SSIM: 0.716  運行時間為: 224.080882 秒
+2021-03-08 15:27:00,630 - __main__ - INFO - save Epoch1.pth
+2021-03-08 15:30:44,555 - __main__ - INFO - Epoch: 0  Loss at iteration1650:0.581  PSNR: 17.180  SSIM: 0.751  運行時間為: 224.099915 秒
+2021-03-08 15:34:28,467 - __main__ - INFO - Epoch: 0  Loss at iteration1700:0.614  PSNR: 18.636  SSIM: 0.790  運行時間為: 223.911939 秒
+2021-03-08 15:38:12,501 - __main__ - INFO - Epoch: 0  Loss at iteration1750:0.514  PSNR: 18.832  SSIM: 0.815  運行時間為: 224.032454 秒
+2021-03-08 15:41:56,535 - __main__ - INFO - Epoch: 0  Loss at iteration1800:0.516  PSNR: 18.047  SSIM: 0.785  運行時間為: 224.032739 秒
+2021-03-08 15:41:56,802 - __main__ - INFO - save Epoch1.pth
+2021-03-08 15:45:41,513 - __main__ - INFO - Epoch: 0  Loss at iteration1850:0.561  PSNR: 17.322  SSIM: 0.779  運行時間為: 224.978097 秒
+2021-03-08 15:49:26,548 - __main__ - INFO - Epoch: 0  Loss at iteration1900:0.474  PSNR: 19.046  SSIM: 0.776  運行時間為: 225.032995 秒
+2021-03-08 15:53:11,030 - __main__ - INFO - Epoch: 0  Loss at iteration1950:0.621  PSNR: 16.165  SSIM: 0.682  運行時間為: 224.481242 秒
+2021-03-08 15:56:55,513 - __main__ - INFO - Epoch: 0  Loss at iteration2000:0.463  PSNR: 20.514  SSIM: 0.851  運行時間為: 224.482900 秒
+2021-03-08 15:56:55,688 - __main__ - INFO - save Epoch1.pth
+2021-03-08 16:00:39,629 - __main__ - INFO - Epoch: 0  Loss at iteration2050:0.465  PSNR: 19.251  SSIM: 0.739  運行時間為: 224.115853 秒
+2021-03-08 16:04:23,670 - __main__ - INFO - Epoch: 0  Loss at iteration2100:0.599  PSNR: 15.600  SSIM: 0.709  運行時間為: 224.041720 秒
+2021-03-08 16:08:07,567 - __main__ - INFO - Epoch: 0  Loss at iteration2150:0.543  PSNR: 15.238  SSIM: 0.688  運行時間為: 223.896145 秒
+2021-03-08 16:11:51,970 - __main__ - INFO - Epoch: 0  Loss at iteration2200:0.589  PSNR: 19.154  SSIM: 0.785  運行時間為: 224.401271 秒
+2021-03-08 16:11:52,124 - __main__ - INFO - save Epoch1.pth
+2021-03-08 16:15:35,998 - __main__ - INFO - Epoch: 0  Loss at iteration2250:0.552  PSNR: 16.154  SSIM: 0.744  運行時間為: 224.027899 秒
+2021-03-08 16:19:20,047 - __main__ - INFO - Epoch: 0  Loss at iteration2300:0.505  PSNR: 20.911  SSIM: 0.864  運行時間為: 224.048628 秒
+2021-03-08 16:23:04,087 - __main__ - INFO - Epoch: 0  Loss at iteration2350:0.523  PSNR: 17.624  SSIM: 0.733  運行時間為: 224.039604 秒
+2021-03-08 16:26:48,590 - __main__ - INFO - Epoch: 0  Loss at iteration2400:0.511  PSNR: 18.208  SSIM: 0.741  運行時間為: 224.503038 秒
+2021-03-08 16:26:48,759 - __main__ - INFO - save Epoch1.pth
+2021-03-08 16:30:32,878 - __main__ - INFO - Epoch: 0  Loss at iteration2450:0.511  PSNR: 21.116  SSIM: 0.811  運行時間為: 224.287156 秒
+2021-03-08 16:34:13,487 - __main__ - INFO - Epoch: 0  Loss at iteration2500:0.520  PSNR: 21.442  SSIM: 0.853  運行時間為: 220.608229 秒
+2021-03-08 16:37:53,963 - __main__ - INFO - Epoch: 0  Loss at iteration2550:0.499  PSNR: 19.030  SSIM: 0.820  運行時間為: 220.474412 秒
+2021-03-08 16:41:34,696 - __main__ - INFO - Epoch: 0  Loss at iteration2600:0.523  PSNR: 15.288  SSIM: 0.675  運行時間為: 220.733548 秒
+2021-03-08 16:41:34,865 - __main__ - INFO - save Epoch1.pth
+2021-03-08 16:45:15,906 - __main__ - INFO - Epoch: 0  Loss at iteration2650:0.560  PSNR: 16.858  SSIM: 0.711  運行時間為: 221.209938 秒
+2021-03-08 16:48:56,791 - __main__ - INFO - Epoch: 0  Loss at iteration2700:0.547  PSNR: 21.557  SSIM: 0.830  運行時間為: 220.884999 秒
+2021-03-08 16:52:38,017 - __main__ - INFO - Epoch: 0  Loss at iteration2750:0.464  PSNR: 22.095  SSIM: 0.806  運行時間為: 221.225677 秒
+2021-03-08 16:56:19,031 - __main__ - INFO - Epoch: 0  Loss at iteration2800:0.543  PSNR: 18.977  SSIM: 0.703  運行時間為: 221.013323 秒
+2021-03-08 16:56:19,189 - __main__ - INFO - save Epoch1.pth
+2021-03-08 17:40:15,310 - __main__ - INFO - Epoch 運行時間為: 15176.382497 秒
+2021-03-08 17:43:58,143 - __main__ - INFO - Epoch: 1  Loss at iteration50:0.507  PSNR: 18.371  SSIM: 0.737  運行時間為: 222.833579 秒
+2021-03-08 17:47:38,144 - __main__ - INFO - Epoch: 1  Loss at iteration100:0.510  PSNR: 19.114  SSIM: 0.824  運行時間為: 220.000836 秒
+2021-03-08 17:51:18,434 - __main__ - INFO - Epoch: 1  Loss at iteration150:0.553  PSNR: 17.284  SSIM: 0.774  運行時間為: 220.289457 秒
+2021-03-08 17:54:58,617 - __main__ - INFO - Epoch: 1  Loss at iteration200:0.610  PSNR: 18.991  SSIM: 0.822  運行時間為: 220.183511 秒
+2021-03-08 17:54:58,781 - __main__ - INFO - save Epoch2.pth
+2021-03-08 17:58:39,615 - __main__ - INFO - Epoch: 1  Loss at iteration250:0.459  PSNR: 20.352  SSIM: 0.862  運行時間為: 220.998217 秒
+2021-03-08 18:02:20,167 - __main__ - INFO - Epoch: 1  Loss at iteration300:0.576  PSNR: 18.357  SSIM: 0.835  運行時間為: 220.550986 秒
+2021-03-08 18:06:01,184 - __main__ - INFO - Epoch: 1  Loss at iteration350:0.594  PSNR: 17.923  SSIM: 0.805  運行時間為: 221.017201 秒
+2021-03-08 18:09:42,340 - __main__ - INFO - Epoch: 1  Loss at iteration400:0.558  PSNR: 19.630  SSIM: 0.847  運行時間為: 221.154219 秒
+2021-03-08 18:09:42,515 - __main__ - INFO - save Epoch2.pth
+2021-03-08 18:13:23,662 - __main__ - INFO - Epoch: 1  Loss at iteration450:0.530  PSNR: 20.500  SSIM: 0.839  運行時間為: 221.321543 秒
+2021-03-08 18:17:04,617 - __main__ - INFO - Epoch: 1  Loss at iteration500:0.537  PSNR: 16.476  SSIM: 0.769  運行時間為: 220.954508 秒
+2021-03-08 18:20:45,655 - __main__ - INFO - Epoch: 1  Loss at iteration550:0.480  PSNR: 16.532  SSIM: 0.775  運行時間為: 221.037565 秒
+2021-03-08 18:24:26,650 - __main__ - INFO - Epoch: 1  Loss at iteration600:0.561  PSNR: 17.184  SSIM: 0.777  運行時間為: 220.994546 秒
+2021-03-08 18:24:26,822 - __main__ - INFO - save Epoch2.pth
+2021-03-08 18:28:07,906 - __main__ - INFO - Epoch: 1  Loss at iteration650:0.488  PSNR: 18.525  SSIM: 0.805  運行時間為: 221.256243 秒
+2021-03-08 18:31:48,862 - __main__ - INFO - Epoch: 1  Loss at iteration700:0.533  PSNR: 21.414  SSIM: 0.851  運行時間為: 220.956173 秒
+2021-03-08 18:35:29,874 - __main__ - INFO - Epoch: 1  Loss at iteration750:0.539  PSNR: 20.788  SSIM: 0.839  運行時間為: 221.011673 秒
+2021-03-08 18:39:10,895 - __main__ - INFO - Epoch: 1  Loss at iteration800:0.452  PSNR: 19.572  SSIM: 0.793  運行時間為: 221.019753 秒
+2021-03-08 18:39:11,065 - __main__ - INFO - save Epoch2.pth
+2021-03-08 18:42:51,844 - __main__ - INFO - Epoch: 1  Loss at iteration850:0.466  PSNR: 20.992  SSIM: 0.864  運行時間為: 220.947866 秒
+2021-03-08 18:46:32,557 - __main__ - INFO - Epoch: 1  Loss at iteration900:0.491  PSNR: 19.108  SSIM: 0.768  運行時間為: 220.712339 秒
+2021-03-08 18:50:13,399 - __main__ - INFO - Epoch: 1  Loss at iteration950:0.540  PSNR: 18.521  SSIM: 0.793  運行時間為: 220.842528 秒
+2021-03-08 18:53:53,800 - __main__ - INFO - Epoch: 1  Loss at iteration1000:0.469  PSNR: 18.825  SSIM: 0.831  運行時間為: 220.400497 秒
+2021-03-08 18:53:54,059 - __main__ - INFO - save Epoch2.pth
+2021-03-08 18:57:35,185 - __main__ - INFO - Epoch: 1  Loss at iteration1050:0.519  PSNR: 19.186  SSIM: 0.814  運行時間為: 221.384916 秒
+2021-03-08 19:01:15,911 - __main__ - INFO - Epoch: 1  Loss at iteration1100:0.423  PSNR: 19.630  SSIM: 0.819  運行時間為: 220.725626 秒
+2021-03-08 19:04:56,912 - __main__ - INFO - Epoch: 1  Loss at iteration1150:0.515  PSNR: 19.019  SSIM: 0.776  運行時間為: 221.000553 秒
+2021-03-08 19:08:37,961 - __main__ - INFO - Epoch: 1  Loss at iteration1200:0.487  PSNR: 20.355  SSIM: 0.838  運行時間為: 221.048386 秒
+2021-03-08 19:08:38,129 - __main__ - INFO - save Epoch2.pth
+2021-03-08 19:12:19,285 - __main__ - INFO - Epoch: 1  Loss at iteration1250:0.446  PSNR: 22.400  SSIM: 0.903  運行時間為: 221.322684 秒
+2021-03-08 19:16:00,127 - __main__ - INFO - Epoch: 1  Loss at iteration1300:0.556  PSNR: 17.352  SSIM: 0.746  運行時間為: 220.840424 秒
+2021-03-08 19:19:40,892 - __main__ - INFO - Epoch: 1  Loss at iteration1350:0.473  PSNR: 15.998  SSIM: 0.660  運行時間為: 220.765691 秒
+2021-03-08 19:23:21,773 - __main__ - INFO - Epoch: 1  Loss at iteration1400:0.445  PSNR: 18.521  SSIM: 0.789  運行時間為: 220.880671 秒
+2021-03-08 19:23:21,944 - __main__ - INFO - save Epoch2.pth
+2021-03-08 19:27:03,115 - __main__ - INFO - Epoch: 1  Loss at iteration1450:0.629  PSNR: 18.149  SSIM: 0.786  運行時間為: 221.341002 秒
+2021-03-08 19:30:43,840 - __main__ - INFO - Epoch: 1  Loss at iteration1500:0.461  PSNR: 17.411  SSIM: 0.645  運行時間為: 220.723984 秒
+2021-03-08 19:34:24,733 - __main__ - INFO - Epoch: 1  Loss at iteration1550:0.488  PSNR: 19.068  SSIM: 0.688  運行時間為: 220.893101 秒
+2021-03-08 19:38:05,974 - __main__ - INFO - Epoch: 1  Loss at iteration1600:0.411  PSNR: 19.809  SSIM: 0.813  運行時間為: 221.240540 秒
+2021-03-08 19:38:06,144 - __main__ - INFO - save Epoch2.pth
+2021-03-08 19:41:47,362 - __main__ - INFO - Epoch: 1  Loss at iteration1650:0.552  PSNR: 21.385  SSIM: 0.797  運行時間為: 221.387230 秒
+2021-03-08 19:45:28,579 - __main__ - INFO - Epoch: 1  Loss at iteration1700:0.515  PSNR: 16.907  SSIM: 0.728  運行時間為: 221.216788 秒
+2021-03-08 19:49:09,785 - __main__ - INFO - Epoch: 1  Loss at iteration1750:0.504  PSNR: 19.707  SSIM: 0.705  運行時間為: 221.206105 秒
+2021-03-08 19:52:51,032 - __main__ - INFO - Epoch: 1  Loss at iteration1800:0.519  PSNR: 19.371  SSIM: 0.819  運行時間為: 221.247500 秒
+2021-03-08 19:52:51,213 - __main__ - INFO - save Epoch2.pth
+2021-03-08 19:56:32,485 - __main__ - INFO - Epoch: 1  Loss at iteration1850:0.538  PSNR: 19.703  SSIM: 0.858  運行時間為: 221.453014 秒
+2021-03-08 20:00:13,744 - __main__ - INFO - Epoch: 1  Loss at iteration1900:0.416  PSNR: 21.812  SSIM: 0.853  運行時間為: 221.258331 秒
+2021-03-08 20:03:54,657 - __main__ - INFO - Epoch: 1  Loss at iteration1950:0.482  PSNR: 23.142  SSIM: 0.894  運行時間為: 220.912455 秒
+2021-03-08 20:07:35,709 - __main__ - INFO - Epoch: 1  Loss at iteration2000:0.458  PSNR: 22.843  SSIM: 0.858  運行時間為: 221.051955 秒
+2021-03-08 20:07:35,885 - __main__ - INFO - save Epoch2.pth
+2021-03-08 20:11:17,242 - __main__ - INFO - Epoch: 1  Loss at iteration2050:0.465  PSNR: 21.512  SSIM: 0.851  運行時間為: 221.531714 秒
+2021-03-08 20:14:58,375 - __main__ - INFO - Epoch: 1  Loss at iteration2100:0.498  PSNR: 21.308  SSIM: 0.882  運行時間為: 221.133698 秒
+2021-03-08 20:18:39,593 - __main__ - INFO - Epoch: 1  Loss at iteration2150:0.380  PSNR: 21.322  SSIM: 0.825  運行時間為: 221.217284 秒
+2021-03-08 20:22:21,163 - __main__ - INFO - Epoch: 1  Loss at iteration2200:0.471  PSNR: 19.097  SSIM: 0.788  運行時間為: 221.569385 秒
+2021-03-08 20:22:21,335 - __main__ - INFO - save Epoch2.pth
+2021-03-08 20:26:02,172 - __main__ - INFO - Epoch: 1  Loss at iteration2250:0.510  PSNR: 20.517  SSIM: 0.713  運行時間為: 221.009214 秒
+2021-03-08 20:29:41,385 - __main__ - INFO - Epoch: 1  Loss at iteration2300:0.447  PSNR: 22.039  SSIM: 0.871  運行時間為: 219.212888 秒
+2021-03-08 20:33:20,253 - __main__ - INFO - Epoch: 1  Loss at iteration2350:0.483  PSNR: 18.946  SSIM: 0.790  運行時間為: 218.867655 秒
+2021-03-08 20:36:59,246 - __main__ - INFO - Epoch: 1  Loss at iteration2400:0.532  PSNR: 21.206  SSIM: 0.765  運行時間為: 218.993732 秒
+2021-03-08 20:36:59,417 - __main__ - INFO - save Epoch2.pth
+2021-03-08 20:40:38,429 - __main__ - INFO - Epoch: 1  Loss at iteration2450:0.406  PSNR: 23.233  SSIM: 0.870  運行時間為: 219.182675 秒
+2021-03-08 20:44:17,234 - __main__ - INFO - Epoch: 1  Loss at iteration2500:0.538  PSNR: 18.515  SSIM: 0.783  運行時間為: 218.804887 秒
+2021-03-08 20:47:56,137 - __main__ - INFO - Epoch: 1  Loss at iteration2550:0.442  PSNR: 22.730  SSIM: 0.877  運行時間為: 218.903247 秒
+2021-03-08 20:51:34,834 - __main__ - INFO - Epoch: 1  Loss at iteration2600:0.460  PSNR: 22.638  SSIM: 0.861  運行時間為: 218.696296 秒
+2021-03-08 20:51:35,004 - __main__ - INFO - save Epoch2.pth
+2021-03-08 20:55:13,927 - __main__ - INFO - Epoch: 1  Loss at iteration2650:0.436  PSNR: 21.569  SSIM: 0.831  運行時間為: 219.092998 秒
+2021-03-08 20:58:53,793 - __main__ - INFO - Epoch: 1  Loss at iteration2700:0.421  PSNR: 21.584  SSIM: 0.842  運行時間為: 219.866730 秒
+2021-03-08 21:02:33,971 - __main__ - INFO - Epoch: 1  Loss at iteration2750:0.395  PSNR: 22.363  SSIM: 0.824  運行時間為: 220.177330 秒
+2021-03-08 21:06:13,902 - __main__ - INFO - Epoch: 1  Loss at iteration2800:0.461  PSNR: 22.779  SSIM: 0.871  運行時間為: 219.931372 秒
+2021-03-08 21:06:14,072 - __main__ - INFO - save Epoch2.pth
+2021-03-08 21:49:54,353 - __main__ - INFO - Epoch 運行時間為: 14979.042829 秒
+2021-03-08 21:53:36,816 - __main__ - INFO - Epoch: 2  Loss at iteration50:0.443  PSNR: 22.609  SSIM: 0.869  運行時間為: 222.463346 秒
+2021-03-08 21:57:16,384 - __main__ - INFO - Epoch: 2  Loss at iteration100:0.450  PSNR: 20.277  SSIM: 0.825  運行時間為: 219.567750 秒
+2021-03-08 22:00:55,929 - __main__ - INFO - Epoch: 2  Loss at iteration150:0.525  PSNR: 21.802  SSIM: 0.881  運行時間為: 219.545361 秒
+2021-03-08 22:04:35,631 - __main__ - INFO - Epoch: 2  Loss at iteration200:0.491  PSNR: 21.085  SSIM: 0.830  運行時間為: 219.700825 秒
+2021-03-08 22:04:35,796 - __main__ - INFO - save Epoch3.pth
+2021-03-08 22:08:15,687 - __main__ - INFO - Epoch: 2  Loss at iteration250:0.413  PSNR: 20.550  SSIM: 0.728  運行時間為: 220.055913 秒
+2021-03-08 22:11:55,492 - __main__ - INFO - Epoch: 2  Loss at iteration300:0.364  PSNR: 22.692  SSIM: 0.893  運行時間為: 219.805371 秒
+2021-03-08 22:15:35,447 - __main__ - INFO - Epoch: 2  Loss at iteration350:0.529  PSNR: 20.814  SSIM: 0.859  運行時間為: 219.953795 秒
+2021-03-08 22:19:15,363 - __main__ - INFO - Epoch: 2  Loss at iteration400:0.454  PSNR: 23.130  SSIM: 0.788  運行時間為: 219.914785 秒
+2021-03-08 22:19:15,526 - __main__ - INFO - save Epoch3.pth
+2021-03-08 22:22:55,427 - __main__ - INFO - Epoch: 2  Loss at iteration450:0.418  PSNR: 20.754  SSIM: 0.838  運行時間為: 220.064147 秒
+2021-03-08 22:26:35,692 - __main__ - INFO - Epoch: 2  Loss at iteration500:0.369  PSNR: 25.525  SSIM: 0.885  運行時間為: 220.265517 秒
+2021-03-08 22:30:15,826 - __main__ - INFO - Epoch: 2  Loss at iteration550:0.435  PSNR: 23.030  SSIM: 0.792  運行時間為: 220.133859 秒
+2021-03-08 22:33:55,779 - __main__ - INFO - Epoch: 2  Loss at iteration600:0.468  PSNR: 22.954  SSIM: 0.847  運行時間為: 219.952521 秒
+2021-03-08 22:33:55,948 - __main__ - INFO - save Epoch3.pth
+2021-03-08 22:37:36,196 - __main__ - INFO - Epoch: 2  Loss at iteration650:0.530  PSNR: 19.541  SSIM: 0.810  運行時間為: 220.417176 秒
+2021-03-08 22:41:16,299 - __main__ - INFO - Epoch: 2  Loss at iteration700:0.435  PSNR: 23.023  SSIM: 0.835  運行時間為: 220.102809 秒
+2021-03-08 22:44:56,420 - __main__ - INFO - Epoch: 2  Loss at iteration750:0.434  PSNR: 23.427  SSIM: 0.883  運行時間為: 220.121242 秒
+2021-03-08 22:48:36,620 - __main__ - INFO - Epoch: 2  Loss at iteration800:0.458  PSNR: 20.280  SSIM: 0.818  運行時間為: 220.199015 秒
+2021-03-08 22:48:36,788 - __main__ - INFO - save Epoch3.pth
+2021-03-08 22:52:17,192 - __main__ - INFO - Epoch: 2  Loss at iteration850:0.487  PSNR: 23.715  SSIM: 0.846  運行時間為: 220.572163 秒
+2021-03-08 22:55:57,691 - __main__ - INFO - Epoch: 2  Loss at iteration900:0.414  PSNR: 24.669  SSIM: 0.813  運行時間為: 220.499166 秒
+2021-03-08 22:59:37,744 - __main__ - INFO - Epoch: 2  Loss at iteration950:0.564  PSNR: 21.942  SSIM: 0.848  運行時間為: 220.052541 秒
+2021-03-08 23:03:17,866 - __main__ - INFO - Epoch: 2  Loss at iteration1000:0.472  PSNR: 21.240  SSIM: 0.840  運行時間為: 220.121937 秒
+2021-03-08 23:03:18,034 - __main__ - INFO - save Epoch3.pth
+2021-03-08 23:06:58,216 - __main__ - INFO - Epoch: 2  Loss at iteration1050:0.377  PSNR: 24.813  SSIM: 0.887  運行時間為: 220.349018 秒
+2021-03-08 23:10:38,408 - __main__ - INFO - Epoch: 2  Loss at iteration1100:0.477  PSNR: 22.295  SSIM: 0.870  運行時間為: 220.192320 秒
+2021-03-08 23:14:18,676 - __main__ - INFO - Epoch: 2  Loss at iteration1150:0.472  PSNR: 23.643  SSIM: 0.876  運行時間為: 220.267403 秒
+2021-03-08 23:17:58,893 - __main__ - INFO - Epoch: 2  Loss at iteration1200:0.485  PSNR: 22.954  SSIM: 0.856  運行時間為: 220.217647 秒
+2021-03-08 23:17:59,062 - __main__ - INFO - save Epoch3.pth
+2021-03-08 23:21:39,117 - __main__ - INFO - Epoch: 2  Loss at iteration1250:0.399  PSNR: 22.871  SSIM: 0.866  運行時間為: 220.222888 秒
+2021-03-08 23:25:19,203 - __main__ - INFO - Epoch: 2  Loss at iteration1300:0.507  PSNR: 23.171  SSIM: 0.872  運行時間為: 220.086105 秒
+2021-03-08 23:28:59,611 - __main__ - INFO - Epoch: 2  Loss at iteration1350:0.437  PSNR: 23.612  SSIM: 0.859  運行時間為: 220.406760 秒
+2021-03-08 23:32:39,894 - __main__ - INFO - Epoch: 2  Loss at iteration1400:0.345  PSNR: 24.814  SSIM: 0.908  運行時間為: 220.282130 秒
+2021-03-08 23:32:40,063 - __main__ - INFO - save Epoch3.pth
+2021-03-08 23:36:20,428 - __main__ - INFO - Epoch: 2  Loss at iteration1450:0.498  PSNR: 22.370  SSIM: 0.890  運行時間為: 220.533875 秒
+2021-03-08 23:40:01,162 - __main__ - INFO - Epoch: 2  Loss at iteration1500:0.392  PSNR: 23.998  SSIM: 0.855  運行時間為: 220.734192 秒
+2021-03-08 23:43:41,714 - __main__ - INFO - Epoch: 2  Loss at iteration1550:0.382  PSNR: 25.375  SSIM: 0.890  運行時間為: 220.551460 秒
+2021-03-08 23:47:22,174 - __main__ - INFO - Epoch: 2  Loss at iteration1600:0.384  PSNR: 22.873  SSIM: 0.886  運行時間為: 220.460479 秒
+2021-03-08 23:47:22,337 - __main__ - INFO - save Epoch3.pth
+2021-03-08 23:51:02,843 - __main__ - INFO - Epoch: 2  Loss at iteration1650:0.413  PSNR: 21.553  SSIM: 0.819  運行時間為: 220.669280 秒
+2021-03-08 23:54:43,211 - __main__ - INFO - Epoch: 2  Loss at iteration1700:0.483  PSNR: 23.133  SSIM: 0.886  運行時間為: 220.367438 秒
+2021-03-08 23:58:23,744 - __main__ - INFO - Epoch: 2  Loss at iteration1750:0.442  PSNR: 24.390  SSIM: 0.900  運行時間為: 220.532500 秒
+2021-03-09 00:02:04,002 - __main__ - INFO - Epoch: 2  Loss at iteration1800:0.440  PSNR: 22.521  SSIM: 0.826  運行時間為: 220.258106 秒
+2021-03-09 00:02:04,173 - __main__ - INFO - save Epoch3.pth
+2021-03-09 00:05:44,640 - __main__ - INFO - Epoch: 2  Loss at iteration1850:0.384  PSNR: 24.191  SSIM: 0.864  運行時間為: 220.637729 秒
+2021-03-09 00:09:24,855 - __main__ - INFO - Epoch: 2  Loss at iteration1900:0.356  PSNR: 24.133  SSIM: 0.871  運行時間為: 220.214408 秒
+2021-03-09 00:13:05,214 - __main__ - INFO - Epoch: 2  Loss at iteration1950:0.427  PSNR: 22.887  SSIM: 0.853  運行時間為: 220.359229 秒
+2021-03-09 00:16:45,733 - __main__ - INFO - Epoch: 2  Loss at iteration2000:0.423  PSNR: 23.561  SSIM: 0.895  運行時間為: 220.518234 秒
+2021-03-09 00:16:45,909 - __main__ - INFO - save Epoch3.pth
+2021-03-09 00:20:26,508 - __main__ - INFO - Epoch: 2  Loss at iteration2050:0.408  PSNR: 22.544  SSIM: 0.887  運行時間為: 220.774775 秒
+2021-03-09 00:24:06,768 - __main__ - INFO - Epoch: 2  Loss at iteration2100:0.342  PSNR: 26.500  SSIM: 0.847  運行時間為: 220.258256 秒
+2021-03-09 00:27:47,419 - __main__ - INFO - Epoch: 2  Loss at iteration2150:0.448  PSNR: 22.570  SSIM: 0.821  運行時間為: 220.649846 秒
+2021-03-09 00:31:27,710 - __main__ - INFO - Epoch: 2  Loss at iteration2200:0.429  PSNR: 24.342  SSIM: 0.897  運行時間為: 220.291319 秒
+2021-03-09 00:31:27,886 - __main__ - INFO - save Epoch3.pth
+2021-03-09 00:35:08,253 - __main__ - INFO - Epoch: 2  Loss at iteration2250:0.349  PSNR: 25.012  SSIM: 0.926  運行時間為: 220.542783 秒
+2021-03-09 00:38:49,120 - __main__ - INFO - Epoch: 2  Loss at iteration2300:0.452  PSNR: 21.212  SSIM: 0.848  運行時間為: 220.867472 秒
+2021-03-09 00:42:29,510 - __main__ - INFO - Epoch: 2  Loss at iteration2350:0.348  PSNR: 24.964  SSIM: 0.857  運行時間為: 220.390046 秒
+2021-03-09 00:46:10,289 - __main__ - INFO - Epoch: 2  Loss at iteration2400:0.390  PSNR: 25.938  SSIM: 0.869  運行時間為: 220.776557 秒
+2021-03-09 00:46:10,441 - __main__ - INFO - save Epoch3.pth
+2021-03-09 00:49:51,093 - __main__ - INFO - Epoch: 2  Loss at iteration2450:0.489  PSNR: 23.626  SSIM: 0.830  運行時間為: 220.804164 秒
+2021-03-09 00:53:31,719 - __main__ - INFO - Epoch: 2  Loss at iteration2500:0.323  PSNR: 26.871  SSIM: 0.926  運行時間為: 220.626276 秒
+2021-03-09 00:57:12,262 - __main__ - INFO - Epoch: 2  Loss at iteration2550:0.357  PSNR: 24.539  SSIM: 0.874  運行時間為: 220.542312 秒
+2021-03-09 01:00:52,895 - __main__ - INFO - Epoch: 2  Loss at iteration2600:0.474  PSNR: 22.513  SSIM: 0.875  運行時間為: 220.632385 秒
+2021-03-09 01:00:53,063 - __main__ - INFO - save Epoch3.pth
+2021-03-09 01:04:33,732 - __main__ - INFO - Epoch: 2  Loss at iteration2650:0.537  PSNR: 21.018  SSIM: 0.821  運行時間為: 220.837195 秒
+2021-03-09 01:08:14,544 - __main__ - INFO - Epoch: 2  Loss at iteration2700:0.519  PSNR: 22.225  SSIM: 0.890  運行時間為: 220.811738 秒
+2021-03-09 01:11:55,074 - __main__ - INFO - Epoch: 2  Loss at iteration2750:0.357  PSNR: 25.057  SSIM: 0.886  運行時間為: 220.530187 秒
+2021-03-09 01:15:35,498 - __main__ - INFO - Epoch: 2  Loss at iteration2800:0.495  PSNR: 24.157  SSIM: 0.856  運行時間為: 220.423846 秒
+2021-03-09 01:15:35,657 - __main__ - INFO - save Epoch3.pth
+2021-03-09 01:59:30,467 - __main__ - INFO - Epoch 運行時間為: 14976.114719 秒
+2021-03-09 02:03:16,207 - __main__ - INFO - Epoch: 3  Loss at iteration50:0.355  PSNR: 23.508  SSIM: 0.820  運行時間為: 225.739579 秒
+2021-03-09 02:06:58,912 - __main__ - INFO - Epoch: 3  Loss at iteration100:0.402  PSNR: 23.275  SSIM: 0.826  運行時間為: 222.704928 秒
+2021-03-09 02:10:41,882 - __main__ - INFO - Epoch: 3  Loss at iteration150:0.453  PSNR: 23.150  SSIM: 0.881  運行時間為: 222.970193 秒
+2021-03-09 02:14:24,669 - __main__ - INFO - Epoch: 3  Loss at iteration200:0.480  PSNR: 22.206  SSIM: 0.848  運行時間為: 222.786989 秒
+2021-03-09 02:14:24,841 - __main__ - INFO - save Epoch4.pth
+2021-03-09 02:18:07,572 - __main__ - INFO - Epoch: 3  Loss at iteration250:0.513  PSNR: 19.943  SSIM: 0.809  運行時間為: 222.902838 秒
+2021-03-09 02:21:50,206 - __main__ - INFO - Epoch: 3  Loss at iteration300:0.435  PSNR: 25.219  SSIM: 0.867  運行時間為: 222.634660 秒
+2021-03-09 02:25:33,192 - __main__ - INFO - Epoch: 3  Loss at iteration350:0.448  PSNR: 22.992  SSIM: 0.859  運行時間為: 222.984733 秒
+2021-03-09 02:29:15,922 - __main__ - INFO - Epoch: 3  Loss at iteration400:0.552  PSNR: 22.422  SSIM: 0.891  運行時間為: 222.729687 秒
+2021-03-09 02:29:16,092 - __main__ - INFO - save Epoch4.pth
+2021-03-09 02:32:58,618 - __main__ - INFO - Epoch: 3  Loss at iteration450:0.468  PSNR: 23.900  SSIM: 0.853  運行時間為: 222.696086 秒
+2021-03-09 02:36:41,575 - __main__ - INFO - Epoch: 3  Loss at iteration500:0.475  PSNR: 23.073  SSIM: 0.822  運行時間為: 222.956779 秒
+2021-03-09 02:40:24,359 - __main__ - INFO - Epoch: 3  Loss at iteration550:0.435  PSNR: 22.052  SSIM: 0.861  運行時間為: 222.783924 秒
+2021-03-09 02:44:06,885 - __main__ - INFO - Epoch: 3  Loss at iteration600:0.377  PSNR: 25.095  SSIM: 0.923  運行時間為: 222.525655 秒
+2021-03-09 02:44:07,127 - __main__ - INFO - save Epoch4.pth
+2021-03-09 02:47:49,881 - __main__ - INFO - Epoch: 3  Loss at iteration650:0.473  PSNR: 23.815  SSIM: 0.736  運行時間為: 222.995287 秒
+2021-03-09 02:51:32,732 - __main__ - INFO - Epoch: 3  Loss at iteration700:0.457  PSNR: 22.503  SSIM: 0.906  運行時間為: 222.851372 秒
+2021-03-09 02:55:15,789 - __main__ - INFO - Epoch: 3  Loss at iteration750:0.329  PSNR: 24.344  SSIM: 0.836  運行時間為: 223.056894 秒
+2021-03-09 02:58:58,857 - __main__ - INFO - Epoch: 3  Loss at iteration800:0.433  PSNR: 24.435  SSIM: 0.919  運行時間為: 223.067314 秒
+2021-03-09 02:58:59,025 - __main__ - INFO - save Epoch4.pth
+2021-03-09 03:02:41,838 - __main__ - INFO - Epoch: 3  Loss at iteration850:0.369  PSNR: 25.302  SSIM: 0.882  運行時間為: 222.979387 秒
+2021-03-09 03:06:24,894 - __main__ - INFO - Epoch: 3  Loss at iteration900:0.452  PSNR: 24.669  SSIM: 0.868  運行時間為: 223.056935 秒
+2021-03-09 03:10:07,005 - __main__ - INFO - Epoch: 3  Loss at iteration950:0.429  PSNR: 23.479  SSIM: 0.858  運行時間為: 222.109417 秒
+2021-03-09 03:13:48,479 - __main__ - INFO - Epoch: 3  Loss at iteration1000:0.416  PSNR: 23.264  SSIM: 0.777  運行時間為: 221.474368 秒
+2021-03-09 03:13:48,639 - __main__ - INFO - save Epoch4.pth
+2021-03-09 03:17:30,277 - __main__ - INFO - Epoch: 3  Loss at iteration1050:0.398  PSNR: 24.940  SSIM: 0.908  運行時間為: 221.796957 秒
+2021-03-09 03:21:11,696 - __main__ - INFO - Epoch: 3  Loss at iteration1100:0.440  PSNR: 23.885  SSIM: 0.879  運行時間為: 221.417309 秒
+2021-03-09 03:24:53,141 - __main__ - INFO - Epoch: 3  Loss at iteration1150:0.396  PSNR: 22.406  SSIM: 0.838  運行時間為: 221.445568 秒
+2021-03-09 03:28:34,914 - __main__ - INFO - Epoch: 3  Loss at iteration1200:0.390  PSNR: 24.228  SSIM: 0.844  運行時間為: 221.772760 秒
+2021-03-09 03:28:35,084 - __main__ - INFO - save Epoch4.pth
+2021-03-09 03:32:16,536 - __main__ - INFO - Epoch: 3  Loss at iteration1250:0.416  PSNR: 23.155  SSIM: 0.820  運行時間為: 221.621625 秒
+2021-03-09 03:35:58,240 - __main__ - INFO - Epoch: 3  Loss at iteration1300:0.412  PSNR: 25.445  SSIM: 0.896  運行時間為: 221.704607 秒
+2021-03-09 03:39:39,925 - __main__ - INFO - Epoch: 3  Loss at iteration1350:0.494  PSNR: 22.824  SSIM: 0.879  運行時間為: 221.685312 秒
+2021-03-09 03:43:21,479 - __main__ - INFO - Epoch: 3  Loss at iteration1400:0.396  PSNR: 25.018  SSIM: 0.876  運行時間為: 221.552373 秒
+2021-03-09 03:43:21,635 - __main__ - INFO - save Epoch4.pth
+2021-03-09 03:47:03,047 - __main__ - INFO - Epoch: 3  Loss at iteration1450:0.346  PSNR: 26.835  SSIM: 0.924  運行時間為: 221.568014 秒
+2021-03-09 03:50:44,735 - __main__ - INFO - Epoch: 3  Loss at iteration1500:0.484  PSNR: 23.098  SSIM: 0.863  運行時間為: 221.688154 秒
+2021-03-09 03:54:26,256 - __main__ - INFO - Epoch: 3  Loss at iteration1550:0.446  PSNR: 24.720  SSIM: 0.854  運行時間為: 221.520569 秒
+2021-03-09 03:58:07,978 - __main__ - INFO - Epoch: 3  Loss at iteration1600:0.358  PSNR: 26.795  SSIM: 0.911  運行時間為: 221.722046 秒
+2021-03-09 03:58:08,148 - __main__ - INFO - save Epoch4.pth
+2021-03-09 04:01:49,722 - __main__ - INFO - Epoch: 3  Loss at iteration1650:0.390  PSNR: 24.147  SSIM: 0.856  運行時間為: 221.744320 秒
+2021-03-09 04:05:31,000 - __main__ - INFO - Epoch: 3  Loss at iteration1700:0.396  PSNR: 24.625  SSIM: 0.873  運行時間為: 221.276967 秒
+2021-03-09 04:09:12,435 - __main__ - INFO - Epoch: 3  Loss at iteration1750:0.338  PSNR: 27.848  SSIM: 0.871  運行時間為: 221.435324 秒
+2021-03-09 04:12:54,256 - __main__ - INFO - Epoch: 3  Loss at iteration1800:0.357  PSNR: 24.429  SSIM: 0.862  運行時間為: 221.821115 秒
+2021-03-09 04:12:54,433 - __main__ - INFO - save Epoch4.pth
+2021-03-09 04:16:36,134 - __main__ - INFO - Epoch: 3  Loss at iteration1850:0.431  PSNR: 23.046  SSIM: 0.887  運行時間為: 221.877580 秒
+2021-03-09 04:20:17,656 - __main__ - INFO - Epoch: 3  Loss at iteration1900:0.401  PSNR: 22.458  SSIM: 0.759  運行時間為: 221.521137 秒
+2021-03-09 04:23:59,005 - __main__ - INFO - Epoch: 3  Loss at iteration1950:0.367  PSNR: 24.739  SSIM: 0.848  運行時間為: 221.348785 秒
+2021-03-09 04:27:40,939 - __main__ - INFO - Epoch: 3  Loss at iteration2000:0.475  PSNR: 24.853  SSIM: 0.868  運行時間為: 221.933849 秒
+2021-03-09 04:27:41,113 - __main__ - INFO - save Epoch4.pth
+2021-03-09 04:31:22,721 - __main__ - INFO - Epoch: 3  Loss at iteration2050:0.468  PSNR: 21.541  SSIM: 0.834  運行時間為: 221.782109 秒
+2021-03-09 04:35:04,394 - __main__ - INFO - Epoch: 3  Loss at iteration2100:0.398  PSNR: 24.232  SSIM: 0.836  運行時間為: 221.672327 秒
+2021-03-09 04:38:46,190 - __main__ - INFO - Epoch: 3  Loss at iteration2150:0.374  PSNR: 24.301  SSIM: 0.892  運行時間為: 221.796361 秒
+2021-03-09 04:42:27,493 - __main__ - INFO - Epoch: 3  Loss at iteration2200:0.404  PSNR: 26.237  SSIM: 0.926  運行時間為: 221.302535 秒
+2021-03-09 04:42:27,645 - __main__ - INFO - save Epoch4.pth
+2021-03-09 04:46:09,226 - __main__ - INFO - Epoch: 3  Loss at iteration2250:0.535  PSNR: 23.569  SSIM: 0.857  運行時間為: 221.733125 秒
+2021-03-09 04:49:51,243 - __main__ - INFO - Epoch: 3  Loss at iteration2300:0.333  PSNR: 26.378  SSIM: 0.906  運行時間為: 222.016736 秒
+2021-03-09 04:53:32,811 - __main__ - INFO - Epoch: 3  Loss at iteration2350:0.397  PSNR: 26.178  SSIM: 0.911  運行時間為: 221.566672 秒
+2021-03-09 04:57:14,942 - __main__ - INFO - Epoch: 3  Loss at iteration2400:0.473  PSNR: 23.276  SSIM: 0.867  運行時間為: 222.131225 秒
+2021-03-09 04:57:15,182 - __main__ - INFO - save Epoch4.pth
+2021-03-09 05:00:59,843 - __main__ - INFO - Epoch: 3  Loss at iteration2450:0.331  PSNR: 25.855  SSIM: 0.930  運行時間為: 224.899950 秒
+2021-03-09 05:04:42,523 - __main__ - INFO - Epoch: 3  Loss at iteration2500:0.548  PSNR: 20.167  SSIM: 0.792  運行時間為: 222.680314 秒
+2021-03-09 05:08:25,431 - __main__ - INFO - Epoch: 3  Loss at iteration2550:0.388  PSNR: 26.646  SSIM: 0.840  運行時間為: 222.907563 秒
+2021-03-09 05:12:08,273 - __main__ - INFO - Epoch: 3  Loss at iteration2600:0.289  PSNR: 28.097  SSIM: 0.928  運行時間為: 222.841268 秒
+2021-03-09 05:12:08,427 - __main__ - INFO - save Epoch4.pth
+2021-03-09 05:15:51,382 - __main__ - INFO - Epoch: 3  Loss at iteration2650:0.437  PSNR: 25.230  SSIM: 0.890  運行時間為: 223.109634 秒
+2021-03-09 05:19:34,102 - __main__ - INFO - Epoch: 3  Loss at iteration2700:0.386  PSNR: 24.025  SSIM: 0.915  運行時間為: 222.719706 秒
+2021-03-09 05:23:16,976 - __main__ - INFO - Epoch: 3  Loss at iteration2750:0.328  PSNR: 27.568  SSIM: 0.884  運行時間為: 222.873121 秒
+2021-03-09 05:27:03,415 - __main__ - INFO - Epoch: 3  Loss at iteration2800:0.440  PSNR: 23.090  SSIM: 0.893  運行時間為: 226.438264 秒
+2021-03-09 05:27:03,645 - __main__ - INFO - save Epoch4.pth
+2021-03-09 06:10:57,231 - __main__ - INFO - Epoch 運行時間為: 15086.763983 秒
+2021-03-09 06:14:43,023 - __main__ - INFO - Epoch: 4  Loss at iteration50:0.379  PSNR: 24.774  SSIM: 0.870  運行時間為: 225.790790 秒
+2021-03-09 06:18:26,192 - __main__ - INFO - Epoch: 4  Loss at iteration100:0.445  PSNR: 24.715  SSIM: 0.909  運行時間為: 223.168700 秒
+2021-03-09 06:22:09,368 - __main__ - INFO - Epoch: 4  Loss at iteration150:0.426  PSNR: 23.602  SSIM: 0.804  運行時間為: 223.176253 秒
+2021-03-09 06:25:52,568 - __main__ - INFO - Epoch: 4  Loss at iteration200:0.388  PSNR: 26.511  SSIM: 0.866  運行時間為: 223.200198 秒
+2021-03-09 06:25:52,716 - __main__ - INFO - save Epoch5.pth
+2021-03-09 06:29:35,664 - __main__ - INFO - Epoch: 4  Loss at iteration250:0.389  PSNR: 25.669  SSIM: 0.922  運行時間為: 223.095716 秒
+2021-03-09 06:33:18,628 - __main__ - INFO - Epoch: 4  Loss at iteration300:0.487  PSNR: 22.856  SSIM: 0.893  運行時間為: 222.963865 秒
+2021-03-09 06:37:01,817 - __main__ - INFO - Epoch: 4  Loss at iteration350:0.434  PSNR: 23.021  SSIM: 0.852  運行時間為: 223.189054 秒
+2021-03-09 06:40:44,669 - __main__ - INFO - Epoch: 4  Loss at iteration400:0.491  PSNR: 21.666  SSIM: 0.852  運行時間為: 222.852544 秒
+2021-03-09 06:40:44,829 - __main__ - INFO - save Epoch5.pth
+2021-03-09 06:44:24,963 - __main__ - INFO - Epoch: 4  Loss at iteration450:0.376  PSNR: 26.611  SSIM: 0.930  運行時間為: 220.293418 秒
+2021-03-09 06:48:05,094 - __main__ - INFO - Epoch: 4  Loss at iteration500:0.391  PSNR: 24.636  SSIM: 0.847  運行時間為: 220.131115 秒
+2021-03-09 06:51:45,255 - __main__ - INFO - Epoch: 4  Loss at iteration550:0.399  PSNR: 24.768  SSIM: 0.914  運行時間為: 220.160540 秒
+2021-03-09 06:55:25,022 - __main__ - INFO - Epoch: 4  Loss at iteration600:0.335  PSNR: 28.055  SSIM: 0.907  運行時間為: 219.766078 秒
+2021-03-09 06:55:25,198 - __main__ - INFO - save Epoch5.pth
+2021-03-09 06:59:05,026 - __main__ - INFO - Epoch: 4  Loss at iteration650:0.330  PSNR: 26.366  SSIM: 0.901  運行時間為: 220.003304 秒
+2021-03-09 07:02:44,919 - __main__ - INFO - Epoch: 4  Loss at iteration700:0.324  PSNR: 25.953  SSIM: 0.872  運行時間為: 219.892316 秒
+2021-03-09 07:06:24,925 - __main__ - INFO - Epoch: 4  Loss at iteration750:0.436  PSNR: 24.190  SSIM: 0.874  運行時間為: 220.006120 秒
+2021-03-09 07:10:04,887 - __main__ - INFO - Epoch: 4  Loss at iteration800:0.409  PSNR: 23.069  SSIM: 0.902  運行時間為: 219.961450 秒
+2021-03-09 07:10:05,055 - __main__ - INFO - save Epoch5.pth
+2021-03-09 07:13:44,941 - __main__ - INFO - Epoch: 4  Loss at iteration850:0.401  PSNR: 23.633  SSIM: 0.868  運行時間為: 220.053973 秒
+2021-03-09 07:17:24,829 - __main__ - INFO - Epoch: 4  Loss at iteration900:0.444  PSNR: 24.892  SSIM: 0.897  運行時間為: 219.888191 秒
+2021-03-09 07:21:04,837 - __main__ - INFO - Epoch: 4  Loss at iteration950:0.366  PSNR: 25.824  SSIM: 0.916  運行時間為: 220.008038 秒
+2021-03-09 07:24:44,935 - __main__ - INFO - Epoch: 4  Loss at iteration1000:0.406  PSNR: 25.679  SSIM: 0.897  運行時間為: 220.096149 秒
+2021-03-09 07:24:45,105 - __main__ - INFO - save Epoch5.pth
+2021-03-09 07:28:25,289 - __main__ - INFO - Epoch: 4  Loss at iteration1050:0.404  PSNR: 25.064  SSIM: 0.876  運行時間為: 220.352491 秒
+2021-03-09 07:32:05,138 - __main__ - INFO - Epoch: 4  Loss at iteration1100:0.386  PSNR: 24.555  SSIM: 0.906  運行時間為: 219.849930 秒
+2021-03-09 07:35:45,060 - __main__ - INFO - Epoch: 4  Loss at iteration1150:0.359  PSNR: 26.357  SSIM: 0.926  運行時間為: 219.920268 秒
+2021-03-09 07:39:25,067 - __main__ - INFO - Epoch: 4  Loss at iteration1200:0.328  PSNR: 27.266  SSIM: 0.929  運行時間為: 220.007067 秒
+2021-03-09 07:39:25,236 - __main__ - INFO - save Epoch5.pth
+2021-03-09 07:43:05,445 - __main__ - INFO - Epoch: 4  Loss at iteration1250:0.423  PSNR: 23.180  SSIM: 0.882  運行時間為: 220.377728 秒
+2021-03-09 07:46:45,855 - __main__ - INFO - Epoch: 4  Loss at iteration1300:0.401  PSNR: 25.199  SSIM: 0.887  運行時間為: 220.410156 秒
+2021-03-09 07:50:26,246 - __main__ - INFO - Epoch: 4  Loss at iteration1350:0.411  PSNR: 24.924  SSIM: 0.861  運行時間為: 220.390504 秒
+2021-03-09 07:54:06,483 - __main__ - INFO - Epoch: 4  Loss at iteration1400:0.460  PSNR: 25.409  SSIM: 0.874  運行時間為: 220.236794 秒
+2021-03-09 07:54:06,644 - __main__ - INFO - save Epoch5.pth
+2021-03-09 07:57:46,984 - __main__ - INFO - Epoch: 4  Loss at iteration1450:0.413  PSNR: 24.602  SSIM: 0.891  運行時間為: 220.500954 秒
+2021-03-09 08:01:26,909 - __main__ - INFO - Epoch: 4  Loss at iteration1500:0.356  PSNR: 27.189  SSIM: 0.904  運行時間為: 219.924562 秒
+2021-03-09 08:05:07,778 - __main__ - INFO - Epoch: 4  Loss at iteration1550:0.409  PSNR: 25.488  SSIM: 0.924  運行時間為: 220.868922 秒
+2021-03-09 08:08:48,296 - __main__ - INFO - Epoch: 4  Loss at iteration1600:0.449  PSNR: 24.571  SSIM: 0.857  運行時間為: 220.517721 秒
+2021-03-09 08:08:48,462 - __main__ - INFO - save Epoch5.pth
+2021-03-09 08:12:28,405 - __main__ - INFO - Epoch: 4  Loss at iteration1650:0.400  PSNR: 24.272  SSIM: 0.900  運行時間為: 220.108163 秒
+2021-03-09 08:16:08,599 - __main__ - INFO - Epoch: 4  Loss at iteration1700:0.466  PSNR: 22.681  SSIM: 0.852  運行時間為: 220.193396 秒
+2021-03-09 08:19:48,577 - __main__ - INFO - Epoch: 4  Loss at iteration1750:0.452  PSNR: 24.863  SSIM: 0.888  運行時間為: 219.978651 秒
+2021-03-09 08:23:28,661 - __main__ - INFO - Epoch: 4  Loss at iteration1800:0.438  PSNR: 24.290  SSIM: 0.882  運行時間為: 220.083276 秒
+2021-03-09 08:23:28,838 - __main__ - INFO - save Epoch5.pth
+2021-03-09 08:27:09,001 - __main__ - INFO - Epoch: 4  Loss at iteration1850:0.393  PSNR: 26.263  SSIM: 0.896  運行時間為: 220.340245 秒
+2021-03-09 08:30:49,183 - __main__ - INFO - Epoch: 4  Loss at iteration1900:0.424  PSNR: 26.560  SSIM: 0.924  運行時間為: 220.182401 秒
+2021-03-09 08:34:29,010 - __main__ - INFO - Epoch: 4  Loss at iteration1950:0.362  PSNR: 25.576  SSIM: 0.898  運行時間為: 219.826823 秒
+2021-03-09 08:38:09,072 - __main__ - INFO - Epoch: 4  Loss at iteration2000:0.358  PSNR: 23.809  SSIM: 0.918  運行時間為: 220.061025 秒
+2021-03-09 08:38:09,240 - __main__ - INFO - save Epoch5.pth
+2021-03-09 08:41:49,227 - __main__ - INFO - Epoch: 4  Loss at iteration2050:0.441  PSNR: 24.298  SSIM: 0.898  運行時間為: 220.154807 秒
+2021-03-09 08:45:29,398 - __main__ - INFO - Epoch: 4  Loss at iteration2100:0.382  PSNR: 25.706  SSIM: 0.881  運行時間為: 220.171268 秒
+2021-03-09 08:49:09,387 - __main__ - INFO - Epoch: 4  Loss at iteration2150:0.464  PSNR: 23.919  SSIM: 0.882  運行時間為: 219.988343 秒
+2021-03-09 08:52:49,365 - __main__ - INFO - Epoch: 4  Loss at iteration2200:0.395  PSNR: 23.918  SSIM: 0.871  運行時間為: 219.977744 秒
+2021-03-09 08:52:49,536 - __main__ - INFO - save Epoch5.pth
+2021-03-09 08:56:29,701 - __main__ - INFO - Epoch: 4  Loss at iteration2250:0.351  PSNR: 25.751  SSIM: 0.889  運行時間為: 220.335731 秒
+2021-03-09 09:00:09,256 - __main__ - INFO - Epoch: 4  Loss at iteration2300:0.416  PSNR: 26.374  SSIM: 0.925  運行時間為: 219.554822 秒
+2021-03-09 09:03:49,096 - __main__ - INFO - Epoch: 4  Loss at iteration2350:0.446  PSNR: 24.058  SSIM: 0.907  運行時間為: 219.840331 秒
+2021-03-09 09:07:28,981 - __main__ - INFO - Epoch: 4  Loss at iteration2400:0.382  PSNR: 26.684  SSIM: 0.896  運行時間為: 219.884444 秒
+2021-03-09 09:07:29,152 - __main__ - INFO - save Epoch5.pth
+2021-03-09 09:11:09,281 - __main__ - INFO - Epoch: 4  Loss at iteration2450:0.380  PSNR: 25.224  SSIM: 0.838  運行時間為: 220.299262 秒
+2021-03-09 09:14:49,291 - __main__ - INFO - Epoch: 4  Loss at iteration2500:0.428  PSNR: 23.540  SSIM: 0.892  運行時間為: 220.009681 秒
+2021-03-09 09:18:29,367 - __main__ - INFO - Epoch: 4  Loss at iteration2550:0.350  PSNR: 25.339  SSIM: 0.908  運行時間為: 220.076499 秒
+2021-03-09 09:22:09,009 - __main__ - INFO - Epoch: 4  Loss at iteration2600:0.412  PSNR: 25.381  SSIM: 0.889  運行時間為: 219.641793 秒
+2021-03-09 09:22:09,179 - __main__ - INFO - save Epoch5.pth
+2021-03-09 09:25:49,428 - __main__ - INFO - Epoch: 4  Loss at iteration2650:0.384  PSNR: 24.799  SSIM: 0.867  運行時間為: 220.418330 秒
+2021-03-09 09:29:29,463 - __main__ - INFO - Epoch: 4  Loss at iteration2700:0.310  PSNR: 26.679  SSIM: 0.907  運行時間為: 220.035179 秒
+2021-03-09 09:33:09,411 - __main__ - INFO - Epoch: 4  Loss at iteration2750:0.484  PSNR: 24.197  SSIM: 0.883  運行時間為: 219.947950 秒
+2021-03-09 09:36:49,215 - __main__ - INFO - Epoch: 4  Loss at iteration2800:0.478  PSNR: 23.156  SSIM: 0.834  運行時間為: 219.803343 秒
+2021-03-09 09:36:49,392 - __main__ - INFO - save Epoch5.pth
+2021-03-09 10:20:14,898 - __main__ - INFO - Epoch 運行時間為: 14957.667090 秒
+2021-03-09 10:24:00,064 - __main__ - INFO - Epoch: 5  Loss at iteration50:0.454  PSNR: 24.574  SSIM: 0.891  運行時間為: 225.165648 秒
+2021-03-09 10:27:42,524 - __main__ - INFO - Epoch: 5  Loss at iteration100:0.398  PSNR: 24.936  SSIM: 0.926  運行時間為: 222.460482 秒
+2021-03-09 10:31:24,874 - __main__ - INFO - Epoch: 5  Loss at iteration150:0.414  PSNR: 26.065  SSIM: 0.900  運行時間為: 222.348932 秒
+2021-03-09 10:35:07,172 - __main__ - INFO - Epoch: 5  Loss at iteration200:0.395  PSNR: 24.829  SSIM: 0.884  運行時間為: 222.296272 秒
+2021-03-09 10:35:07,345 - __main__ - INFO - save Epoch6.pth
+2021-03-09 10:38:49,934 - __main__ - INFO - Epoch: 5  Loss at iteration250:0.335  PSNR: 27.888  SSIM: 0.925  運行時間為: 222.762258 秒
+2021-03-09 10:42:32,937 - __main__ - INFO - Epoch: 5  Loss at iteration300:0.325  PSNR: 26.961  SSIM: 0.910  運行時間為: 223.003195 秒
+2021-03-09 10:46:15,943 - __main__ - INFO - Epoch: 5  Loss at iteration350:0.337  PSNR: 29.160  SSIM: 0.934  運行時間為: 223.005979 秒
+2021-03-09 10:49:58,759 - __main__ - INFO - Epoch: 5  Loss at iteration400:0.437  PSNR: 25.168  SSIM: 0.896  運行時間為: 222.815861 秒
+2021-03-09 10:49:58,934 - __main__ - INFO - save Epoch6.pth
+2021-03-09 10:53:41,943 - __main__ - INFO - Epoch: 5  Loss at iteration450:0.331  PSNR: 24.026  SSIM: 0.896  運行時間為: 223.182569 秒
+2021-03-09 10:57:24,924 - __main__ - INFO - Epoch: 5  Loss at iteration500:0.400  PSNR: 25.332  SSIM: 0.894  運行時間為: 222.981941 秒
+2021-03-09 11:01:07,843 - __main__ - INFO - Epoch: 5  Loss at iteration550:0.398  PSNR: 25.725  SSIM: 0.909  運行時間為: 222.917764 秒
+2021-03-09 11:04:50,544 - __main__ - INFO - Epoch: 5  Loss at iteration600:0.411  PSNR: 25.583  SSIM: 0.902  運行時間為: 222.701176 秒
+2021-03-09 11:04:50,698 - __main__ - INFO - save Epoch6.pth
+2021-03-09 11:08:33,424 - __main__ - INFO - Epoch: 5  Loss at iteration650:0.406  PSNR: 24.372  SSIM: 0.880  運行時間為: 222.880075 秒
+2021-03-09 11:12:16,211 - __main__ - INFO - Epoch: 5  Loss at iteration700:0.407  PSNR: 25.138  SSIM: 0.901  運行時間為: 222.786780 秒
+2021-03-09 11:15:58,828 - __main__ - INFO - Epoch: 5  Loss at iteration750:0.315  PSNR: 27.488  SSIM: 0.924  運行時間為: 222.616687 秒
+2021-03-09 11:19:41,551 - __main__ - INFO - Epoch: 5  Loss at iteration800:0.385  PSNR: 25.616  SSIM: 0.910  運行時間為: 222.721601 秒
+2021-03-09 11:19:41,709 - __main__ - INFO - save Epoch6.pth
+2021-03-09 11:23:24,565 - __main__ - INFO - Epoch: 5  Loss at iteration850:0.389  PSNR: 23.968  SSIM: 0.902  運行時間為: 223.014025 秒
+2021-03-09 11:27:07,395 - __main__ - INFO - Epoch: 5  Loss at iteration900:0.366  PSNR: 26.397  SSIM: 0.900  運行時間為: 222.830453 秒
+2021-03-09 11:30:50,472 - __main__ - INFO - Epoch: 5  Loss at iteration950:0.368  PSNR: 24.980  SSIM: 0.910  運行時間為: 223.076154 秒
+2021-03-09 11:34:32,973 - __main__ - INFO - Epoch: 5  Loss at iteration1000:0.300  PSNR: 25.705  SSIM: 0.944  運行時間為: 222.500462 秒
+2021-03-09 11:34:33,144 - __main__ - INFO - save Epoch6.pth
+2021-03-09 11:38:15,822 - __main__ - INFO - Epoch: 5  Loss at iteration1050:0.462  PSNR: 22.050  SSIM: 0.911  運行時間為: 222.849154 秒
+2021-03-09 11:41:58,127 - __main__ - INFO - Epoch: 5  Loss at iteration1100:0.358  PSNR: 25.994  SSIM: 0.898  運行時間為: 222.305291 秒
+2021-03-09 11:45:40,510 - __main__ - INFO - Epoch: 5  Loss at iteration1150:0.310  PSNR: 27.571  SSIM: 0.903  運行時間為: 222.381927 秒
+2021-03-09 11:49:23,132 - __main__ - INFO - Epoch: 5  Loss at iteration1200:0.333  PSNR: 23.331  SSIM: 0.939  運行時間為: 222.622278 秒
+2021-03-09 11:49:23,303 - __main__ - INFO - save Epoch6.pth
+2021-03-09 11:53:05,754 - __main__ - INFO - Epoch: 5  Loss at iteration1250:0.401  PSNR: 24.651  SSIM: 0.902  運行時間為: 222.622066 秒
+2021-03-09 11:56:48,255 - __main__ - INFO - Epoch: 5  Loss at iteration1300:0.371  PSNR: 24.444  SSIM: 0.878  運行時間為: 222.499868 秒
+2021-03-09 12:00:30,475 - __main__ - INFO - Epoch: 5  Loss at iteration1350:0.368  PSNR: 27.067  SSIM: 0.919  運行時間為: 222.219784 秒
+2021-03-09 12:04:12,492 - __main__ - INFO - Epoch: 5  Loss at iteration1400:0.300  PSNR: 29.139  SSIM: 0.917  運行時間為: 222.016544 秒
+2021-03-09 12:04:12,646 - __main__ - INFO - save Epoch6.pth
+2021-03-09 12:07:54,680 - __main__ - INFO - Epoch: 5  Loss at iteration1450:0.353  PSNR: 27.587  SSIM: 0.926  運行時間為: 222.187460 秒
+2021-03-09 12:11:36,625 - __main__ - INFO - Epoch: 5  Loss at iteration1500:0.471  PSNR: 23.155  SSIM: 0.892  運行時間為: 221.944370 秒
+2021-03-09 12:15:18,939 - __main__ - INFO - Epoch: 5  Loss at iteration1550:0.357  PSNR: 24.905  SSIM: 0.905  運行時間為: 222.313313 秒
+2021-03-09 12:19:01,302 - __main__ - INFO - Epoch: 5  Loss at iteration1600:0.417  PSNR: 25.752  SSIM: 0.902  運行時間為: 222.363396 秒
+2021-03-09 12:19:01,472 - __main__ - INFO - save Epoch6.pth
+2021-03-09 12:22:43,737 - __main__ - INFO - Epoch: 5  Loss at iteration1650:0.459  PSNR: 24.928  SSIM: 0.871  運行時間為: 222.434816 秒
+2021-03-09 12:26:25,914 - __main__ - INFO - Epoch: 5  Loss at iteration1700:0.361  PSNR: 25.966  SSIM: 0.876  運行時間為: 222.177451 秒
+2021-03-09 12:30:08,073 - __main__ - INFO - Epoch: 5  Loss at iteration1750:0.286  PSNR: 28.302  SSIM: 0.929  運行時間為: 222.158801 秒
+2021-03-09 12:33:49,974 - __main__ - INFO - Epoch: 5  Loss at iteration1800:0.328  PSNR: 27.156  SSIM: 0.884  運行時間為: 221.901186 秒
+2021-03-09 12:33:50,149 - __main__ - INFO - save Epoch6.pth
+2021-03-09 12:37:32,162 - __main__ - INFO - Epoch: 5  Loss at iteration1850:0.330  PSNR: 27.879  SSIM: 0.927  運行時間為: 222.187639 秒
+2021-03-09 12:41:14,569 - __main__ - INFO - Epoch: 5  Loss at iteration1900:0.398  PSNR: 24.543  SSIM: 0.903  運行時間為: 222.407451 秒
+2021-03-09 12:44:56,780 - __main__ - INFO - Epoch: 5  Loss at iteration1950:0.392  PSNR: 25.237  SSIM: 0.912  運行時間為: 222.210757 秒
+2021-03-09 12:48:38,819 - __main__ - INFO - Epoch: 5  Loss at iteration2000:0.374  PSNR: 24.244  SSIM: 0.875  運行時間為: 222.037788 秒
+2021-03-09 12:48:38,989 - __main__ - INFO - save Epoch6.pth
+2021-03-09 12:52:21,375 - __main__ - INFO - Epoch: 5  Loss at iteration2050:0.452  PSNR: 23.407  SSIM: 0.877  運行時間為: 222.555035 秒
+2021-03-09 12:56:03,924 - __main__ - INFO - Epoch: 5  Loss at iteration2100:0.378  PSNR: 25.119  SSIM: 0.847  運行時間為: 222.548693 秒
+2021-03-09 12:59:46,065 - __main__ - INFO - Epoch: 5  Loss at iteration2150:0.410  PSNR: 24.989  SSIM: 0.886  運行時間為: 222.141423 秒
+2021-03-09 13:03:28,420 - __main__ - INFO - Epoch: 5  Loss at iteration2200:0.412  PSNR: 24.469  SSIM: 0.907  運行時間為: 222.354889 秒
+2021-03-09 13:03:28,574 - __main__ - INFO - save Epoch6.pth
+2021-03-09 13:07:10,853 - __main__ - INFO - Epoch: 5  Loss at iteration2250:0.413  PSNR: 24.053  SSIM: 0.858  運行時間為: 222.433138 秒
+2021-03-09 13:10:53,375 - __main__ - INFO - Epoch: 5  Loss at iteration2300:0.257  PSNR: 27.664  SSIM: 0.945  運行時間為: 222.521574 秒
+2021-03-09 13:14:35,722 - __main__ - INFO - Epoch: 5  Loss at iteration2350:0.322  PSNR: 26.396  SSIM: 0.910  運行時間為: 222.347266 秒
+2021-03-09 13:18:18,285 - __main__ - INFO - Epoch: 5  Loss at iteration2400:0.362  PSNR: 25.640  SSIM: 0.833  運行時間為: 222.561805 秒
+2021-03-09 13:18:18,449 - __main__ - INFO - save Epoch6.pth
+2021-03-09 13:22:00,891 - __main__ - INFO - Epoch: 5  Loss at iteration2450:0.353  PSNR: 24.936  SSIM: 0.901  運行時間為: 222.606180 秒
+2021-03-09 13:25:43,619 - __main__ - INFO - Epoch: 5  Loss at iteration2500:0.347  PSNR: 27.634  SSIM: 0.909  運行時間為: 222.725647 秒
+2021-03-09 13:29:26,341 - __main__ - INFO - Epoch: 5  Loss at iteration2550:0.401  PSNR: 26.391  SSIM: 0.898  運行時間為: 222.722342 秒
+2021-03-09 13:33:08,445 - __main__ - INFO - Epoch: 5  Loss at iteration2600:0.426  PSNR: 25.593  SSIM: 0.900  運行時間為: 222.103776 秒
+2021-03-09 13:33:08,621 - __main__ - INFO - save Epoch6.pth
+2021-03-09 13:36:50,254 - __main__ - INFO - Epoch: 5  Loss at iteration2650:0.373  PSNR: 27.287  SSIM: 0.930  運行時間為: 221.809458 秒
+2021-03-09 13:40:33,093 - __main__ - INFO - Epoch: 5  Loss at iteration2700:0.336  PSNR: 27.982  SSIM: 0.943  運行時間為: 222.839011 秒
+2021-03-09 13:44:15,941 - __main__ - INFO - Epoch: 5  Loss at iteration2750:0.470  PSNR: 24.823  SSIM: 0.865  運行時間為: 222.847304 秒
+2021-03-09 13:47:58,425 - __main__ - INFO - Epoch: 5  Loss at iteration2800:0.436  PSNR: 25.849  SSIM: 0.883  運行時間為: 222.484884 秒
+2021-03-09 13:47:58,584 - __main__ - INFO - save Epoch6.pth
+2021-03-09 14:31:50,797 - __main__ - INFO - Epoch 運行時間為: 15095.899072 秒
+2021-03-09 14:35:34,536 - __main__ - INFO - Epoch: 6  Loss at iteration50:0.357  PSNR: 26.754  SSIM: 0.900  運行時間為: 223.738618 秒
+2021-03-09 14:39:15,871 - __main__ - INFO - Epoch: 6  Loss at iteration100:0.430  PSNR: 25.296  SSIM: 0.895  運行時間為: 221.334311 秒
+2021-03-09 14:42:56,966 - __main__ - INFO - Epoch: 6  Loss at iteration150:0.399  PSNR: 26.314  SSIM: 0.860  運行時間為: 221.094587 秒
+2021-03-09 14:46:37,908 - __main__ - INFO - Epoch: 6  Loss at iteration200:0.413  PSNR: 27.097  SSIM: 0.931  運行時間為: 220.941604 秒
+2021-03-09 14:46:38,074 - __main__ - INFO - save Epoch7.pth
+2021-03-09 14:50:19,053 - __main__ - INFO - Epoch: 6  Loss at iteration250:0.365  PSNR: 25.726  SSIM: 0.889  運行時間為: 221.145227 秒
+2021-03-09 14:54:00,033 - __main__ - INFO - Epoch: 6  Loss at iteration300:0.328  PSNR: 28.054  SSIM: 0.925  運行時間為: 220.980651 秒
+2021-03-09 14:57:41,237 - __main__ - INFO - Epoch: 6  Loss at iteration350:0.342  PSNR: 25.065  SSIM: 0.899  運行時間為: 221.201193 秒
+2021-03-09 15:01:22,095 - __main__ - INFO - Epoch: 6  Loss at iteration400:0.406  PSNR: 26.423  SSIM: 0.920  運行時間為: 220.858547 秒
+2021-03-09 15:01:22,264 - __main__ - INFO - save Epoch7.pth
+2021-03-09 15:05:03,045 - __main__ - INFO - Epoch: 6  Loss at iteration450:0.343  PSNR: 27.931  SSIM: 0.868  運行時間為: 220.950026 秒
+2021-03-09 15:08:43,909 - __main__ - INFO - Epoch: 6  Loss at iteration500:0.401  PSNR: 24.584  SSIM: 0.916  運行時間為: 220.863651 秒
+2021-03-09 15:12:24,790 - __main__ - INFO - Epoch: 6  Loss at iteration550:0.450  PSNR: 26.227  SSIM: 0.907  運行時間為: 220.880150 秒
+2021-03-09 15:16:05,748 - __main__ - INFO - Epoch: 6  Loss at iteration600:0.361  PSNR: 26.106  SSIM: 0.925  運行時間為: 220.958428 秒
+2021-03-09 15:16:06,010 - __main__ - INFO - save Epoch7.pth
+2021-03-09 15:19:46,575 - __main__ - INFO - Epoch: 6  Loss at iteration650:0.313  PSNR: 26.890  SSIM: 0.927  運行時間為: 220.825188 秒
+2021-03-09 15:23:27,190 - __main__ - INFO - Epoch: 6  Loss at iteration700:0.393  PSNR: 24.985  SSIM: 0.923  運行時間為: 220.615122 秒
+2021-03-09 15:27:07,986 - __main__ - INFO - Epoch: 6  Loss at iteration750:0.468  PSNR: 24.891  SSIM: 0.906  運行時間為: 220.796013 秒
+2021-03-09 15:30:48,887 - __main__ - INFO - Epoch: 6  Loss at iteration800:0.413  PSNR: 23.349  SSIM: 0.885  運行時間為: 220.901759 秒
+2021-03-09 15:30:49,057 - __main__ - INFO - save Epoch7.pth
+2021-03-09 15:34:29,191 - __main__ - INFO - Epoch: 6  Loss at iteration850:0.418  PSNR: 24.148  SSIM: 0.874  運行時間為: 220.303082 秒
+2021-03-09 15:38:09,976 - __main__ - INFO - Epoch: 6  Loss at iteration900:0.353  PSNR: 27.660  SSIM: 0.878  運行時間為: 220.785665 秒
+2021-03-09 15:41:50,824 - __main__ - INFO - Epoch: 6  Loss at iteration950:0.355  PSNR: 27.672  SSIM: 0.918  運行時間為: 220.847163 秒
+2021-03-09 15:45:30,560 - __main__ - INFO - Epoch: 6  Loss at iteration1000:0.432  PSNR: 25.526  SSIM: 0.839  運行時間為: 219.735290 秒
+2021-03-09 15:45:30,720 - __main__ - INFO - save Epoch7.pth
+2021-03-09 15:49:10,859 - __main__ - INFO - Epoch: 6  Loss at iteration1050:0.363  PSNR: 27.215  SSIM: 0.897  運行時間為: 220.298529 秒
+2021-03-09 15:52:50,367 - __main__ - INFO - Epoch: 6  Loss at iteration1100:0.458  PSNR: 25.529  SSIM: 0.869  運行時間為: 219.507896 秒
+2021-03-09 15:56:29,971 - __main__ - INFO - Epoch: 6  Loss at iteration1150:0.340  PSNR: 25.222  SSIM: 0.889  運行時間為: 219.604038 秒
+2021-03-09 16:00:09,870 - __main__ - INFO - Epoch: 6  Loss at iteration1200:0.422  PSNR: 24.837  SSIM: 0.921  運行時間為: 219.897885 秒
+2021-03-09 16:00:10,039 - __main__ - INFO - save Epoch7.pth
+2021-03-09 16:03:49,947 - __main__ - INFO - Epoch: 6  Loss at iteration1250:0.424  PSNR: 24.482  SSIM: 0.896  運行時間為: 220.075934 秒
+2021-03-09 16:07:29,675 - __main__ - INFO - Epoch: 6  Loss at iteration1300:0.513  PSNR: 24.476  SSIM: 0.908  運行時間為: 219.727893 秒
+2021-03-09 16:11:09,414 - __main__ - INFO - Epoch: 6  Loss at iteration1350:0.321  PSNR: 28.255  SSIM: 0.922  運行時間為: 219.737645 秒
+2021-03-09 16:14:49,104 - __main__ - INFO - Epoch: 6  Loss at iteration1400:0.382  PSNR: 26.706  SSIM: 0.907  運行時間為: 219.690765 秒
+2021-03-09 16:14:49,281 - __main__ - INFO - save Epoch7.pth
+2021-03-09 16:18:29,188 - __main__ - INFO - Epoch: 6  Loss at iteration1450:0.416  PSNR: 24.629  SSIM: 0.904  運行時間為: 220.083958 秒
+2021-03-09 16:22:08,813 - __main__ - INFO - Epoch: 6  Loss at iteration1500:0.402  PSNR: 24.787  SSIM: 0.875  運行時間為: 219.624674 秒
+2021-03-09 16:25:48,498 - __main__ - INFO - Epoch: 6  Loss at iteration1550:0.298  PSNR: 27.051  SSIM: 0.896  運行時間為: 219.685358 秒
+2021-03-09 16:29:28,161 - __main__ - INFO - Epoch: 6  Loss at iteration1600:0.453  PSNR: 24.218  SSIM: 0.892  運行時間為: 219.660596 秒
+2021-03-09 16:29:28,330 - __main__ - INFO - save Epoch7.pth
+2021-03-09 16:33:07,936 - __main__ - INFO - Epoch: 6  Loss at iteration1650:0.311  PSNR: 26.134  SSIM: 0.938  運行時間為: 219.774842 秒
+2021-03-09 16:36:47,860 - __main__ - INFO - Epoch: 6  Loss at iteration1700:0.473  PSNR: 24.996  SSIM: 0.887  運行時間為: 219.924371 秒
+2021-03-09 16:40:27,641 - __main__ - INFO - Epoch: 6  Loss at iteration1750:0.318  PSNR: 26.627  SSIM: 0.904  運行時間為: 219.779507 秒
+2021-03-09 16:44:07,435 - __main__ - INFO - Epoch: 6  Loss at iteration1800:0.318  PSNR: 27.949  SSIM: 0.931  運行時間為: 219.794297 秒
+2021-03-09 16:44:07,598 - __main__ - INFO - save Epoch7.pth
+2021-03-09 16:47:47,470 - __main__ - INFO - Epoch: 6  Loss at iteration1850:0.326  PSNR: 27.068  SSIM: 0.936  運行時間為: 220.035310 秒
+2021-03-09 16:51:27,372 - __main__ - INFO - Epoch: 6  Loss at iteration1900:0.396  PSNR: 23.767  SSIM: 0.887  運行時間為: 219.901628 秒
+2021-03-09 16:55:07,021 - __main__ - INFO - Epoch: 6  Loss at iteration1950:0.366  PSNR: 24.989  SSIM: 0.845  運行時間為: 219.649426 秒
+2021-03-09 16:58:47,072 - __main__ - INFO - Epoch: 6  Loss at iteration2000:0.292  PSNR: 28.865  SSIM: 0.946  運行時間為: 220.050832 秒
+2021-03-09 16:58:47,243 - __main__ - INFO - save Epoch7.pth
+2021-03-09 17:02:26,965 - __main__ - INFO - Epoch: 6  Loss at iteration2050:0.417  PSNR: 25.890  SSIM: 0.883  運行時間為: 219.892241 秒
+2021-03-09 17:06:06,865 - __main__ - INFO - Epoch: 6  Loss at iteration2100:0.356  PSNR: 26.753  SSIM: 0.934  運行時間為: 219.899288 秒
+2021-03-09 17:09:46,685 - __main__ - INFO - Epoch: 6  Loss at iteration2150:0.356  PSNR: 27.798  SSIM: 0.930  運行時間為: 219.819933 秒
+2021-03-09 17:13:26,533 - __main__ - INFO - Epoch: 6  Loss at iteration2200:0.406  PSNR: 25.896  SSIM: 0.923  運行時間為: 219.847723 秒
+2021-03-09 17:13:26,686 - __main__ - INFO - save Epoch7.pth
+2021-03-09 17:17:06,370 - __main__ - INFO - Epoch: 6  Loss at iteration2250:0.336  PSNR: 27.792  SSIM: 0.929  運行時間為: 219.836630 秒
+2021-03-09 17:20:46,025 - __main__ - INFO - Epoch: 6  Loss at iteration2300:0.414  PSNR: 27.053  SSIM: 0.911  運行時間為: 219.655350 秒
+2021-03-09 17:24:25,751 - __main__ - INFO - Epoch: 6  Loss at iteration2350:0.430  PSNR: 25.252  SSIM: 0.920  運行時間為: 219.724887 秒
+2021-03-09 17:28:05,884 - __main__ - INFO - Epoch: 6  Loss at iteration2400:0.343  PSNR: 27.579  SSIM: 0.915  運行時間為: 220.133323 秒
+2021-03-09 17:28:06,065 - __main__ - INFO - save Epoch7.pth
+2021-03-09 17:31:46,087 - __main__ - INFO - Epoch: 6  Loss at iteration2450:0.321  PSNR: 27.536  SSIM: 0.909  運行時間為: 220.201307 秒
+2021-03-09 17:35:25,966 - __main__ - INFO - Epoch: 6  Loss at iteration2500:0.416  PSNR: 25.293  SSIM: 0.898  運行時間為: 219.878232 秒
+2021-03-09 17:39:06,141 - __main__ - INFO - Epoch: 6  Loss at iteration2550:0.484  PSNR: 24.012  SSIM: 0.921  運行時間為: 220.174570 秒
+2021-03-09 17:42:45,956 - __main__ - INFO - Epoch: 6  Loss at iteration2600:0.421  PSNR: 24.065  SSIM: 0.924  運行時間為: 219.815265 秒
+2021-03-09 17:42:46,127 - __main__ - INFO - save Epoch7.pth
+2021-03-09 17:46:25,875 - __main__ - INFO - Epoch: 6  Loss at iteration2650:0.477  PSNR: 23.057  SSIM: 0.883  運行時間為: 219.918997 秒
+2021-03-09 17:50:05,748 - __main__ - INFO - Epoch: 6  Loss at iteration2700:0.375  PSNR: 27.225  SSIM: 0.894  運行時間為: 219.872691 秒
+2021-03-09 17:53:45,390 - __main__ - INFO - Epoch: 6  Loss at iteration2750:0.371  PSNR: 26.691  SSIM: 0.900  運行時間為: 219.641646 秒
+2021-03-09 17:57:25,543 - __main__ - INFO - Epoch: 6  Loss at iteration2800:0.361  PSNR: 26.074  SSIM: 0.852  運行時間為: 220.152362 秒
+2021-03-09 17:57:25,697 - __main__ - INFO - save Epoch7.pth
+2021-03-09 18:40:36,368 - __main__ - INFO - Epoch 運行時間為: 14925.570267 秒
+2021-03-09 18:44:19,050 - __main__ - INFO - Epoch: 7  Loss at iteration50:0.359  PSNR: 28.089  SSIM: 0.878  運行時間為: 222.681550 秒
+2021-03-09 18:47:59,024 - __main__ - INFO - Epoch: 7  Loss at iteration100:0.330  PSNR: 28.902  SSIM: 0.903  運行時間為: 219.974167 秒
+2021-03-09 18:51:38,949 - __main__ - INFO - Epoch: 7  Loss at iteration150:0.341  PSNR: 25.457  SSIM: 0.879  運行時間為: 219.924907 秒
+2021-03-09 18:55:18,831 - __main__ - INFO - Epoch: 7  Loss at iteration200:0.363  PSNR: 24.528  SSIM: 0.949  運行時間為: 219.882145 秒
+2021-03-09 18:55:19,044 - __main__ - INFO - save Epoch8.pth
+2021-03-09 18:58:59,252 - __main__ - INFO - Epoch: 7  Loss at iteration250:0.352  PSNR: 27.338  SSIM: 0.928  運行時間為: 220.420518 秒
+2021-03-09 19:02:39,066 - __main__ - INFO - Epoch: 7  Loss at iteration300:0.319  PSNR: 27.291  SSIM: 0.907  運行時間為: 219.813855 秒
+2021-03-09 19:06:19,153 - __main__ - INFO - Epoch: 7  Loss at iteration350:0.345  PSNR: 25.971  SSIM: 0.878  運行時間為: 220.087051 秒
+2021-03-09 19:09:58,946 - __main__ - INFO - Epoch: 7  Loss at iteration400:0.368  PSNR: 26.626  SSIM: 0.850  運行時間為: 219.793587 秒
+2021-03-09 19:09:59,118 - __main__ - INFO - save Epoch8.pth
+2021-03-09 19:13:38,868 - __main__ - INFO - Epoch: 7  Loss at iteration450:0.325  PSNR: 29.386  SSIM: 0.932  運行時間為: 219.921906 秒
+2021-03-09 19:17:18,601 - __main__ - INFO - Epoch: 7  Loss at iteration500:0.339  PSNR: 28.051  SSIM: 0.916  運行時間為: 219.732528 秒
+2021-03-09 19:20:58,513 - __main__ - INFO - Epoch: 7  Loss at iteration550:0.341  PSNR: 25.441  SSIM: 0.916  運行時間為: 219.909852 秒
+2021-03-09 19:24:38,411 - __main__ - INFO - Epoch: 7  Loss at iteration600:0.309  PSNR: 27.231  SSIM: 0.927  運行時間為: 219.897131 秒
+2021-03-09 19:24:38,595 - __main__ - INFO - save Epoch8.pth
+2021-03-09 19:28:18,641 - __main__ - INFO - Epoch: 7  Loss at iteration650:0.369  PSNR: 26.375  SSIM: 0.879  運行時間為: 220.229194 秒
+2021-03-09 19:31:58,426 - __main__ - INFO - Epoch: 7  Loss at iteration700:0.383  PSNR: 27.100  SSIM: 0.932  運行時間為: 219.785052 秒
+2021-03-09 19:35:38,283 - __main__ - INFO - Epoch: 7  Loss at iteration750:0.328  PSNR: 27.107  SSIM: 0.909  運行時間為: 219.854526 秒
+2021-03-09 19:39:18,386 - __main__ - INFO - Epoch: 7  Loss at iteration800:0.314  PSNR: 27.510  SSIM: 0.885  運行時間為: 220.103586 秒
+2021-03-09 19:39:18,554 - __main__ - INFO - save Epoch8.pth
+2021-03-09 19:42:58,407 - __main__ - INFO - Epoch: 7  Loss at iteration850:0.411  PSNR: 26.233  SSIM: 0.886  運行時間為: 220.021111 秒
+2021-03-09 19:46:38,354 - __main__ - INFO - Epoch: 7  Loss at iteration900:0.327  PSNR: 27.073  SSIM: 0.894  運行時間為: 219.946629 秒
+2021-03-09 19:50:18,218 - __main__ - INFO - Epoch: 7  Loss at iteration950:0.386  PSNR: 25.093  SSIM: 0.928  運行時間為: 219.862964 秒
+2021-03-09 19:53:58,228 - __main__ - INFO - Epoch: 7  Loss at iteration1000:0.413  PSNR: 24.166  SSIM: 0.899  運行時間為: 220.010087 秒
+2021-03-09 19:53:58,397 - __main__ - INFO - save Epoch8.pth
+2021-03-09 19:57:38,976 - __main__ - INFO - Epoch: 7  Loss at iteration1050:0.394  PSNR: 25.811  SSIM: 0.856  運行時間為: 220.747355 秒
+2021-03-09 20:01:19,226 - __main__ - INFO - Epoch: 7  Loss at iteration1100:0.350  PSNR: 26.412  SSIM: 0.878  運行時間為: 220.249249 秒
+2021-03-09 20:04:59,461 - __main__ - INFO - Epoch: 7  Loss at iteration1150:0.432  PSNR: 24.784  SSIM: 0.889  運行時間為: 220.235392 秒
+2021-03-09 20:08:39,610 - __main__ - INFO - Epoch: 7  Loss at iteration1200:0.345  PSNR: 27.377  SSIM: 0.926  運行時間為: 220.148463 秒
+2021-03-09 20:08:39,779 - __main__ - INFO - save Epoch8.pth
+2021-03-09 20:12:20,014 - __main__ - INFO - Epoch: 7  Loss at iteration1250:0.427  PSNR: 25.998  SSIM: 0.923  運行時間為: 220.403018 秒
+2021-03-09 20:16:00,237 - __main__ - INFO - Epoch: 7  Loss at iteration1300:0.327  PSNR: 28.039  SSIM: 0.926  運行時間為: 220.221406 秒
+2021-03-09 20:19:40,483 - __main__ - INFO - Epoch: 7  Loss at iteration1350:0.487  PSNR: 22.788  SSIM: 0.908  運行時間為: 220.245673 秒
+2021-03-09 20:23:20,846 - __main__ - INFO - Epoch: 7  Loss at iteration1400:0.370  PSNR: 26.513  SSIM: 0.918  運行時間為: 220.361532 秒
+2021-03-09 20:23:21,023 - __main__ - INFO - save Epoch8.pth
+2021-03-09 20:27:01,503 - __main__ - INFO - Epoch: 7  Loss at iteration1450:0.446  PSNR: 25.476  SSIM: 0.871  運行時間為: 220.655448 秒
+2021-03-09 20:30:41,965 - __main__ - INFO - Epoch: 7  Loss at iteration1500:0.470  PSNR: 25.774  SSIM: 0.905  運行時間為: 220.461919 秒
+2021-03-09 20:34:22,359 - __main__ - INFO - Epoch: 7  Loss at iteration1550:0.398  PSNR: 25.904  SSIM: 0.929  運行時間為: 220.393929 秒
+2021-03-09 20:38:02,712 - __main__ - INFO - Epoch: 7  Loss at iteration1600:0.357  PSNR: 28.609  SSIM: 0.918  運行時間為: 220.352890 秒
+2021-03-09 20:38:02,870 - __main__ - INFO - save Epoch8.pth
+2021-03-09 20:41:43,848 - __main__ - INFO - Epoch: 7  Loss at iteration1650:0.339  PSNR: 29.184  SSIM: 0.946  運行時間為: 221.134372 秒
+2021-03-09 20:45:24,495 - __main__ - INFO - Epoch: 7  Loss at iteration1700:0.356  PSNR: 26.716  SSIM: 0.869  運行時間為: 220.647765 秒
+2021-03-09 20:49:05,184 - __main__ - INFO - Epoch: 7  Loss at iteration1750:0.415  PSNR: 24.248  SSIM: 0.887  運行時間為: 220.688879 秒
+2021-03-09 20:52:45,982 - __main__ - INFO - Epoch: 7  Loss at iteration1800:0.345  PSNR: 28.214  SSIM: 0.916  運行時間為: 220.797408 秒
+2021-03-09 20:52:46,154 - __main__ - INFO - save Epoch8.pth
+2021-03-09 20:56:26,929 - __main__ - INFO - Epoch: 7  Loss at iteration1850:0.397  PSNR: 26.665  SSIM: 0.915  運行時間為: 220.946665 秒
+2021-03-09 21:00:07,677 - __main__ - INFO - Epoch: 7  Loss at iteration1900:0.344  PSNR: 28.339  SSIM: 0.892  運行時間為: 220.747478 秒
+2021-03-09 21:03:48,395 - __main__ - INFO - Epoch: 7  Loss at iteration1950:0.418  PSNR: 26.400  SSIM: 0.902  運行時間為: 220.718051 秒
+2021-03-09 21:07:29,084 - __main__ - INFO - Epoch: 7  Loss at iteration2000:0.372  PSNR: 27.921  SSIM: 0.817  運行時間為: 220.687856 秒
+2021-03-09 21:07:29,253 - __main__ - INFO - save Epoch8.pth
+2021-03-09 21:11:09,977 - __main__ - INFO - Epoch: 7  Loss at iteration2050:0.374  PSNR: 27.130  SSIM: 0.925  運行時間為: 220.892866 秒
+2021-03-09 21:14:50,858 - __main__ - INFO - Epoch: 7  Loss at iteration2100:0.371  PSNR: 27.426  SSIM: 0.904  運行時間為: 220.881731 秒
+2021-03-09 21:18:31,897 - __main__ - INFO - Epoch: 7  Loss at iteration2150:0.367  PSNR: 27.518  SSIM: 0.928  運行時間為: 221.038175 秒
+2021-03-09 21:22:12,905 - __main__ - INFO - Epoch: 7  Loss at iteration2200:0.369  PSNR: 26.567  SSIM: 0.850  運行時間為: 221.007432 秒
+2021-03-09 21:22:13,123 - __main__ - INFO - save Epoch8.pth
+2021-03-09 21:25:54,019 - __main__ - INFO - Epoch: 7  Loss at iteration2250:0.424  PSNR: 25.628  SSIM: 0.916  運行時間為: 221.113749 秒
+2021-03-09 21:29:34,964 - __main__ - INFO - Epoch: 7  Loss at iteration2300:0.321  PSNR: 27.423  SSIM: 0.849  運行時間為: 220.944451 秒
+2021-03-09 21:33:15,752 - __main__ - INFO - Epoch: 7  Loss at iteration2350:0.371  PSNR: 28.697  SSIM: 0.919  運行時間為: 220.788240 秒
+2021-03-09 21:36:56,580 - __main__ - INFO - Epoch: 7  Loss at iteration2400:0.379  PSNR: 27.950  SSIM: 0.938  運行時間為: 220.827426 秒
+2021-03-09 21:36:56,739 - __main__ - INFO - save Epoch8.pth
+2021-03-09 21:40:37,994 - __main__ - INFO - Epoch: 7  Loss at iteration2450:0.445  PSNR: 24.995  SSIM: 0.911  運行時間為: 221.413987 秒
+2021-03-09 21:44:19,039 - __main__ - INFO - Epoch: 7  Loss at iteration2500:0.400  PSNR: 25.716  SSIM: 0.897  運行時間為: 221.044748 秒
+2021-03-09 21:48:00,144 - __main__ - INFO - Epoch: 7  Loss at iteration2550:0.369  PSNR: 27.145  SSIM: 0.930  運行時間為: 221.105244 秒
+2021-03-09 21:51:41,296 - __main__ - INFO - Epoch: 7  Loss at iteration2600:0.369  PSNR: 25.649  SSIM: 0.931  運行時間為: 221.152432 秒
+2021-03-09 21:51:41,479 - __main__ - INFO - save Epoch8.pth
+2021-03-09 21:55:22,633 - __main__ - INFO - Epoch: 7  Loss at iteration2650:0.387  PSNR: 26.297  SSIM: 0.900  運行時間為: 221.336161 秒
+2021-03-09 21:59:03,473 - __main__ - INFO - Epoch: 7  Loss at iteration2700:0.316  PSNR: 28.844  SSIM: 0.955  運行時間為: 220.840002 秒
+2021-03-09 22:02:44,659 - __main__ - INFO - Epoch: 7  Loss at iteration2750:0.426  PSNR: 27.210  SSIM: 0.915  運行時間為: 221.185404 秒
+2021-03-09 22:06:25,903 - __main__ - INFO - Epoch: 7  Loss at iteration2800:0.365  PSNR: 27.604  SSIM: 0.923  運行時間為: 221.243803 秒
+2021-03-09 22:06:26,073 - __main__ - INFO - save Epoch8.pth
+2021-03-09 22:49:42,163 - __main__ - INFO - Epoch 運行時間為: 14945.795624 秒
+2021-03-09 22:53:25,740 - __main__ - INFO - Epoch: 8  Loss at iteration50:0.354  PSNR: 28.200  SSIM: 0.923  運行時間為: 223.576203 秒
+2021-03-09 22:57:06,633 - __main__ - INFO - Epoch: 8  Loss at iteration100:0.296  PSNR: 28.260  SSIM: 0.936  運行時間為: 220.892910 秒
+2021-03-09 23:00:47,319 - __main__ - INFO - Epoch: 8  Loss at iteration150:0.273  PSNR: 29.530  SSIM: 0.957  運行時間為: 220.685835 秒
+2021-03-09 23:04:28,115 - __main__ - INFO - Epoch: 8  Loss at iteration200:0.368  PSNR: 30.268  SSIM: 0.937  運行時間為: 220.794357 秒
+2021-03-09 23:04:28,278 - __main__ - INFO - save Epoch9.pth
+2021-03-09 23:08:09,520 - __main__ - INFO - Epoch: 8  Loss at iteration250:0.373  PSNR: 25.744  SSIM: 0.912  運行時間為: 221.405319 秒
+2021-03-09 23:11:50,411 - __main__ - INFO - Epoch: 8  Loss at iteration300:0.353  PSNR: 28.009  SSIM: 0.919  運行時間為: 220.891334 秒
+2021-03-09 23:15:31,665 - __main__ - INFO - Epoch: 8  Loss at iteration350:0.371  PSNR: 26.543  SSIM: 0.925  運行時間為: 221.253342 秒
+2021-03-09 23:19:12,548 - __main__ - INFO - Epoch: 8  Loss at iteration400:0.362  PSNR: 26.454  SSIM: 0.905  運行時間為: 220.883230 秒
+2021-03-09 23:19:12,701 - __main__ - INFO - save Epoch9.pth
+2021-03-09 23:22:53,386 - __main__ - INFO - Epoch: 8  Loss at iteration450:0.430  PSNR: 25.916  SSIM: 0.914  運行時間為: 220.838494 秒
+2021-03-09 23:26:34,081 - __main__ - INFO - Epoch: 8  Loss at iteration500:0.358  PSNR: 27.566  SSIM: 0.907  運行時間為: 220.693660 秒
+2021-03-09 23:30:14,942 - __main__ - INFO - Epoch: 8  Loss at iteration550:0.418  PSNR: 26.036  SSIM: 0.885  運行時間為: 220.860743 秒
+2021-03-09 23:33:56,129 - __main__ - INFO - Epoch: 8  Loss at iteration600:0.318  PSNR: 28.537  SSIM: 0.903  運行時間為: 221.186774 秒
+2021-03-09 23:33:56,300 - __main__ - INFO - save Epoch9.pth
+2021-03-09 23:37:37,011 - __main__ - INFO - Epoch: 8  Loss at iteration650:0.328  PSNR: 26.201  SSIM: 0.873  運行時間為: 220.880312 秒
+2021-03-09 23:41:18,068 - __main__ - INFO - Epoch: 8  Loss at iteration700:0.394  PSNR: 26.056  SSIM: 0.910  運行時間為: 221.056723 秒
+2021-03-09 23:44:58,949 - __main__ - INFO - Epoch: 8  Loss at iteration750:0.381  PSNR: 26.317  SSIM: 0.911  運行時間為: 220.881787 秒
+2021-03-09 23:48:39,595 - __main__ - INFO - Epoch: 8  Loss at iteration800:0.369  PSNR: 26.728  SSIM: 0.916  運行時間為: 220.644941 秒
+2021-03-09 23:48:39,749 - __main__ - INFO - save Epoch9.pth
+2021-03-09 23:52:20,464 - __main__ - INFO - Epoch: 8  Loss at iteration850:0.385  PSNR: 27.896  SSIM: 0.921  運行時間為: 220.869230 秒
+2021-03-09 23:56:01,418 - __main__ - INFO - Epoch: 8  Loss at iteration900:0.373  PSNR: 26.107  SSIM: 0.928  運行時間為: 220.953763 秒
+2021-03-09 23:59:41,999 - __main__ - INFO - Epoch: 8  Loss at iteration950:0.384  PSNR: 28.602  SSIM: 0.929  運行時間為: 220.579579 秒
+2021-03-10 00:03:22,556 - __main__ - INFO - Epoch: 8  Loss at iteration1000:0.361  PSNR: 26.721  SSIM: 0.910  運行時間為: 220.556035 秒
+2021-03-10 00:03:22,731 - __main__ - INFO - save Epoch9.pth
+2021-03-10 00:07:03,758 - __main__ - INFO - Epoch: 8  Loss at iteration1050:0.366  PSNR: 28.047  SSIM: 0.945  運行時間為: 221.202190 秒
+2021-03-10 00:10:44,198 - __main__ - INFO - Epoch: 8  Loss at iteration1100:0.374  PSNR: 27.866  SSIM: 0.911  運行時間為: 220.439519 秒
+2021-03-10 00:14:25,153 - __main__ - INFO - Epoch: 8  Loss at iteration1150:0.361  PSNR: 28.716  SSIM: 0.931  運行時間為: 220.954924 秒
+2021-03-10 00:18:06,076 - __main__ - INFO - Epoch: 8  Loss at iteration1200:0.305  PSNR: 27.295  SSIM: 0.888  運行時間為: 220.922667 秒
+2021-03-10 00:18:06,251 - __main__ - INFO - save Epoch9.pth
+2021-03-10 00:21:46,919 - __main__ - INFO - Epoch: 8  Loss at iteration1250:0.382  PSNR: 26.083  SSIM: 0.877  運行時間為: 220.842832 秒
+2021-03-10 00:25:27,525 - __main__ - INFO - Epoch: 8  Loss at iteration1300:0.388  PSNR: 27.549  SSIM: 0.891  運行時間為: 220.604834 秒
+2021-03-10 00:29:08,173 - __main__ - INFO - Epoch: 8  Loss at iteration1350:0.397  PSNR: 27.773  SSIM: 0.915  運行時間為: 220.647643 秒
+2021-03-10 00:32:48,911 - __main__ - INFO - Epoch: 8  Loss at iteration1400:0.363  PSNR: 27.080  SSIM: 0.936  運行時間為: 220.737551 秒
+2021-03-10 00:32:49,080 - __main__ - INFO - save Epoch9.pth
+2021-03-10 00:36:29,961 - __main__ - INFO - Epoch: 8  Loss at iteration1450:0.438  PSNR: 25.633  SSIM: 0.928  運行時間為: 221.048898 秒
+2021-03-10 00:40:10,997 - __main__ - INFO - Epoch: 8  Loss at iteration1500:0.377  PSNR: 27.634  SSIM: 0.893  運行時間為: 221.036323 秒
+2021-03-10 00:43:52,126 - __main__ - INFO - Epoch: 8  Loss at iteration1550:0.330  PSNR: 27.699  SSIM: 0.894  運行時間為: 221.127515 秒
+2021-03-10 00:47:33,274 - __main__ - INFO - Epoch: 8  Loss at iteration1600:0.347  PSNR: 28.088  SSIM: 0.919  運行時間為: 221.147000 秒
+2021-03-10 00:47:33,444 - __main__ - INFO - save Epoch9.pth
+2021-03-10 00:51:14,762 - __main__ - INFO - Epoch: 8  Loss at iteration1650:0.350  PSNR: 29.173  SSIM: 0.939  運行時間為: 221.487723 秒
+2021-03-10 00:54:55,425 - __main__ - INFO - Epoch: 8  Loss at iteration1700:0.317  PSNR: 29.446  SSIM: 0.918  運行時間為: 220.662720 秒
+2021-03-10 00:58:36,735 - __main__ - INFO - Epoch: 8  Loss at iteration1750:0.416  PSNR: 26.472  SSIM: 0.861  運行時間為: 221.309158 秒
+2021-03-10 01:02:17,527 - __main__ - INFO - Epoch: 8  Loss at iteration1800:0.510  PSNR: 25.497  SSIM: 0.908  運行時間為: 220.790550 秒
+2021-03-10 01:02:17,697 - __main__ - INFO - save Epoch9.pth
+2021-03-10 01:05:58,641 - __main__ - INFO - Epoch: 8  Loss at iteration1850:0.362  PSNR: 26.641  SSIM: 0.902  運行時間為: 221.114258 秒
+2021-03-10 01:09:39,666 - __main__ - INFO - Epoch: 8  Loss at iteration1900:0.352  PSNR: 27.104  SSIM: 0.945  運行時間為: 221.024693 秒
+2021-03-10 01:13:20,676 - __main__ - INFO - Epoch: 8  Loss at iteration1950:0.402  PSNR: 26.837  SSIM: 0.909  運行時間為: 221.009658 秒
+2021-03-10 01:17:01,480 - __main__ - INFO - Epoch: 8  Loss at iteration2000:0.329  PSNR: 27.730  SSIM: 0.909  運行時間為: 220.802093 秒
+2021-03-10 01:17:01,652 - __main__ - INFO - save Epoch9.pth
+2021-03-10 01:20:42,516 - __main__ - INFO - Epoch: 8  Loss at iteration2050:0.358  PSNR: 28.316  SSIM: 0.918  運行時間為: 221.035772 秒
+2021-03-10 01:24:23,583 - __main__ - INFO - Epoch: 8  Loss at iteration2100:0.391  PSNR: 25.262  SSIM: 0.897  運行時間為: 221.066990 秒
+2021-03-10 01:28:04,692 - __main__ - INFO - Epoch: 8  Loss at iteration2150:0.345  PSNR: 25.745  SSIM: 0.890  運行時間為: 221.108557 秒
+2021-03-10 01:31:45,688 - __main__ - INFO - Epoch: 8  Loss at iteration2200:0.367  PSNR: 25.943  SSIM: 0.911  運行時間為: 220.994761 秒
+2021-03-10 01:31:45,847 - __main__ - INFO - save Epoch9.pth
+2021-03-10 01:35:27,033 - __main__ - INFO - Epoch: 8  Loss at iteration2250:0.337  PSNR: 27.511  SSIM: 0.913  運行時間為: 221.344911 秒
+2021-03-10 01:39:08,734 - __main__ - INFO - Epoch: 8  Loss at iteration2300:0.272  PSNR: 28.579  SSIM: 0.888  運行時間為: 221.701158 秒
+2021-03-10 01:42:49,662 - __main__ - INFO - Epoch: 8  Loss at iteration2350:0.337  PSNR: 27.208  SSIM: 0.927  運行時間為: 220.928625 秒
+2021-03-10 01:46:30,530 - __main__ - INFO - Epoch: 8  Loss at iteration2400:0.356  PSNR: 26.706  SSIM: 0.924  運行時間為: 220.867373 秒
+2021-03-10 01:46:30,689 - __main__ - INFO - save Epoch9.pth
+2021-03-10 01:50:11,938 - __main__ - INFO - Epoch: 8  Loss at iteration2450:0.395  PSNR: 26.115  SSIM: 0.900  運行時間為: 221.408057 秒
+2021-03-10 01:53:52,905 - __main__ - INFO - Epoch: 8  Loss at iteration2500:0.389  PSNR: 25.888  SSIM: 0.942  運行時間為: 220.967364 秒
+2021-03-10 01:57:33,947 - __main__ - INFO - Epoch: 8  Loss at iteration2550:0.343  PSNR: 29.397  SSIM: 0.948  運行時間為: 221.040998 秒
+2021-03-10 02:01:14,929 - __main__ - INFO - Epoch: 8  Loss at iteration2600:0.281  PSNR: 30.129  SSIM: 0.913  運行時間為: 220.979473 秒
+2021-03-10 02:01:15,111 - __main__ - INFO - save Epoch9.pth
+2021-03-10 02:04:56,224 - __main__ - INFO - Epoch: 8  Loss at iteration2650:0.329  PSNR: 29.016  SSIM: 0.935  運行時間為: 221.295484 秒
+2021-03-10 02:08:37,153 - __main__ - INFO - Epoch: 8  Loss at iteration2700:0.380  PSNR: 27.202  SSIM: 0.917  運行時間為: 220.927094 秒
+2021-03-10 02:12:18,191 - __main__ - INFO - Epoch: 8  Loss at iteration2750:0.396  PSNR: 27.375  SSIM: 0.926  運行時間為: 221.037896 秒
+2021-03-10 02:15:59,034 - __main__ - INFO - Epoch: 8  Loss at iteration2800:0.439  PSNR: 25.681  SSIM: 0.842  運行時間為: 220.842911 秒
+2021-03-10 02:15:59,203 - __main__ - INFO - save Epoch9.pth
+2021-03-10 02:59:12,817 - __main__ - INFO - Epoch 運行時間為: 14970.653916 秒
+2021-03-10 03:02:54,955 - __main__ - INFO - Epoch: 9  Loss at iteration50:0.334  PSNR: 26.741  SSIM: 0.891  運行時間為: 222.136608 秒
+2021-03-10 03:06:34,224 - __main__ - INFO - Epoch: 9  Loss at iteration100:0.395  PSNR: 25.007  SSIM: 0.902  運行時間為: 219.268901 秒
+2021-03-10 03:10:12,587 - __main__ - INFO - Epoch: 9  Loss at iteration150:0.383  PSNR: 24.892  SSIM: 0.923  運行時間為: 218.363229 秒
+2021-03-10 03:13:50,770 - __main__ - INFO - Epoch: 9  Loss at iteration200:0.430  PSNR: 25.328  SSIM: 0.916  運行時間為: 218.182834 秒
+2021-03-10 03:13:50,925 - __main__ - INFO - save Epoch10.pth
+2021-03-10 03:17:28,876 - __main__ - INFO - Epoch: 9  Loss at iteration250:0.394  PSNR: 27.844  SSIM: 0.912  運行時間為: 218.106260 秒
+2021-03-10 03:21:06,875 - __main__ - INFO - Epoch: 9  Loss at iteration300:0.327  PSNR: 27.984  SSIM: 0.917  運行時間為: 217.998983 秒
+2021-03-10 03:24:44,709 - __main__ - INFO - Epoch: 9  Loss at iteration350:0.369  PSNR: 26.489  SSIM: 0.895  運行時間為: 217.833933 秒
+2021-03-10 03:28:22,670 - __main__ - INFO - Epoch: 9  Loss at iteration400:0.416  PSNR: 25.825  SSIM: 0.901  運行時間為: 217.961288 秒
+2021-03-10 03:28:22,823 - __main__ - INFO - save Epoch10.pth
+2021-03-10 03:32:00,674 - __main__ - INFO - Epoch: 9  Loss at iteration450:0.336  PSNR: 28.067  SSIM: 0.912  運行時間為: 218.003532 秒
+2021-03-10 03:35:38,390 - __main__ - INFO - Epoch: 9  Loss at iteration500:0.326  PSNR: 27.742  SSIM: 0.897  運行時間為: 217.715270 秒
+2021-03-10 03:39:16,606 - __main__ - INFO - Epoch: 9  Loss at iteration550:0.366  PSNR: 28.570  SSIM: 0.924  運行時間為: 218.216074 秒
+2021-03-10 03:42:54,764 - __main__ - INFO - Epoch: 9  Loss at iteration600:0.326  PSNR: 27.007  SSIM: 0.846  運行時間為: 218.157738 秒
+2021-03-10 03:42:54,923 - __main__ - INFO - save Epoch10.pth
+2021-03-10 03:46:32,988 - __main__ - INFO - Epoch: 9  Loss at iteration650:0.375  PSNR: 27.929  SSIM: 0.928  運行時間為: 218.223359 秒
+2021-03-10 03:50:10,854 - __main__ - INFO - Epoch: 9  Loss at iteration700:0.380  PSNR: 28.495  SSIM: 0.906  運行時間為: 217.865570 秒
+2021-03-10 03:53:48,847 - __main__ - INFO - Epoch: 9  Loss at iteration750:0.328  PSNR: 26.266  SSIM: 0.898  運行時間為: 217.993254 秒
+2021-03-10 03:57:26,875 - __main__ - INFO - Epoch: 9  Loss at iteration800:0.360  PSNR: 27.358  SSIM: 0.925  運行時間為: 218.027752 秒
+2021-03-10 03:57:27,044 - __main__ - INFO - save Epoch10.pth
+2021-03-10 04:01:05,276 - __main__ - INFO - Epoch: 9  Loss at iteration850:0.373  PSNR: 26.521  SSIM: 0.932  運行時間為: 218.400179 秒
+2021-03-10 04:04:42,926 - __main__ - INFO - Epoch: 9  Loss at iteration900:0.393  PSNR: 28.322  SSIM: 0.934  運行時間為: 217.648631 秒
+2021-03-10 04:08:20,891 - __main__ - INFO - Epoch: 9  Loss at iteration950:0.309  PSNR: 27.020  SSIM: 0.936  運行時間為: 217.964068 秒
+2021-03-10 04:11:58,849 - __main__ - INFO - Epoch: 9  Loss at iteration1000:0.390  PSNR: 28.436  SSIM: 0.932  運行時間為: 217.958572 秒
+2021-03-10 04:11:59,015 - __main__ - INFO - save Epoch10.pth
+2021-03-10 04:15:36,888 - __main__ - INFO - Epoch: 9  Loss at iteration1050:0.380  PSNR: 27.835  SSIM: 0.933  運行時間為: 218.039133 秒
+2021-03-10 04:19:15,080 - __main__ - INFO - Epoch: 9  Loss at iteration1100:0.391  PSNR: 27.558  SSIM: 0.911  運行時間為: 218.191992 秒
+2021-03-10 04:22:52,911 - __main__ - INFO - Epoch: 9  Loss at iteration1150:0.439  PSNR: 26.071  SSIM: 0.894  運行時間為: 217.830520 秒
+2021-03-10 04:26:31,022 - __main__ - INFO - Epoch: 9  Loss at iteration1200:0.342  PSNR: 28.889  SSIM: 0.943  運行時間為: 218.111311 秒
+2021-03-10 04:26:31,194 - __main__ - INFO - save Epoch10.pth
+2021-03-10 04:30:09,640 - __main__ - INFO - Epoch: 9  Loss at iteration1250:0.371  PSNR: 26.704  SSIM: 0.939  運行時間為: 218.617950 秒
+2021-03-10 04:33:50,115 - __main__ - INFO - Epoch: 9  Loss at iteration1300:0.372  PSNR: 27.733  SSIM: 0.927  運行時間為: 220.473799 秒
+2021-03-10 11:27:54,876 - __main__ - INFO - Start training.
+2021-03-10 11:31:41,137 - __main__ - INFO - Epoch: 0  Loss at iteration50:1.529  PSNR: 11.528  SSIM: 0.394  運行時間為: 226.260518 秒
+2021-03-10 11:35:23,484 - __main__ - INFO - Epoch: 0  Loss at iteration100:1.383  PSNR: 13.500  SSIM: 0.560  運行時間為: 222.345818 秒
+2021-03-10 11:39:06,197 - __main__ - INFO - Epoch: 0  Loss at iteration150:1.230  PSNR: 14.247  SSIM: 0.656  運行時間為: 222.712585 秒
+2021-03-10 11:42:48,483 - __main__ - INFO - Epoch: 0  Loss at iteration200:1.050  PSNR: 17.829  SSIM: 0.741  運行時間為: 222.284898 秒
+2021-03-10 11:42:48,648 - __main__ - INFO - save Epoch1.pth
+2021-03-10 11:46:31,391 - __main__ - INFO - Start training.
+2021-03-10 11:50:15,353 - __main__ - INFO - Epoch: 0  Loss at iteration50:1.984  PSNR: 7.253  SSIM: 0.143  運行時間為: 223.960868 秒
+2021-03-10 11:53:53,410 - __main__ - INFO - Epoch: 0  Loss at iteration100:1.523  PSNR: 9.072  SSIM: 0.260  運行時間為: 218.056742 秒
+2021-03-10 11:57:30,935 - __main__ - INFO - Epoch: 0  Loss at iteration150:1.193  PSNR: 10.696  SSIM: 0.344  運行時間為: 217.524684 秒
+2021-03-10 12:01:07,641 - __main__ - INFO - Epoch: 0  Loss at iteration200:1.041  PSNR: 12.190  SSIM: 0.437  運行時間為: 216.706898 秒
+2021-03-10 12:01:07,814 - __main__ - INFO - save Epoch1.pth
+2021-03-10 12:04:44,547 - __main__ - INFO - Epoch: 0  Loss at iteration250:1.041  PSNR: 12.188  SSIM: 0.479  運行時間為: 216.903922 秒
+2021-03-10 12:08:22,812 - __main__ - INFO - Epoch: 0  Loss at iteration300:0.920  PSNR: 14.379  SSIM: 0.520  運行時間為: 218.264112 秒
+2021-03-10 12:12:03,551 - __main__ - INFO - Epoch: 0  Loss at iteration350:0.952  PSNR: 15.916  SSIM: 0.594  運行時間為: 220.738461 秒
+2021-03-10 12:13:17,519 - __main__ - INFO - Start training.
+2021-03-10 12:17:01,791 - __main__ - INFO - Epoch: 0  Loss at iteration50:1.944  PSNR: 7.787  SSIM: 0.260  運行時間為: 224.272548 秒
+2021-03-10 12:20:41,600 - __main__ - INFO - Epoch: 0  Loss at iteration100:1.180  PSNR: 10.107  SSIM: 0.349  運行時間為: 219.808381 秒
+2021-03-10 12:24:18,291 - __main__ - INFO - Epoch: 0  Loss at iteration150:1.123  PSNR: 12.833  SSIM: 0.469  運行時間為: 216.690665 秒
+2021-03-10 12:27:54,441 - __main__ - INFO - Epoch: 0  Loss at iteration200:0.877  PSNR: 13.461  SSIM: 0.570  運行時間為: 216.150231 秒
+2021-03-10 12:27:54,614 - __main__ - INFO - save Epoch1.pth
+2021-03-10 12:31:32,084 - __main__ - INFO - Epoch: 0  Loss at iteration250:0.876  PSNR: 12.795  SSIM: 0.602  運行時間為: 217.643018 秒
+2021-03-10 12:35:09,326 - __main__ - INFO - Epoch: 0  Loss at iteration300:1.064  PSNR: 16.042  SSIM: 0.627  運行時間為: 217.241219 秒
+2021-03-10 12:38:46,733 - __main__ - INFO - Epoch: 0  Loss at iteration350:0.829  PSNR: 15.569  SSIM: 0.678  運行時間為: 217.407467 秒
+2021-03-10 12:42:24,765 - __main__ - INFO - Epoch: 0  Loss at iteration400:0.839  PSNR: 16.343  SSIM: 0.673  運行時間為: 218.031512 秒
+2021-03-10 12:42:24,916 - __main__ - INFO - save Epoch1.pth
+2021-03-10 12:46:02,760 - __main__ - INFO - Epoch: 0  Loss at iteration450:0.770  PSNR: 18.069  SSIM: 0.735  運行時間為: 217.995008 秒
+2021-03-10 12:49:40,334 - __main__ - INFO - Epoch: 0  Loss at iteration500:0.763  PSNR: 16.863  SSIM: 0.731  運行時間為: 217.574289 秒
+2021-03-10 12:53:18,099 - __main__ - INFO - Epoch: 0  Loss at iteration550:0.840  PSNR: 18.240  SSIM: 0.774  運行時間為: 217.765449 秒
+2021-03-10 12:56:55,533 - __main__ - INFO - Epoch: 0  Loss at iteration600:0.762  PSNR: 18.964  SSIM: 0.761  運行時間為: 217.433638 秒
+2021-03-10 12:56:55,698 - __main__ - INFO - save Epoch1.pth
+2021-03-10 13:00:33,248 - __main__ - INFO - Epoch: 0  Loss at iteration650:0.584  PSNR: 17.905  SSIM: 0.777  運行時間為: 217.714494 秒
+2021-03-10 13:04:10,739 - __main__ - INFO - Epoch: 0  Loss at iteration700:0.737  PSNR: 18.516  SSIM: 0.805  運行時間為: 217.491509 秒
+2021-03-10 13:07:47,956 - __main__ - INFO - Epoch: 0  Loss at iteration750:0.652  PSNR: 17.291  SSIM: 0.724  運行時間為: 217.216579 秒
+2021-03-10 13:11:24,569 - __main__ - INFO - Epoch: 0  Loss at iteration800:0.815  PSNR: 14.787  SSIM: 0.671  運行時間為: 216.612287 秒
+2021-03-10 13:11:24,723 - __main__ - INFO - save Epoch1.pth
+2021-03-10 13:15:01,549 - __main__ - INFO - Epoch: 0  Loss at iteration850:0.823  PSNR: 19.194  SSIM: 0.817  運行時間為: 216.978678 秒
+2021-03-10 13:18:38,439 - __main__ - INFO - Epoch: 0  Loss at iteration900:0.749  PSNR: 16.479  SSIM: 0.710  運行時間為: 216.890449 秒
+2021-03-10 13:22:15,248 - __main__ - INFO - Epoch: 0  Loss at iteration950:0.734  PSNR: 16.447  SSIM: 0.780  運行時間為: 216.809010 秒
+2021-03-10 13:25:52,080 - __main__ - INFO - Epoch: 0  Loss at iteration1000:0.717  PSNR: 20.017  SSIM: 0.816  運行時間為: 216.830856 秒
+2021-03-10 13:25:52,237 - __main__ - INFO - save Epoch1.pth
+2021-03-10 13:29:30,440 - __main__ - INFO - Epoch: 0  Loss at iteration1050:0.638  PSNR: 15.050  SSIM: 0.682  運行時間為: 218.359552 秒
+2021-03-10 13:33:07,050 - __main__ - INFO - Epoch: 0  Loss at iteration1100:0.654  PSNR: 18.385  SSIM: 0.774  運行時間為: 216.609142 秒
+2021-03-10 13:36:42,745 - __main__ - INFO - Epoch: 0  Loss at iteration1150:0.779  PSNR: 17.796  SSIM: 0.747  運行時間為: 215.695316 秒
+2021-03-10 13:40:18,172 - __main__ - INFO - Epoch: 0  Loss at iteration1200:0.679  PSNR: 17.411  SSIM: 0.745  運行時間為: 215.427175 秒
+2021-03-10 13:40:18,340 - __main__ - INFO - save Epoch1.pth
+2021-03-10 13:43:54,289 - __main__ - INFO - Epoch: 0  Loss at iteration1250:0.543  PSNR: 17.445  SSIM: 0.813  運行時間為: 216.116625 秒
+2021-03-10 13:47:29,930 - __main__ - INFO - Epoch: 0  Loss at iteration1300:0.724  PSNR: 15.646  SSIM: 0.747  運行時間為: 215.641389 秒
+2021-03-10 13:51:06,025 - __main__ - INFO - Epoch: 0  Loss at iteration1350:0.602  PSNR: 18.517  SSIM: 0.844  運行時間為: 216.094941 秒
+2021-03-10 13:54:42,018 - __main__ - INFO - Epoch: 0  Loss at iteration1400:0.703  PSNR: 16.108  SSIM: 0.719  運行時間為: 215.991704 秒
+2021-03-10 13:54:42,180 - __main__ - INFO - save Epoch1.pth
+2021-03-10 13:58:19,069 - __main__ - INFO - Epoch: 0  Loss at iteration1450:0.648  PSNR: 15.925  SSIM: 0.750  運行時間為: 217.051009 秒
+2021-03-10 14:01:58,703 - __main__ - INFO - Epoch: 0  Loss at iteration1500:0.625  PSNR: 19.573  SSIM: 0.808  運行時間為: 219.634578 秒
+2021-03-10 14:05:37,975 - __main__ - INFO - Epoch: 0  Loss at iteration1550:0.573  PSNR: 16.314  SSIM: 0.719  運行時間為: 219.272008 秒
+2021-03-10 14:09:17,269 - __main__ - INFO - Epoch: 0  Loss at iteration1600:0.572  PSNR: 16.306  SSIM: 0.768  運行時間為: 219.292594 秒
+2021-03-10 14:09:17,436 - __main__ - INFO - save Epoch1.pth
+2021-03-10 14:12:56,903 - __main__ - INFO - Epoch: 0  Loss at iteration1650:0.622  PSNR: 19.535  SSIM: 0.779  運行時間為: 219.633921 秒
+2021-03-10 14:16:36,593 - __main__ - INFO - Epoch: 0  Loss at iteration1700:0.584  PSNR: 19.365  SSIM: 0.821  運行時間為: 219.689455 秒
+2021-03-10 14:20:16,513 - __main__ - INFO - Epoch: 0  Loss at iteration1750:0.606  PSNR: 18.434  SSIM: 0.778  運行時間為: 219.919895 秒
+2021-03-10 14:23:56,625 - __main__ - INFO - Epoch: 0  Loss at iteration1800:0.611  PSNR: 20.390  SSIM: 0.831  運行時間為: 220.111402 秒
+2021-03-10 14:23:56,795 - __main__ - INFO - save Epoch1.pth
+2021-03-10 14:27:36,862 - __main__ - INFO - Epoch: 0  Loss at iteration1850:0.616  PSNR: 19.384  SSIM: 0.805  運行時間為: 220.236884 秒
+2021-03-10 14:31:16,999 - __main__ - INFO - Epoch: 0  Loss at iteration1900:0.618  PSNR: 18.786  SSIM: 0.813  運行時間為: 220.136125 秒
+2021-03-10 14:34:57,232 - __main__ - INFO - Epoch: 0  Loss at iteration1950:0.685  PSNR: 16.574  SSIM: 0.767  運行時間為: 220.233495 秒
+2021-03-10 14:38:37,283 - __main__ - INFO - Epoch: 0  Loss at iteration2000:0.671  PSNR: 16.019  SSIM: 0.814  運行時間為: 220.050601 秒
+2021-03-10 14:38:37,450 - __main__ - INFO - save Epoch1.pth
+2021-03-10 14:42:17,918 - __main__ - INFO - Epoch: 0  Loss at iteration2050:0.656  PSNR: 16.011  SSIM: 0.752  運行時間為: 220.635101 秒
+2021-03-10 14:45:58,117 - __main__ - INFO - Epoch: 0  Loss at iteration2100:0.601  PSNR: 17.700  SSIM: 0.765  運行時間為: 220.199538 秒
+2021-03-10 14:49:38,776 - __main__ - INFO - Epoch: 0  Loss at iteration2150:0.622  PSNR: 18.616  SSIM: 0.807  運行時間為: 220.658586 秒
+2021-03-10 14:53:18,844 - __main__ - INFO - Epoch: 0  Loss at iteration2200:0.619  PSNR: 18.984  SSIM: 0.790  運行時間為: 220.067957 秒
+2021-03-10 14:53:18,997 - __main__ - INFO - save Epoch1.pth
+2021-03-10 14:56:57,802 - __main__ - INFO - Epoch: 0  Loss at iteration2250:0.643  PSNR: 18.240  SSIM: 0.739  運行時間為: 218.958157 秒
+2021-03-10 15:00:37,135 - __main__ - INFO - Epoch: 0  Loss at iteration2300:0.526  PSNR: 20.071  SSIM: 0.834  運行時間為: 219.332468 秒
+2021-03-10 15:04:16,514 - __main__ - INFO - Epoch: 0  Loss at iteration2350:0.564  PSNR: 16.829  SSIM: 0.772  運行時間為: 219.378886 秒
+2021-03-10 15:07:55,758 - __main__ - INFO - Epoch: 0  Loss at iteration2400:0.702  PSNR: 17.326  SSIM: 0.751  運行時間為: 219.243969 秒
+2021-03-10 15:07:55,926 - __main__ - INFO - save Epoch1.pth
+2021-03-10 15:11:35,259 - __main__ - INFO - Epoch: 0  Loss at iteration2450:0.571  PSNR: 20.609  SSIM: 0.850  運行時間為: 219.500252 秒
+2021-03-10 15:15:14,495 - __main__ - INFO - Epoch: 0  Loss at iteration2500:0.651  PSNR: 18.012  SSIM: 0.803  運行時間為: 219.236852 秒
+2021-03-10 15:18:53,561 - __main__ - INFO - Epoch: 0  Loss at iteration2550:0.574  PSNR: 20.484  SSIM: 0.836  運行時間為: 219.065682 秒
+2021-03-10 15:22:32,697 - __main__ - INFO - Epoch: 0  Loss at iteration2600:0.622  PSNR: 19.155  SSIM: 0.812  運行時間為: 219.135915 秒
+2021-03-10 15:22:32,852 - __main__ - INFO - save Epoch1.pth
+2021-03-10 15:26:11,982 - __main__ - INFO - Epoch: 0  Loss at iteration2650:0.529  PSNR: 19.807  SSIM: 0.831  運行時間為: 219.284065 秒
+2021-03-10 15:29:50,556 - __main__ - INFO - Epoch: 0  Loss at iteration2700:0.703  PSNR: 16.580  SSIM: 0.712  運行時間為: 218.574062 秒
+2021-03-10 15:33:29,424 - __main__ - INFO - Epoch: 0  Loss at iteration2750:0.585  PSNR: 17.055  SSIM: 0.742  運行時間為: 218.868261 秒
+2021-03-10 15:37:08,289 - __main__ - INFO - Epoch: 0  Loss at iteration2800:0.561  PSNR: 17.293  SSIM: 0.788  運行時間為: 218.863541 秒
+2021-03-10 15:37:08,456 - __main__ - INFO - save Epoch1.pth
+2021-03-10 16:20:06,577 - __main__ - INFO - Epoch 運行時間為: 14809.058142 秒
+2021-03-10 16:23:45,478 - __main__ - INFO - Epoch: 1  Loss at iteration50:0.526  PSNR: 21.196  SSIM: 0.840  運行時間為: 218.901190 秒
+2021-03-10 16:27:21,443 - __main__ - INFO - Epoch: 1  Loss at iteration100:0.673  PSNR: 18.019  SSIM: 0.808  運行時間為: 215.964807 秒
+2021-03-10 16:30:57,591 - __main__ - INFO - Epoch: 1  Loss at iteration150:0.535  PSNR: 18.328  SSIM: 0.813  運行時間為: 216.147394 秒
+2021-03-10 16:34:33,722 - __main__ - INFO - Epoch: 1  Loss at iteration200:0.464  PSNR: 19.094  SSIM: 0.814  運行時間為: 216.130723 秒
+2021-03-10 16:34:33,885 - __main__ - INFO - save Epoch2.pth
+2021-03-10 16:38:10,439 - __main__ - INFO - Epoch: 1  Loss at iteration250:0.706  PSNR: 16.896  SSIM: 0.802  運行時間為: 216.717008 秒
+2021-03-10 16:41:46,969 - __main__ - INFO - Epoch: 1  Loss at iteration300:0.551  PSNR: 19.719  SSIM: 0.836  運行時間為: 216.529114 秒
+2021-03-10 16:45:23,507 - __main__ - INFO - Epoch: 1  Loss at iteration350:0.640  PSNR: 17.637  SSIM: 0.780  運行時間為: 216.538025 秒
+2021-03-10 16:49:00,285 - __main__ - INFO - Epoch: 1  Loss at iteration400:0.553  PSNR: 18.528  SSIM: 0.821  運行時間為: 216.777644 秒
+2021-03-10 16:49:00,529 - __main__ - INFO - save Epoch2.pth
+2021-03-10 16:52:37,416 - __main__ - INFO - Epoch: 1  Loss at iteration450:0.550  PSNR: 19.344  SSIM: 0.802  運行時間為: 217.130035 秒
+2021-03-10 16:56:14,271 - __main__ - INFO - Epoch: 1  Loss at iteration500:0.589  PSNR: 18.140  SSIM: 0.818  運行時間為: 216.855413 秒
+2021-03-10 16:59:51,089 - __main__ - INFO - Epoch: 1  Loss at iteration550:0.556  PSNR: 19.759  SSIM: 0.860  運行時間為: 216.817648 秒
+2021-03-10 17:03:27,964 - __main__ - INFO - Epoch: 1  Loss at iteration600:0.541  PSNR: 19.608  SSIM: 0.834  運行時間為: 216.873130 秒
+2021-03-10 17:03:28,119 - __main__ - INFO - save Epoch2.pth
+2021-03-10 17:07:04,895 - __main__ - INFO - Epoch: 1  Loss at iteration650:0.506  PSNR: 21.003  SSIM: 0.862  運行時間為: 216.930758 秒
+2021-03-10 17:10:41,645 - __main__ - INFO - Epoch: 1  Loss at iteration700:0.588  PSNR: 19.341  SSIM: 0.795  運行時間為: 216.750409 秒
+2021-03-10 17:14:18,457 - __main__ - INFO - Epoch: 1  Loss at iteration750:0.522  PSNR: 20.662  SSIM: 0.872  運行時間為: 216.811714 秒
+2021-03-10 17:17:55,072 - __main__ - INFO - Epoch: 1  Loss at iteration800:0.516  PSNR: 19.249  SSIM: 0.826  運行時間為: 216.615142 秒
+2021-03-10 17:17:55,223 - __main__ - INFO - save Epoch2.pth
+2021-03-10 17:21:32,409 - __main__ - INFO - Epoch: 1  Loss at iteration850:0.611  PSNR: 17.601  SSIM: 0.758  運行時間為: 217.337034 秒
+2021-03-10 17:25:09,357 - __main__ - INFO - Epoch: 1  Loss at iteration900:0.532  PSNR: 19.440  SSIM: 0.782  運行時間為: 216.948505 秒
+2021-03-10 17:28:46,403 - __main__ - INFO - Epoch: 1  Loss at iteration950:0.527  PSNR: 18.824  SSIM: 0.841  運行時間為: 217.046042 秒
+2021-03-10 17:32:23,317 - __main__ - INFO - Epoch: 1  Loss at iteration1000:0.660  PSNR: 17.405  SSIM: 0.755  運行時間為: 216.913179 秒
+2021-03-10 17:32:23,485 - __main__ - INFO - save Epoch2.pth
+2021-03-10 17:36:00,453 - __main__ - INFO - Epoch: 1  Loss at iteration1050:0.539  PSNR: 19.660  SSIM: 0.809  運行時間為: 217.136268 秒
+2021-03-10 17:39:37,108 - __main__ - INFO - Epoch: 1  Loss at iteration1100:0.524  PSNR: 21.870  SSIM: 0.879  運行時間為: 216.654555 秒
+2021-03-10 17:43:13,797 - __main__ - INFO - Epoch: 1  Loss at iteration1150:0.553  PSNR: 19.079  SSIM: 0.838  運行時間為: 216.688324 秒
+2021-03-10 17:46:50,563 - __main__ - INFO - Epoch: 1  Loss at iteration1200:0.634  PSNR: 18.399  SSIM: 0.830  運行時間為: 216.765384 秒
+2021-03-10 17:46:50,732 - __main__ - INFO - save Epoch2.pth
+2021-03-10 17:50:27,868 - __main__ - INFO - Epoch: 1  Loss at iteration1250:0.472  PSNR: 21.640  SSIM: 0.839  運行時間為: 217.304579 秒
+2021-03-10 17:54:04,362 - __main__ - INFO - Epoch: 1  Loss at iteration1300:0.507  PSNR: 20.478  SSIM: 0.867  運行時間為: 216.493664 秒
+2021-03-10 17:57:41,042 - __main__ - INFO - Epoch: 1  Loss at iteration1350:0.598  PSNR: 17.236  SSIM: 0.748  運行時間為: 216.678329 秒
+2021-03-10 18:01:17,463 - __main__ - INFO - Epoch: 1  Loss at iteration1400:0.536  PSNR: 19.259  SSIM: 0.815  運行時間為: 216.419818 秒
+2021-03-10 18:01:17,631 - __main__ - INFO - save Epoch2.pth
+2021-03-10 18:04:54,254 - __main__ - INFO - Epoch: 1  Loss at iteration1450:0.561  PSNR: 18.119  SSIM: 0.801  運行時間為: 216.791376 秒
+2021-03-10 18:08:30,495 - __main__ - INFO - Epoch: 1  Loss at iteration1500:0.503  PSNR: 18.298  SSIM: 0.835  運行時間為: 216.240289 秒
+2021-03-10 18:12:07,053 - __main__ - INFO - Epoch: 1  Loss at iteration1550:0.574  PSNR: 20.693  SSIM: 0.863  運行時間為: 216.557885 秒
+2021-03-10 18:15:43,403 - __main__ - INFO - Epoch: 1  Loss at iteration1600:0.544  PSNR: 18.319  SSIM: 0.770  運行時間為: 216.349366 秒
+2021-03-10 18:15:43,664 - __main__ - INFO - save Epoch2.pth
+2021-03-10 18:19:19,529 - __main__ - INFO - Epoch: 1  Loss at iteration1650:0.506  PSNR: 19.612  SSIM: 0.863  運行時間為: 216.125147 秒
+2021-03-10 18:22:56,225 - __main__ - INFO - Epoch: 1  Loss at iteration1700:0.570  PSNR: 20.570  SSIM: 0.880  運行時間為: 216.696490 秒
+2021-03-10 18:26:32,579 - __main__ - INFO - Epoch: 1  Loss at iteration1750:0.492  PSNR: 20.176  SSIM: 0.870  運行時間為: 216.354259 秒
+2021-03-10 18:30:08,805 - __main__ - INFO - Epoch: 1  Loss at iteration1800:0.429  PSNR: 23.167  SSIM: 0.880  運行時間為: 216.225588 秒
+2021-03-10 18:30:08,977 - __main__ - INFO - save Epoch2.pth
+2021-03-10 18:33:44,915 - __main__ - INFO - Epoch: 1  Loss at iteration1850:0.458  PSNR: 22.236  SSIM: 0.868  運行時間為: 216.108610 秒
+2021-03-10 18:37:20,871 - __main__ - INFO - Epoch: 1  Loss at iteration1900:0.596  PSNR: 19.628  SSIM: 0.857  運行時間為: 215.956794 秒
+2021-03-10 18:40:57,732 - __main__ - INFO - Epoch: 1  Loss at iteration1950:0.440  PSNR: 23.673  SSIM: 0.870  運行時間為: 216.860682 秒
+2021-03-10 18:44:34,523 - __main__ - INFO - Epoch: 1  Loss at iteration2000:0.588  PSNR: 19.892  SSIM: 0.853  運行時間為: 216.789837 秒
+2021-03-10 18:44:34,690 - __main__ - INFO - save Epoch2.pth
+2021-03-10 18:48:11,597 - __main__ - INFO - Epoch: 1  Loss at iteration2050:0.583  PSNR: 18.914  SSIM: 0.861  運行時間為: 217.074523 秒
+2021-03-10 18:51:48,488 - __main__ - INFO - Epoch: 1  Loss at iteration2100:0.419  PSNR: 22.711  SSIM: 0.871  運行時間為: 216.889436 秒
+2021-03-10 18:55:25,002 - __main__ - INFO - Epoch: 1  Loss at iteration2150:0.546  PSNR: 19.061  SSIM: 0.789  運行時間為: 216.514069 秒
+2021-03-10 18:59:01,756 - __main__ - INFO - Epoch: 1  Loss at iteration2200:0.552  PSNR: 20.352  SSIM: 0.840  運行時間為: 216.752268 秒
+2021-03-10 18:59:01,924 - __main__ - INFO - save Epoch2.pth
+2021-03-10 19:02:38,340 - __main__ - INFO - Epoch: 1  Loss at iteration2250:0.621  PSNR: 17.922  SSIM: 0.801  運行時間為: 216.584168 秒
+2021-03-10 19:06:14,964 - __main__ - INFO - Epoch: 1  Loss at iteration2300:0.445  PSNR: 21.575  SSIM: 0.873  運行時間為: 216.623843 秒
+2021-03-10 19:09:51,628 - __main__ - INFO - Epoch: 1  Loss at iteration2350:0.455  PSNR: 20.882  SSIM: 0.876  運行時間為: 216.664001 秒
+2021-03-10 19:13:28,507 - __main__ - INFO - Epoch: 1  Loss at iteration2400:0.419  PSNR: 21.112  SSIM: 0.895  運行時間為: 216.879226 秒
+2021-03-10 19:13:28,675 - __main__ - INFO - save Epoch2.pth
+2021-03-10 19:17:05,185 - __main__ - INFO - Epoch: 1  Loss at iteration2450:0.560  PSNR: 21.535  SSIM: 0.863  運行時間為: 216.677420 秒
+2021-03-10 19:20:42,143 - __main__ - INFO - Epoch: 1  Loss at iteration2500:0.512  PSNR: 19.867  SSIM: 0.891  運行時間為: 216.956768 秒
+2021-03-10 19:24:18,787 - __main__ - INFO - Epoch: 1  Loss at iteration2550:0.412  PSNR: 21.136  SSIM: 0.867  運行時間為: 216.644497 秒
+2021-03-10 19:27:55,084 - __main__ - INFO - Epoch: 1  Loss at iteration2600:0.595  PSNR: 17.195  SSIM: 0.812  運行時間為: 216.294413 秒
+2021-03-10 19:27:55,237 - __main__ - INFO - save Epoch2.pth
+2021-03-10 19:31:31,718 - __main__ - INFO - Epoch: 1  Loss at iteration2650:0.543  PSNR: 19.915  SSIM: 0.837  運行時間為: 216.634413 秒
+2021-03-10 19:35:08,118 - __main__ - INFO - Epoch: 1  Loss at iteration2700:0.502  PSNR: 21.002  SSIM: 0.869  運行時間為: 216.400156 秒
+2021-03-10 19:38:44,777 - __main__ - INFO - Epoch: 1  Loss at iteration2750:0.479  PSNR: 21.301  SSIM: 0.835  運行時間為: 216.658835 秒
+2021-03-10 19:42:21,680 - __main__ - INFO - Epoch: 1  Loss at iteration2800:0.516  PSNR: 21.272  SSIM: 0.857  運行時間為: 216.903068 秒
+2021-03-10 19:42:21,849 - __main__ - INFO - save Epoch2.pth
+2021-03-10 23:18:41,807 - __main__ - INFO - Start training.
+2021-03-10 23:22:30,775 - __main__ - INFO - Epoch: 0  Loss at iteration50:1.965  PSNR: 6.236  SSIM: 0.053  運行時間為: 228.959193 秒
+2021-03-10 23:26:10,376 - __main__ - INFO - Epoch: 0  Loss at iteration100:1.466  PSNR: 7.940  SSIM: 0.192  運行時間為: 219.601583 秒
+2021-03-10 23:29:49,228 - __main__ - INFO - Epoch: 0  Loss at iteration150:1.140  PSNR: 13.227  SSIM: 0.500  運行時間為: 218.850521 秒
+2021-03-10 23:33:28,157 - __main__ - INFO - Epoch: 0  Loss at iteration200:1.024  PSNR: 13.487  SSIM: 0.598  運行時間為: 218.928057 秒
+2021-03-10 23:33:28,321 - __main__ - INFO - save Epoch1.pth
+2021-03-10 23:37:07,738 - __main__ - INFO - Epoch: 0  Loss at iteration250:1.019  PSNR: 16.279  SSIM: 0.651  運行時間為: 219.580817 秒
+2021-03-10 23:40:47,055 - __main__ - INFO - Epoch: 0  Loss at iteration300:0.883  PSNR: 17.698  SSIM: 0.757  運行時間為: 219.317910 秒
+2021-03-10 23:44:26,418 - __main__ - INFO - Epoch: 0  Loss at iteration350:0.810  PSNR: 15.415  SSIM: 0.698  運行時間為: 219.361847 秒
+2021-03-10 23:48:05,774 - __main__ - INFO - Epoch: 0  Loss at iteration400:0.883  PSNR: 15.404  SSIM: 0.721  運行時間為: 219.354863 秒
+2021-03-10 23:48:05,942 - __main__ - INFO - save Epoch1.pth
+2021-03-10 23:51:45,021 - __main__ - INFO - Epoch: 0  Loss at iteration450:0.851  PSNR: 17.592  SSIM: 0.735  運行時間為: 219.245703 秒
+2021-03-10 23:55:24,375 - __main__ - INFO - Epoch: 0  Loss at iteration500:0.746  PSNR: 15.793  SSIM: 0.550  運行時間為: 219.353052 秒
+2021-03-10 23:59:04,423 - __main__ - INFO - Epoch: 0  Loss at iteration550:0.596  PSNR: 16.875  SSIM: 0.713  運行時間為: 220.048289 秒
+2021-03-11 00:02:45,018 - __main__ - INFO - Epoch: 0  Loss at iteration600:0.683  PSNR: 18.123  SSIM: 0.773  運行時間為: 220.594625 秒
+2021-03-11 00:02:45,177 - __main__ - INFO - save Epoch1.pth
+2021-03-11 00:06:26,524 - __main__ - INFO - Epoch: 0  Loss at iteration650:0.552  PSNR: 18.468  SSIM: 0.785  運行時間為: 221.505357 秒
+2021-03-11 00:10:07,927 - __main__ - INFO - Epoch: 0  Loss at iteration700:0.617  PSNR: 20.461  SSIM: 0.821  運行時間為: 221.402955 秒
+2021-03-11 00:13:49,455 - __main__ - INFO - Epoch: 0  Loss at iteration750:0.700  PSNR: 18.966  SSIM: 0.811  運行時間為: 221.527630 秒
+2021-03-11 00:17:31,030 - __main__ - INFO - Epoch: 0  Loss at iteration800:0.745  PSNR: 16.457  SSIM: 0.750  運行時間為: 221.573697 秒
+2021-03-11 00:17:31,189 - __main__ - INFO - save Epoch1.pth
+2021-03-11 00:21:13,344 - __main__ - INFO - Epoch: 0  Loss at iteration850:0.627  PSNR: 15.947  SSIM: 0.710  運行時間為: 222.313062 秒
+2021-03-11 00:24:55,930 - __main__ - INFO - Epoch: 0  Loss at iteration900:0.530  PSNR: 19.320  SSIM: 0.803  運行時間為: 222.586484 秒
+2021-03-11 00:28:38,705 - __main__ - INFO - Epoch: 0  Loss at iteration950:0.614  PSNR: 19.033  SSIM: 0.767  運行時間為: 222.775453 秒
+2021-03-11 00:32:21,452 - __main__ - INFO - Epoch: 0  Loss at iteration1000:0.602  PSNR: 17.810  SSIM: 0.779  運行時間為: 222.746358 秒
+2021-03-11 00:32:21,622 - __main__ - INFO - save Epoch1.pth
+2021-03-11 00:36:04,264 - __main__ - INFO - Epoch: 0  Loss at iteration1050:0.675  PSNR: 16.904  SSIM: 0.777  運行時間為: 222.811569 秒
+2021-03-11 00:39:47,045 - __main__ - INFO - Epoch: 0  Loss at iteration1100:0.486  PSNR: 16.917  SSIM: 0.791  運行時間為: 222.779218 秒
+2021-03-11 00:43:29,522 - __main__ - INFO - Epoch: 0  Loss at iteration1150:0.674  PSNR: 16.522  SSIM: 0.762  運行時間為: 222.477286 秒
+2021-03-11 00:47:12,168 - __main__ - INFO - Epoch: 0  Loss at iteration1200:0.654  PSNR: 16.326  SSIM: 0.745  運行時間為: 222.646164 秒
+2021-03-11 00:47:12,322 - __main__ - INFO - save Epoch1.pth
+2021-03-11 00:50:55,526 - __main__ - INFO - Epoch: 0  Loss at iteration1250:0.693  PSNR: 19.430  SSIM: 0.787  運行時間為: 223.357616 秒
+2021-03-11 00:54:38,356 - __main__ - INFO - Epoch: 0  Loss at iteration1300:0.676  PSNR: 18.286  SSIM: 0.775  運行時間為: 222.830806 秒
+2021-03-11 00:58:21,534 - __main__ - INFO - Epoch: 0  Loss at iteration1350:0.510  PSNR: 20.422  SSIM: 0.763  運行時間為: 223.177025 秒
+2021-03-11 01:02:04,790 - __main__ - INFO - Epoch: 0  Loss at iteration1400:0.625  PSNR: 16.128  SSIM: 0.593  運行時間為: 223.254721 秒
+2021-03-11 01:02:04,958 - __main__ - INFO - save Epoch1.pth
+2021-03-11 01:05:48,471 - __main__ - INFO - Epoch: 0  Loss at iteration1450:0.642  PSNR: 18.190  SSIM: 0.758  運行時間為: 223.681243 秒
+2021-03-11 01:09:31,738 - __main__ - INFO - Epoch: 0  Loss at iteration1500:0.544  PSNR: 21.531  SSIM: 0.803  運行時間為: 223.265837 秒
+2021-03-11 01:13:15,399 - __main__ - INFO - Epoch: 0  Loss at iteration1550:0.696  PSNR: 19.393  SSIM: 0.785  運行時間為: 223.661049 秒
+2021-03-11 01:16:58,389 - __main__ - INFO - Epoch: 0  Loss at iteration1600:0.648  PSNR: 18.526  SSIM: 0.800  運行時間為: 222.988533 秒
+2021-03-11 01:16:58,564 - __main__ - INFO - save Epoch1.pth
+2021-03-11 01:20:41,819 - __main__ - INFO - Epoch: 0  Loss at iteration1650:0.588  PSNR: 17.346  SSIM: 0.744  運行時間為: 223.429806 秒
+2021-03-11 01:24:23,540 - __main__ - INFO - Epoch: 0  Loss at iteration1700:0.616  PSNR: 17.490  SSIM: 0.753  運行時間為: 221.721308 秒
+2021-03-11 01:28:04,520 - __main__ - INFO - Epoch: 0  Loss at iteration1750:0.541  PSNR: 18.270  SSIM: 0.781  運行時間為: 220.980425 秒
+2021-03-11 01:31:45,494 - __main__ - INFO - Epoch: 0  Loss at iteration1800:0.502  PSNR: 20.373  SSIM: 0.783  運行時間為: 220.973423 秒
+2021-03-11 01:31:45,663 - __main__ - INFO - save Epoch1.pth
+2021-03-11 01:35:26,697 - __main__ - INFO - Epoch: 0  Loss at iteration1850:0.616  PSNR: 16.138  SSIM: 0.756  運行時間為: 221.203049 秒
+2021-03-11 01:39:07,604 - __main__ - INFO - Epoch: 0  Loss at iteration1900:0.583  PSNR: 16.439  SSIM: 0.762  運行時間為: 220.907384 秒
+2021-03-11 01:42:48,626 - __main__ - INFO - Epoch: 0  Loss at iteration1950:0.604  PSNR: 17.314  SSIM: 0.755  運行時間為: 221.021471 秒
+2021-03-11 01:46:29,702 - __main__ - INFO - Epoch: 0  Loss at iteration2000:0.565  PSNR: 18.015  SSIM: 0.771  運行時間為: 221.076699 秒
+2021-03-11 01:46:29,895 - __main__ - INFO - save Epoch1.pth
+2021-03-11 01:50:11,024 - __main__ - INFO - Epoch: 0  Loss at iteration2050:0.559  PSNR: 18.033  SSIM: 0.767  運行時間為: 221.321355 秒
+2021-03-11 01:53:52,053 - __main__ - INFO - Epoch: 0  Loss at iteration2100:0.555  PSNR: 19.322  SSIM: 0.792  運行時間為: 221.029404 秒
+2021-03-11 01:57:33,247 - __main__ - INFO - Epoch: 0  Loss at iteration2150:0.456  PSNR: 19.323  SSIM: 0.801  運行時間為: 221.192333 秒
+2021-03-11 02:01:14,645 - __main__ - INFO - Epoch: 0  Loss at iteration2200:0.616  PSNR: 17.446  SSIM: 0.761  運行時間為: 221.397860 秒
+2021-03-11 02:01:14,813 - __main__ - INFO - save Epoch1.pth
+2021-03-11 02:04:55,930 - __main__ - INFO - Epoch: 0  Loss at iteration2250:0.501  PSNR: 20.536  SSIM: 0.855  運行時間為: 221.284514 秒
+2021-03-11 02:08:36,893 - __main__ - INFO - Epoch: 0  Loss at iteration2300:0.536  PSNR: 19.914  SSIM: 0.833  運行時間為: 220.961894 秒
+2021-03-11 02:12:17,689 - __main__ - INFO - Epoch: 0  Loss at iteration2350:0.666  PSNR: 18.999  SSIM: 0.811  運行時間為: 220.796358 秒
+2021-03-11 02:15:58,541 - __main__ - INFO - Epoch: 0  Loss at iteration2400:0.522  PSNR: 16.599  SSIM: 0.763  運行時間為: 220.852130 秒
+2021-03-11 02:15:58,710 - __main__ - INFO - save Epoch1.pth
+2021-03-11 02:19:40,108 - __main__ - INFO - Epoch: 0  Loss at iteration2450:0.504  PSNR: 20.063  SSIM: 0.813  運行時間為: 221.566539 秒
+2021-03-11 02:23:21,084 - __main__ - INFO - Epoch: 0  Loss at iteration2500:0.540  PSNR: 16.549  SSIM: 0.810  運行時間為: 220.976033 秒
+2021-03-11 02:27:02,029 - __main__ - INFO - Epoch: 0  Loss at iteration2550:0.496  PSNR: 17.022  SSIM: 0.777  運行時間為: 220.943820 秒
+2021-03-11 02:30:42,990 - __main__ - INFO - Epoch: 0  Loss at iteration2600:0.510  PSNR: 15.593  SSIM: 0.725  運行時間為: 220.961621 秒
+2021-03-11 02:30:43,158 - __main__ - INFO - save Epoch1.pth
+2021-03-11 02:34:24,159 - __main__ - INFO - Epoch: 0  Loss at iteration2650:0.568  PSNR: 17.330  SSIM: 0.822  運行時間為: 221.168623 秒
+2021-03-11 02:38:05,075 - __main__ - INFO - Epoch: 0  Loss at iteration2700:0.498  PSNR: 16.973  SSIM: 0.726  運行時間為: 220.914792 秒
+2021-03-11 02:41:46,014 - __main__ - INFO - Epoch: 0  Loss at iteration2750:0.569  PSNR: 18.047  SSIM: 0.747  運行時間為: 220.939701 秒
+2021-03-11 02:45:26,821 - __main__ - INFO - Epoch: 0  Loss at iteration2800:0.520  PSNR: 19.005  SSIM: 0.775  運行時間為: 220.806537 秒
+2021-03-11 02:45:26,990 - __main__ - INFO - save Epoch1.pth
+2021-03-11 03:29:39,586 - __main__ - INFO - Epoch 運行時間為: 15057.770225 秒
+2021-03-11 03:33:24,889 - __main__ - INFO - Epoch: 1  Loss at iteration50:0.556  PSNR: 19.678  SSIM: 0.823  運行時間為: 225.303828 秒
+2021-03-11 03:37:07,553 - __main__ - INFO - Epoch: 1  Loss at iteration100:0.585  PSNR: 20.584  SSIM: 0.824  運行時間為: 222.662299 秒
+2021-03-11 03:40:50,361 - __main__ - INFO - Epoch: 1  Loss at iteration150:0.489  PSNR: 18.615  SSIM: 0.816  運行時間為: 222.808577 秒
+2021-03-11 03:44:33,273 - __main__ - INFO - Epoch: 1  Loss at iteration200:0.596  PSNR: 15.271  SSIM: 0.715  運行時間為: 222.912058 秒
+2021-03-11 03:44:33,431 - __main__ - INFO - save Epoch2.pth
+2021-03-11 03:48:17,431 - __main__ - INFO - Epoch: 1  Loss at iteration250:0.568  PSNR: 18.519  SSIM: 0.761  運行時間為: 224.156475 秒
+2021-03-11 03:52:01,557 - __main__ - INFO - Epoch: 1  Loss at iteration300:0.420  PSNR: 20.775  SSIM: 0.855  運行時間為: 224.125702 秒
+2021-03-11 03:55:45,393 - __main__ - INFO - Epoch: 1  Loss at iteration350:0.554  PSNR: 19.810  SSIM: 0.769  運行時間為: 223.835005 秒
+2021-03-11 03:59:29,332 - __main__ - INFO - Epoch: 1  Loss at iteration400:0.658  PSNR: 20.085  SSIM: 0.760  運行時間為: 223.939862 秒
+2021-03-11 03:59:29,488 - __main__ - INFO - save Epoch2.pth
+2021-03-11 04:03:13,315 - __main__ - INFO - Epoch: 1  Loss at iteration450:0.555  PSNR: 18.194  SSIM: 0.782  運行時間為: 223.981552 秒
+2021-03-11 04:06:56,825 - __main__ - INFO - Epoch: 1  Loss at iteration500:0.506  PSNR: 18.832  SSIM: 0.822  運行時間為: 223.509683 秒
+2021-03-11 04:10:40,565 - __main__ - INFO - Epoch: 1  Loss at iteration550:0.552  PSNR: 20.228  SSIM: 0.760  運行時間為: 223.740115 秒
+2021-03-11 04:14:24,332 - __main__ - INFO - Epoch: 1  Loss at iteration600:0.533  PSNR: 18.885  SSIM: 0.810  運行時間為: 223.766229 秒
+2021-03-11 04:14:24,486 - __main__ - INFO - save Epoch2.pth
+2021-03-11 04:18:08,033 - __main__ - INFO - Epoch: 1  Loss at iteration650:0.557  PSNR: 18.661  SSIM: 0.825  運行時間為: 223.700654 秒
+2021-03-11 04:21:51,562 - __main__ - INFO - Epoch: 1  Loss at iteration700:0.577  PSNR: 16.879  SSIM: 0.785  運行時間為: 223.527036 秒
+2021-03-11 04:25:35,003 - __main__ - INFO - Epoch: 1  Loss at iteration750:0.490  PSNR: 19.640  SSIM: 0.700  運行時間為: 223.441522 秒
+2021-03-11 04:29:18,557 - __main__ - INFO - Epoch: 1  Loss at iteration800:0.477  PSNR: 19.153  SSIM: 0.824  運行時間為: 223.553381 秒
+2021-03-11 04:29:18,712 - __main__ - INFO - save Epoch2.pth
+2021-03-11 04:33:02,130 - __main__ - INFO - Epoch: 1  Loss at iteration850:0.426  PSNR: 18.344  SSIM: 0.800  運行時間為: 223.572366 秒
+2021-03-11 04:36:45,829 - __main__ - INFO - Epoch: 1  Loss at iteration900:0.522  PSNR: 16.922  SSIM: 0.777  運行時間為: 223.699234 秒
+2021-03-11 04:40:29,452 - __main__ - INFO - Epoch: 1  Loss at iteration950:0.551  PSNR: 20.066  SSIM: 0.843  運行時間為: 223.623315 秒
+2021-03-11 04:44:13,245 - __main__ - INFO - Epoch: 1  Loss at iteration1000:0.510  PSNR: 18.610  SSIM: 0.602  運行時間為: 223.792163 秒
+2021-03-11 04:44:13,417 - __main__ - INFO - save Epoch2.pth
+2021-03-11 04:47:56,782 - __main__ - INFO - Epoch: 1  Loss at iteration1050:0.565  PSNR: 18.813  SSIM: 0.791  運行時間為: 223.536979 秒
+2021-03-11 04:51:40,031 - __main__ - INFO - Epoch: 1  Loss at iteration1100:0.506  PSNR: 18.462  SSIM: 0.772  運行時間為: 223.248989 秒
+2021-03-11 04:55:23,679 - __main__ - INFO - Epoch: 1  Loss at iteration1150:0.410  PSNR: 21.542  SSIM: 0.835  運行時間為: 223.648459 秒
+2021-03-11 04:59:07,370 - __main__ - INFO - Epoch: 1  Loss at iteration1200:0.454  PSNR: 19.402  SSIM: 0.835  運行時間為: 223.690813 秒
+2021-03-11 04:59:07,537 - __main__ - INFO - save Epoch2.pth
+2021-03-11 05:02:50,865 - __main__ - INFO - Epoch: 1  Loss at iteration1250:0.524  PSNR: 18.120  SSIM: 0.691  運行時間為: 223.495193 秒
+2021-03-11 05:06:34,329 - __main__ - INFO - Epoch: 1  Loss at iteration1300:0.442  PSNR: 22.328  SSIM: 0.837  運行時間為: 223.464387 秒
+2021-03-11 05:10:17,786 - __main__ - INFO - Epoch: 1  Loss at iteration1350:0.554  PSNR: 19.829  SSIM: 0.828  運行時間為: 223.456206 秒
+2021-03-11 05:14:01,173 - __main__ - INFO - Epoch: 1  Loss at iteration1400:0.648  PSNR: 16.521  SSIM: 0.738  運行時間為: 223.385857 秒
+2021-03-11 05:14:01,350 - __main__ - INFO - save Epoch2.pth
+2021-03-11 05:17:45,344 - __main__ - INFO - Epoch: 1  Loss at iteration1450:0.551  PSNR: 18.238  SSIM: 0.660  運行時間為: 224.169906 秒
+2021-03-11 05:21:29,556 - __main__ - INFO - Epoch: 1  Loss at iteration1500:0.563  PSNR: 20.256  SSIM: 0.839  運行時間為: 224.211769 秒
+2021-03-11 05:25:13,995 - __main__ - INFO - Epoch: 1  Loss at iteration1550:0.522  PSNR: 17.963  SSIM: 0.791  運行時間為: 224.438878 秒
+2021-03-11 05:28:58,381 - __main__ - INFO - Epoch: 1  Loss at iteration1600:0.489  PSNR: 18.550  SSIM: 0.793  運行時間為: 224.386078 秒
+2021-03-11 05:28:58,539 - __main__ - INFO - save Epoch2.pth
+2021-03-11 05:32:42,245 - __main__ - INFO - Epoch: 1  Loss at iteration1650:0.477  PSNR: 19.714  SSIM: 0.825  運行時間為: 223.864051 秒
+2021-03-11 05:36:26,347 - __main__ - INFO - Epoch: 1  Loss at iteration1700:0.598  PSNR: 18.190  SSIM: 0.733  運行時間為: 224.100332 秒
+2021-03-11 05:40:10,825 - __main__ - INFO - Epoch: 1  Loss at iteration1750:0.497  PSNR: 20.907  SSIM: 0.813  運行時間為: 224.477335 秒
+2021-03-11 05:43:54,911 - __main__ - INFO - Epoch: 1  Loss at iteration1800:0.459  PSNR: 20.445  SSIM: 0.863  運行時間為: 224.085966 秒
+2021-03-11 05:43:55,080 - __main__ - INFO - save Epoch2.pth
+2021-03-11 05:47:39,118 - __main__ - INFO - Epoch: 1  Loss at iteration1850:0.555  PSNR: 17.191  SSIM: 0.753  運行時間為: 224.206978 秒
+2021-03-11 05:51:23,042 - __main__ - INFO - Epoch: 1  Loss at iteration1900:0.564  PSNR: 18.483  SSIM: 0.771  運行時間為: 223.924037 秒
+2021-03-11 05:55:07,329 - __main__ - INFO - Epoch: 1  Loss at iteration1950:0.473  PSNR: 22.308  SSIM: 0.814  運行時間為: 224.287237 秒
+2021-03-11 05:58:51,818 - __main__ - INFO - Epoch: 1  Loss at iteration2000:0.438  PSNR: 19.947  SSIM: 0.729  運行時間為: 224.486970 秒
+2021-03-11 05:58:51,985 - __main__ - INFO - save Epoch2.pth
+2021-03-11 06:02:36,282 - __main__ - INFO - Epoch: 1  Loss at iteration2050:0.474  PSNR: 20.088  SSIM: 0.817  運行時間為: 224.463605 秒
+2021-03-11 06:06:20,362 - __main__ - INFO - Epoch: 1  Loss at iteration2100:0.508  PSNR: 19.470  SSIM: 0.831  運行時間為: 224.078991 秒
+2021-03-11 06:10:04,866 - __main__ - INFO - Epoch: 1  Loss at iteration2150:0.572  PSNR: 16.853  SSIM: 0.738  運行時間為: 224.504579 秒
+2021-03-11 06:13:48,891 - __main__ - INFO - Epoch: 1  Loss at iteration2200:0.560  PSNR: 18.032  SSIM: 0.765  運行時間為: 224.025222 秒
+2021-03-11 06:13:49,060 - __main__ - INFO - save Epoch2.pth
+2021-03-11 06:17:33,060 - __main__ - INFO - Epoch: 1  Loss at iteration2250:0.433  PSNR: 22.571  SSIM: 0.817  運行時間為: 224.168647 秒
+2021-03-11 06:21:17,340 - __main__ - INFO - Epoch: 1  Loss at iteration2300:0.535  PSNR: 16.329  SSIM: 0.737  運行時間為: 224.278409 秒
+2021-03-11 06:25:01,433 - __main__ - INFO - Epoch: 1  Loss at iteration2350:0.537  PSNR: 18.507  SSIM: 0.833  運行時間為: 224.093295 秒
+2021-03-11 06:28:45,939 - __main__ - INFO - Epoch: 1  Loss at iteration2400:0.549  PSNR: 18.482  SSIM: 0.824  運行時間為: 224.506540 秒
+2021-03-11 06:28:46,109 - __main__ - INFO - save Epoch2.pth
+2021-03-11 06:32:30,316 - __main__ - INFO - Epoch: 1  Loss at iteration2450:0.406  PSNR: 22.473  SSIM: 0.873  運行時間為: 224.376822 秒
+2021-03-11 06:36:13,984 - __main__ - INFO - Epoch: 1  Loss at iteration2500:0.554  PSNR: 18.234  SSIM: 0.579  運行時間為: 223.668103 秒
+2021-03-11 06:39:57,916 - __main__ - INFO - Epoch: 1  Loss at iteration2550:0.526  PSNR: 18.473  SSIM: 0.767  運行時間為: 223.930486 秒
+2021-03-11 06:43:42,258 - __main__ - INFO - Epoch: 1  Loss at iteration2600:0.469  PSNR: 18.118  SSIM: 0.766  運行時間為: 224.342259 秒
+2021-03-11 06:43:42,425 - __main__ - INFO - save Epoch2.pth
+2021-03-11 06:47:26,840 - __main__ - INFO - Epoch: 1  Loss at iteration2650:0.563  PSNR: 20.280  SSIM: 0.774  運行時間為: 224.581301 秒
+2021-03-11 06:51:11,355 - __main__ - INFO - Epoch: 1  Loss at iteration2700:0.547  PSNR: 20.574  SSIM: 0.842  運行時間為: 224.515100 秒
+2021-03-11 06:54:55,826 - __main__ - INFO - Epoch: 1  Loss at iteration2750:0.391  PSNR: 20.695  SSIM: 0.868  運行時間為: 224.471058 秒
+2021-03-11 06:58:40,326 - __main__ - INFO - Epoch: 1  Loss at iteration2800:0.459  PSNR: 20.489  SSIM: 0.799  運行時間為: 224.499593 秒
+2021-03-11 06:58:40,482 - __main__ - INFO - save Epoch2.pth
+2021-03-11 07:42:28,599 - __main__ - INFO - Epoch 運行時間為: 15169.013314 秒
+2021-03-11 07:46:12,754 - __main__ - INFO - Epoch: 2  Loss at iteration50:0.528  PSNR: 19.961  SSIM: 0.798  運行時間為: 224.154951 秒
+2021-03-11 07:49:54,074 - __main__ - INFO - Epoch: 2  Loss at iteration100:0.573  PSNR: 18.878  SSIM: 0.755  運行時間為: 221.319006 秒
+2021-03-11 07:53:35,461 - __main__ - INFO - Epoch: 2  Loss at iteration150:0.586  PSNR: 20.728  SSIM: 0.812  運行時間為: 221.387263 秒
+2021-03-11 07:57:16,803 - __main__ - INFO - Epoch: 2  Loss at iteration200:0.438  PSNR: 22.782  SSIM: 0.883  運行時間為: 221.342342 秒
+2021-03-11 07:57:16,968 - __main__ - INFO - save Epoch3.pth
+2021-03-11 08:00:58,301 - __main__ - INFO - Epoch: 2  Loss at iteration250:0.392  PSNR: 21.978  SSIM: 0.856  運行時間為: 221.496053 秒
+2021-03-11 08:04:40,001 - __main__ - INFO - Epoch: 2  Loss at iteration300:0.470  PSNR: 21.970  SSIM: 0.808  運行時間為: 221.700343 秒
+2021-03-11 08:08:21,182 - __main__ - INFO - Epoch: 2  Loss at iteration350:0.458  PSNR: 19.579  SSIM: 0.785  運行時間為: 221.180926 秒
+2021-03-11 08:12:02,168 - __main__ - INFO - Epoch: 2  Loss at iteration400:0.585  PSNR: 19.084  SSIM: 0.771  運行時間為: 220.985653 秒
+2021-03-11 08:12:02,346 - __main__ - INFO - save Epoch3.pth
+2021-03-11 08:15:43,331 - __main__ - INFO - Epoch: 2  Loss at iteration450:0.443  PSNR: 22.294  SSIM: 0.876  運行時間為: 221.161247 秒
+2021-03-11 08:19:24,799 - __main__ - INFO - Epoch: 2  Loss at iteration500:0.402  PSNR: 21.200  SSIM: 0.843  運行時間為: 221.468248 秒
+2021-03-11 08:23:06,015 - __main__ - INFO - Epoch: 2  Loss at iteration550:0.545  PSNR: 21.470  SSIM: 0.802  運行時間為: 221.214571 秒
+2021-03-11 08:26:47,268 - __main__ - INFO - Epoch: 2  Loss at iteration600:0.569  PSNR: 20.574  SSIM: 0.835  運行時間為: 221.253450 秒
+2021-03-11 08:26:47,440 - __main__ - INFO - save Epoch3.pth
+2021-03-11 08:30:28,696 - __main__ - INFO - Epoch: 2  Loss at iteration650:0.464  PSNR: 20.433  SSIM: 0.827  運行時間為: 221.428203 秒
+2021-03-11 08:34:09,569 - __main__ - INFO - Epoch: 2  Loss at iteration700:0.466  PSNR: 22.018  SSIM: 0.811  運行時間為: 220.873106 秒
+2021-03-11 08:37:50,794 - __main__ - INFO - Epoch: 2  Loss at iteration750:0.471  PSNR: 22.857  SSIM: 0.883  運行時間為: 221.224381 秒
+2021-03-11 08:41:31,970 - __main__ - INFO - Epoch: 2  Loss at iteration800:0.556  PSNR: 21.155  SSIM: 0.812  運行時間為: 221.176646 秒
+2021-03-11 08:41:32,138 - __main__ - INFO - save Epoch3.pth
+2021-03-11 08:45:13,591 - __main__ - INFO - Epoch: 2  Loss at iteration850:0.444  PSNR: 20.480  SSIM: 0.826  運行時間為: 221.620245 秒
+2021-03-11 08:48:55,023 - __main__ - INFO - Epoch: 2  Loss at iteration900:0.390  PSNR: 23.024  SSIM: 0.850  運行時間為: 221.432247 秒
+2021-03-11 08:52:36,392 - __main__ - INFO - Epoch: 2  Loss at iteration950:0.385  PSNR: 25.087  SSIM: 0.851  運行時間為: 221.368930 秒
+2021-03-11 08:56:17,447 - __main__ - INFO - Epoch: 2  Loss at iteration1000:0.433  PSNR: 22.413  SSIM: 0.816  運行時間為: 221.055740 秒
+2021-03-11 08:56:17,607 - __main__ - INFO - save Epoch3.pth
+2021-03-11 08:59:59,044 - __main__ - INFO - Epoch: 2  Loss at iteration1050:0.507  PSNR: 21.845  SSIM: 0.781  運行時間為: 221.596484 秒
+2021-03-11 09:03:40,225 - __main__ - INFO - Epoch: 2  Loss at iteration1100:0.549  PSNR: 21.873  SSIM: 0.846  運行時間為: 221.180196 秒
+2021-03-11 09:07:21,498 - __main__ - INFO - Epoch: 2  Loss at iteration1150:0.451  PSNR: 24.197  SSIM: 0.836  運行時間為: 221.273249 秒
+2021-03-11 09:11:03,134 - __main__ - INFO - Epoch: 2  Loss at iteration1200:0.351  PSNR: 24.203  SSIM: 0.868  運行時間為: 221.635502 秒
+2021-03-11 09:11:03,302 - __main__ - INFO - save Epoch3.pth
+2021-03-11 09:14:44,810 - __main__ - INFO - Epoch: 2  Loss at iteration1250:0.533  PSNR: 23.875  SSIM: 0.875  運行時間為: 221.673755 秒
+2021-03-11 09:18:26,332 - __main__ - INFO - Epoch: 2  Loss at iteration1300:0.515  PSNR: 18.695  SSIM: 0.850  運行時間為: 221.522118 秒
+2021-03-11 09:22:07,349 - __main__ - INFO - Epoch: 2  Loss at iteration1350:0.529  PSNR: 19.586  SSIM: 0.831  運行時間為: 221.017435 秒
+2021-03-11 09:25:48,760 - __main__ - INFO - Epoch: 2  Loss at iteration1400:0.449  PSNR: 22.140  SSIM: 0.835  運行時間為: 221.410277 秒
+2021-03-11 09:25:48,930 - __main__ - INFO - save Epoch3.pth
+2021-03-11 09:29:30,319 - __main__ - INFO - Epoch: 2  Loss at iteration1450:0.504  PSNR: 21.866  SSIM: 0.850  運行時間為: 221.558806 秒
+2021-03-11 09:33:11,811 - __main__ - INFO - Epoch: 2  Loss at iteration1500:0.550  PSNR: 20.615  SSIM: 0.815  運行時間為: 221.492191 秒
+2021-03-11 09:36:53,398 - __main__ - INFO - Epoch: 2  Loss at iteration1550:0.511  PSNR: 22.256  SSIM: 0.825  運行時間為: 221.586976 秒
+2021-03-11 09:40:34,654 - __main__ - INFO - Epoch: 2  Loss at iteration1600:0.500  PSNR: 20.843  SSIM: 0.829  運行時間為: 221.255008 秒
+2021-03-11 09:40:34,823 - __main__ - INFO - save Epoch3.pth
+2021-03-11 09:44:16,250 - __main__ - INFO - Epoch: 2  Loss at iteration1650:0.460  PSNR: 21.035  SSIM: 0.798  運行時間為: 221.594827 秒
+2021-03-11 09:47:57,682 - __main__ - INFO - Epoch: 2  Loss at iteration1700:0.410  PSNR: 23.445  SSIM: 0.854  運行時間為: 221.431636 秒
+2021-03-11 09:51:39,448 - __main__ - INFO - Epoch: 2  Loss at iteration1750:0.382  PSNR: 24.625  SSIM: 0.880  運行時間為: 221.766505 秒
+2021-03-11 09:55:20,890 - __main__ - INFO - Epoch: 2  Loss at iteration1800:0.423  PSNR: 24.734  SSIM: 0.878  運行時間為: 221.442012 秒
+2021-03-11 09:55:21,065 - __main__ - INFO - save Epoch3.pth
+2021-03-11 09:59:02,743 - __main__ - INFO - Epoch: 2  Loss at iteration1850:0.442  PSNR: 22.557  SSIM: 0.807  運行時間為: 221.852086 秒
+2021-03-11 10:02:44,108 - __main__ - INFO - Epoch: 2  Loss at iteration1900:0.460  PSNR: 23.799  SSIM: 0.874  運行時間為: 221.365207 秒
+2021-03-11 10:06:25,561 - __main__ - INFO - Epoch: 2  Loss at iteration1950:0.364  PSNR: 24.857  SSIM: 0.902  運行時間為: 221.452906 秒
+2021-03-11 10:10:06,838 - __main__ - INFO - Epoch: 2  Loss at iteration2000:0.511  PSNR: 21.986  SSIM: 0.851  運行時間為: 221.277796 秒
+2021-03-11 10:10:07,015 - __main__ - INFO - save Epoch3.pth
+2021-03-11 10:13:48,352 - __main__ - INFO - Epoch: 2  Loss at iteration2050:0.567  PSNR: 22.511  SSIM: 0.895  運行時間為: 221.513131 秒
+2021-03-11 10:17:29,884 - __main__ - INFO - Epoch: 2  Loss at iteration2100:0.435  PSNR: 23.968  SSIM: 0.871  運行時間為: 221.531058 秒
+2021-03-11 10:21:11,586 - __main__ - INFO - Epoch: 2  Loss at iteration2150:0.456  PSNR: 21.166  SSIM: 0.850  運行時間為: 221.702123 秒
+2021-03-11 10:24:53,070 - __main__ - INFO - Epoch: 2  Loss at iteration2200:0.398  PSNR: 24.414  SSIM: 0.821  運行時間為: 221.482851 秒
+2021-03-11 10:24:53,238 - __main__ - INFO - save Epoch3.pth
+2021-03-11 10:28:34,573 - __main__ - INFO - Epoch: 2  Loss at iteration2250:0.491  PSNR: 22.321  SSIM: 0.816  運行時間為: 221.502076 秒
+2021-03-11 10:32:15,711 - __main__ - INFO - Epoch: 2  Loss at iteration2300:0.467  PSNR: 21.102  SSIM: 0.846  運行時間為: 221.138762 秒
+2021-03-11 10:35:57,030 - __main__ - INFO - Epoch: 2  Loss at iteration2350:0.445  PSNR: 21.109  SSIM: 0.878  運行時間為: 221.318196 秒
+2021-03-11 10:39:38,449 - __main__ - INFO - Epoch: 2  Loss at iteration2400:0.429  PSNR: 21.820  SSIM: 0.792  運行時間為: 221.418029 秒
+2021-03-11 10:39:38,611 - __main__ - INFO - save Epoch3.pth
+2021-03-11 10:43:20,285 - __main__ - INFO - Epoch: 2  Loss at iteration2450:0.326  PSNR: 26.520  SSIM: 0.906  運行時間為: 221.835917 秒
+2021-03-11 10:47:01,525 - __main__ - INFO - Epoch: 2  Loss at iteration2500:0.439  PSNR: 23.159  SSIM: 0.893  運行時間為: 221.239598 秒
+2021-03-11 10:50:42,875 - __main__ - INFO - Epoch: 2  Loss at iteration2550:0.431  PSNR: 22.926  SSIM: 0.896  運行時間為: 221.349761 秒
+2021-03-11 10:54:24,240 - __main__ - INFO - Epoch: 2  Loss at iteration2600:0.437  PSNR: 24.813  SSIM: 0.898  運行時間為: 221.365363 秒
+2021-03-11 10:54:24,411 - __main__ - INFO - save Epoch3.pth
+2021-03-11 10:58:05,649 - __main__ - INFO - Epoch: 2  Loss at iteration2650:0.448  PSNR: 20.556  SSIM: 0.731  運行時間為: 221.408075 秒
+2021-03-11 11:01:47,209 - __main__ - INFO - Epoch: 2  Loss at iteration2700:0.418  PSNR: 20.359  SSIM: 0.827  運行時間為: 221.558349 秒
+2021-03-11 11:05:28,423 - __main__ - INFO - Epoch: 2  Loss at iteration2750:0.375  PSNR: 23.559  SSIM: 0.849  運行時間為: 221.214043 秒
+2021-03-11 11:09:09,755 - __main__ - INFO - Epoch: 2  Loss at iteration2800:0.564  PSNR: 21.207  SSIM: 0.820  運行時間為: 221.332166 秒
+2021-03-11 11:09:09,923 - __main__ - INFO - save Epoch3.pth
+2021-03-11 11:52:53,126 - __main__ - INFO - Epoch 運行時間為: 15024.526984 秒
+2021-03-11 11:56:36,243 - __main__ - INFO - Epoch: 3  Loss at iteration50:0.436  PSNR: 23.497  SSIM: 0.843  運行時間為: 223.117146 秒
+2021-03-11 12:00:16,334 - __main__ - INFO - Epoch: 3  Loss at iteration100:0.488  PSNR: 22.554  SSIM: 0.812  運行時間為: 220.091100 秒
+2021-03-11 12:03:56,248 - __main__ - INFO - Epoch: 3  Loss at iteration150:0.455  PSNR: 24.440  SSIM: 0.798  運行時間為: 219.914255 秒
+2021-03-11 12:07:36,115 - __main__ - INFO - Epoch: 3  Loss at iteration200:0.483  PSNR: 21.150  SSIM: 0.834  運行時間為: 219.866162 秒
+2021-03-11 12:07:36,269 - __main__ - INFO - save Epoch4.pth
+2021-03-11 12:11:14,552 - __main__ - INFO - Epoch: 3  Loss at iteration250:0.405  PSNR: 23.627  SSIM: 0.827  運行時間為: 218.437100 秒
+2021-03-11 12:14:52,564 - __main__ - INFO - Epoch: 3  Loss at iteration300:0.415  PSNR: 26.041  SSIM: 0.912  運行時間為: 218.012829 秒
+2021-03-11 12:18:30,724 - __main__ - INFO - Epoch: 3  Loss at iteration350:0.349  PSNR: 26.085  SSIM: 0.901  運行時間為: 218.159767 秒
+2021-03-11 12:22:08,375 - __main__ - INFO - Epoch: 3  Loss at iteration400:0.424  PSNR: 24.604  SSIM: 0.885  運行時間為: 217.651025 秒
+2021-03-11 12:22:08,533 - __main__ - INFO - save Epoch4.pth
+2021-03-11 12:25:46,357 - __main__ - INFO - Epoch: 3  Loss at iteration450:0.523  PSNR: 22.750  SSIM: 0.877  運行時間為: 217.981863 秒
+2021-03-11 12:29:24,283 - __main__ - INFO - Epoch: 3  Loss at iteration500:0.435  PSNR: 25.587  SSIM: 0.922  運行時間為: 217.925892 秒
+2021-03-11 12:33:01,987 - __main__ - INFO - Epoch: 3  Loss at iteration550:0.474  PSNR: 24.004  SSIM: 0.834  運行時間為: 217.703957 秒
+2021-03-11 12:36:39,913 - __main__ - INFO - Epoch: 3  Loss at iteration600:0.426  PSNR: 22.559  SSIM: 0.822  運行時間為: 217.926318 秒
+2021-03-11 12:36:40,068 - __main__ - INFO - save Epoch4.pth
+2021-03-11 12:40:18,291 - __main__ - INFO - Epoch: 3  Loss at iteration650:0.473  PSNR: 22.284  SSIM: 0.787  運行時間為: 218.376928 秒
+2021-03-11 12:43:56,275 - __main__ - INFO - Epoch: 3  Loss at iteration700:0.407  PSNR: 24.372  SSIM: 0.887  運行時間為: 217.983535 秒
+2021-03-11 12:47:34,049 - __main__ - INFO - Epoch: 3  Loss at iteration750:0.402  PSNR: 24.204  SSIM: 0.872  運行時間為: 217.773692 秒
+2021-03-11 12:51:12,060 - __main__ - INFO - Epoch: 3  Loss at iteration800:0.428  PSNR: 22.775  SSIM: 0.872  運行時間為: 218.010225 秒
+2021-03-11 12:51:12,220 - __main__ - INFO - save Epoch4.pth
+2021-03-11 12:54:50,363 - __main__ - INFO - Epoch: 3  Loss at iteration850:0.511  PSNR: 23.716  SSIM: 0.842  運行時間為: 218.303772 秒
+2021-03-11 12:58:28,786 - __main__ - INFO - Epoch: 3  Loss at iteration900:0.493  PSNR: 24.539  SSIM: 0.898  運行時間為: 218.421523 秒
+2021-03-11 13:02:06,810 - __main__ - INFO - Epoch: 3  Loss at iteration950:0.444  PSNR: 25.103  SSIM: 0.918  運行時間為: 218.024233 秒
+2021-03-11 13:05:44,832 - __main__ - INFO - Epoch: 3  Loss at iteration1000:0.387  PSNR: 23.993  SSIM: 0.918  運行時間為: 218.020371 秒
+2021-03-11 13:05:44,986 - __main__ - INFO - save Epoch4.pth
+2021-03-11 13:09:23,083 - __main__ - INFO - Epoch: 3  Loss at iteration1050:0.441  PSNR: 25.190  SSIM: 0.890  運行時間為: 218.251241 秒
+2021-03-11 13:13:01,232 - __main__ - INFO - Epoch: 3  Loss at iteration1100:0.377  PSNR: 23.896  SSIM: 0.887  運行時間為: 218.149451 秒
+2021-03-11 13:16:38,756 - __main__ - INFO - Epoch: 3  Loss at iteration1150:0.403  PSNR: 25.344  SSIM: 0.876  運行時間為: 217.523854 秒
+2021-03-11 13:20:16,798 - __main__ - INFO - Epoch: 3  Loss at iteration1200:0.445  PSNR: 22.779  SSIM: 0.867  運行時間為: 218.042174 秒
+2021-03-11 13:20:16,951 - __main__ - INFO - save Epoch4.pth
+2021-03-11 13:23:54,878 - __main__ - INFO - Epoch: 3  Loss at iteration1250:0.362  PSNR: 23.847  SSIM: 0.887  運行時間為: 218.079470 秒
+2021-03-11 13:27:33,233 - __main__ - INFO - Epoch: 3  Loss at iteration1300:0.422  PSNR: 23.757  SSIM: 0.871  運行時間為: 218.354548 秒
+2021-03-11 13:31:11,413 - __main__ - INFO - Epoch: 3  Loss at iteration1350:0.393  PSNR: 23.655  SSIM: 0.868  運行時間為: 218.179573 秒
+2021-03-11 13:34:49,283 - __main__ - INFO - Epoch: 3  Loss at iteration1400:0.456  PSNR: 22.468  SSIM: 0.873  運行時間為: 217.870391 秒
+2021-03-11 13:34:49,464 - __main__ - INFO - save Epoch4.pth
+2021-03-11 13:38:27,758 - __main__ - INFO - Epoch: 3  Loss at iteration1450:0.363  PSNR: 25.398  SSIM: 0.895  運行時間為: 218.474576 秒
+2021-03-11 13:42:05,425 - __main__ - INFO - Epoch: 3  Loss at iteration1500:0.419  PSNR: 22.286  SSIM: 0.857  運行時間為: 217.667220 秒
+2021-03-11 13:45:43,714 - __main__ - INFO - Epoch: 3  Loss at iteration1550:0.463  PSNR: 23.331  SSIM: 0.823  運行時間為: 218.288914 秒
+2021-03-11 13:49:21,721 - __main__ - INFO - Epoch: 3  Loss at iteration1600:0.445  PSNR: 23.010  SSIM: 0.864  運行時間為: 218.005756 秒
+2021-03-11 13:49:21,874 - __main__ - INFO - save Epoch4.pth
+2021-03-11 13:52:59,736 - __main__ - INFO - Epoch: 3  Loss at iteration1650:0.435  PSNR: 25.729  SSIM: 0.917  運行時間為: 218.014826 秒
+2021-03-11 13:56:38,347 - __main__ - INFO - Epoch: 3  Loss at iteration1700:0.338  PSNR: 28.830  SSIM: 0.904  運行時間為: 218.611041 秒
+2021-03-11 14:00:19,867 - __main__ - INFO - Epoch: 3  Loss at iteration1750:0.537  PSNR: 20.506  SSIM: 0.843  運行時間為: 221.519134 秒
+2021-03-11 14:04:01,125 - __main__ - INFO - Epoch: 3  Loss at iteration1800:0.421  PSNR: 23.108  SSIM: 0.838  運行時間為: 221.257944 秒
+2021-03-11 14:04:01,303 - __main__ - INFO - save Epoch4.pth
+2021-03-11 14:07:42,546 - __main__ - INFO - Epoch: 3  Loss at iteration1850:0.383  PSNR: 25.145  SSIM: 0.908  運行時間為: 221.420929 秒
+2021-03-11 14:11:23,766 - __main__ - INFO - Epoch: 3  Loss at iteration1900:0.518  PSNR: 21.569  SSIM: 0.828  運行時間為: 221.220091 秒
+2021-03-11 14:15:04,825 - __main__ - INFO - Epoch: 3  Loss at iteration1950:0.461  PSNR: 22.688  SSIM: 0.899  運行時間為: 221.058840 秒
+2021-03-11 14:18:45,963 - __main__ - INFO - Epoch: 3  Loss at iteration2000:0.421  PSNR: 25.472  SSIM: 0.889  運行時間為: 221.138873 秒
+2021-03-11 14:18:46,132 - __main__ - INFO - save Epoch4.pth
+2021-03-11 14:22:26,953 - __main__ - INFO - Epoch: 3  Loss at iteration2050:0.550  PSNR: 19.923  SSIM: 0.833  運行時間為: 220.989519 秒
+2021-03-11 14:26:07,936 - __main__ - INFO - Epoch: 3  Loss at iteration2100:0.409  PSNR: 23.301  SSIM: 0.885  運行時間為: 220.983346 秒
+2021-03-11 14:29:49,033 - __main__ - INFO - Epoch: 3  Loss at iteration2150:0.443  PSNR: 22.212  SSIM: 0.837  運行時間為: 221.097058 秒
+2021-03-11 14:33:30,114 - __main__ - INFO - Epoch: 3  Loss at iteration2200:0.445  PSNR: 23.085  SSIM: 0.884  運行時間為: 221.079429 秒
+2021-03-11 14:33:30,283 - __main__ - INFO - save Epoch4.pth
+2021-03-11 14:37:11,346 - __main__ - INFO - Epoch: 3  Loss at iteration2250:0.371  PSNR: 25.084  SSIM: 0.890  運行時間為: 221.231050 秒
+2021-03-11 14:40:52,265 - __main__ - INFO - Epoch: 3  Loss at iteration2300:0.361  PSNR: 24.997  SSIM: 0.912  運行時間為: 220.918809 秒
+2021-03-11 14:44:33,112 - __main__ - INFO - Epoch: 3  Loss at iteration2350:0.498  PSNR: 22.331  SSIM: 0.842  運行時間為: 220.847747 秒
+2021-03-11 14:48:13,981 - __main__ - INFO - Epoch: 3  Loss at iteration2400:0.429  PSNR: 24.909  SSIM: 0.858  運行時間為: 220.867128 秒
+2021-03-11 14:48:14,243 - __main__ - INFO - save Epoch4.pth
+2021-03-11 14:51:55,080 - __main__ - INFO - Epoch: 3  Loss at iteration2450:0.376  PSNR: 23.725  SSIM: 0.882  運行時間為: 221.098527 秒
+2021-03-11 14:55:35,863 - __main__ - INFO - Epoch: 3  Loss at iteration2500:0.425  PSNR: 24.215  SSIM: 0.880  運行時間為: 220.783134 秒
+2021-03-11 14:59:16,822 - __main__ - INFO - Epoch: 3  Loss at iteration2550:0.377  PSNR: 26.006  SSIM: 0.852  運行時間為: 220.958728 秒
+2021-03-11 15:02:57,573 - __main__ - INFO - Epoch: 3  Loss at iteration2600:0.454  PSNR: 23.932  SSIM: 0.869  運行時間為: 220.751406 秒
+2021-03-11 15:02:57,726 - __main__ - INFO - save Epoch4.pth
+2021-03-11 15:06:38,635 - __main__ - INFO - Epoch: 3  Loss at iteration2650:0.464  PSNR: 22.979  SSIM: 0.875  運行時間為: 221.061235 秒
+2021-03-11 15:10:19,607 - __main__ - INFO - Epoch: 3  Loss at iteration2700:0.409  PSNR: 26.647  SSIM: 0.907  運行時間為: 220.972691 秒
+2021-03-11 15:14:00,403 - __main__ - INFO - Epoch: 3  Loss at iteration2750:0.461  PSNR: 21.398  SSIM: 0.893  運行時間為: 220.795607 秒
+2021-03-11 15:17:41,391 - __main__ - INFO - Epoch: 3  Loss at iteration2800:0.398  PSNR: 24.095  SSIM: 0.894  運行時間為: 220.988647 秒
+2021-03-11 15:17:41,560 - __main__ - INFO - save Epoch4.pth
+2021-03-11 16:01:19,626 - __main__ - INFO - Epoch 運行時間為: 14906.500614 秒
+2021-03-11 16:05:03,096 - __main__ - INFO - Epoch: 4  Loss at iteration50:0.336  PSNR: 25.957  SSIM: 0.864  運行時間為: 223.469219 秒
+2021-03-11 16:08:43,815 - __main__ - INFO - Epoch: 4  Loss at iteration100:0.448  PSNR: 22.482  SSIM: 0.845  運行時間為: 220.719664 秒
+2021-03-11 16:12:24,325 - __main__ - INFO - Epoch: 4  Loss at iteration150:0.421  PSNR: 22.205  SSIM: 0.836  運行時間為: 220.509416 秒
+2021-03-11 16:16:05,078 - __main__ - INFO - Epoch: 4  Loss at iteration200:0.358  PSNR: 24.593  SSIM: 0.898  運行時間為: 220.752980 秒
+2021-03-11 16:16:05,240 - __main__ - INFO - save Epoch5.pth
+2021-03-11 16:19:46,457 - __main__ - INFO - Epoch: 4  Loss at iteration250:0.367  PSNR: 26.152  SSIM: 0.910  運行時間為: 221.378357 秒
+2021-03-11 16:23:27,449 - __main__ - INFO - Epoch: 4  Loss at iteration300:0.416  PSNR: 25.248  SSIM: 0.873  運行時間為: 220.991518 秒
+2021-03-11 16:27:08,578 - __main__ - INFO - Epoch: 4  Loss at iteration350:0.529  PSNR: 24.135  SSIM: 0.835  運行時間為: 221.129018 秒
+2021-03-11 16:30:49,483 - __main__ - INFO - Epoch: 4  Loss at iteration400:0.367  PSNR: 27.267  SSIM: 0.932  運行時間為: 220.905370 秒
+2021-03-11 16:30:49,643 - __main__ - INFO - save Epoch5.pth
+2021-03-11 16:34:30,756 - __main__ - INFO - Epoch: 4  Loss at iteration450:0.382  PSNR: 25.566  SSIM: 0.888  運行時間為: 221.272917 秒
+2021-03-11 16:38:11,537 - __main__ - INFO - Epoch: 4  Loss at iteration500:0.395  PSNR: 25.308  SSIM: 0.864  運行時間為: 220.780101 秒
+2021-03-11 16:41:52,531 - __main__ - INFO - Epoch: 4  Loss at iteration550:0.384  PSNR: 25.640  SSIM: 0.919  運行時間為: 220.993882 秒
+2021-03-11 16:45:33,186 - __main__ - INFO - Epoch: 4  Loss at iteration600:0.353  PSNR: 26.156  SSIM: 0.898  運行時間為: 220.654558 秒
+2021-03-11 16:45:33,356 - __main__ - INFO - save Epoch5.pth
+2021-03-11 16:49:14,323 - __main__ - INFO - Epoch: 4  Loss at iteration650:0.489  PSNR: 21.673  SSIM: 0.859  運行時間為: 221.137140 秒
+2021-03-11 16:52:54,947 - __main__ - INFO - Epoch: 4  Loss at iteration700:0.410  PSNR: 26.026  SSIM: 0.924  運行時間為: 220.624321 秒
+2021-03-11 16:56:35,432 - __main__ - INFO - Epoch: 4  Loss at iteration750:0.480  PSNR: 22.475  SSIM: 0.849  運行時間為: 220.484655 秒
+2021-03-11 17:00:15,898 - __main__ - INFO - Epoch: 4  Loss at iteration800:0.581  PSNR: 20.536  SSIM: 0.790  運行時間為: 220.465221 秒
+2021-03-11 17:00:16,080 - __main__ - INFO - save Epoch5.pth
+2021-03-11 17:03:56,769 - __main__ - INFO - Epoch: 4  Loss at iteration850:0.398  PSNR: 26.150  SSIM: 0.895  運行時間為: 220.871368 秒
+2021-03-11 17:07:37,395 - __main__ - INFO - Epoch: 4  Loss at iteration900:0.434  PSNR: 24.745  SSIM: 0.861  運行時間為: 220.625827 秒
+2021-03-11 17:11:18,094 - __main__ - INFO - Epoch: 4  Loss at iteration950:0.412  PSNR: 24.351  SSIM: 0.877  運行時間為: 220.698941 秒
+2021-03-11 17:14:58,589 - __main__ - INFO - Epoch: 4  Loss at iteration1000:0.462  PSNR: 21.584  SSIM: 0.816  運行時間為: 220.495307 秒
+2021-03-11 17:14:58,813 - __main__ - INFO - save Epoch5.pth
+2021-03-11 17:18:39,659 - __main__ - INFO - Epoch: 4  Loss at iteration1050:0.406  PSNR: 25.146  SSIM: 0.845  運行時間為: 221.069298 秒
+2021-03-11 17:22:20,363 - __main__ - INFO - Epoch: 4  Loss at iteration1100:0.398  PSNR: 24.302  SSIM: 0.848  運行時間為: 220.703476 秒
+2021-03-11 17:26:01,219 - __main__ - INFO - Epoch: 4  Loss at iteration1150:0.446  PSNR: 23.142  SSIM: 0.860  運行時間為: 220.854747 秒
+2021-03-11 17:29:41,663 - __main__ - INFO - Epoch: 4  Loss at iteration1200:0.432  PSNR: 24.127  SSIM: 0.869  運行時間為: 220.444175 秒
+2021-03-11 17:29:41,833 - __main__ - INFO - save Epoch5.pth
+2021-03-11 17:33:22,627 - __main__ - INFO - Epoch: 4  Loss at iteration1250:0.538  PSNR: 23.362  SSIM: 0.886  運行時間為: 220.963623 秒
+2021-03-11 17:37:03,340 - __main__ - INFO - Epoch: 4  Loss at iteration1300:0.440  PSNR: 25.341  SSIM: 0.853  運行時間為: 220.712955 秒
+2021-03-11 17:40:43,434 - __main__ - INFO - Epoch: 4  Loss at iteration1350:0.387  PSNR: 25.114  SSIM: 0.880  運行時間為: 220.094508 秒
+2021-03-11 17:44:23,409 - __main__ - INFO - Epoch: 4  Loss at iteration1400:0.432  PSNR: 25.163  SSIM: 0.806  運行時間為: 219.974339 秒
+2021-03-11 17:44:23,566 - __main__ - INFO - save Epoch5.pth
+2021-03-11 17:48:04,891 - __main__ - INFO - Epoch: 4  Loss at iteration1450:0.408  PSNR: 24.210  SSIM: 0.856  運行時間為: 221.481216 秒
+2021-03-11 17:51:45,407 - __main__ - INFO - Epoch: 4  Loss at iteration1500:0.424  PSNR: 23.775  SSIM: 0.874  運行時間為: 220.516584 秒
+2021-03-11 17:55:26,353 - __main__ - INFO - Epoch: 4  Loss at iteration1550:0.424  PSNR: 22.070  SSIM: 0.850  運行時間為: 220.946103 秒
+2021-03-11 17:59:07,357 - __main__ - INFO - Epoch: 4  Loss at iteration1600:0.375  PSNR: 24.822  SSIM: 0.882  運行時間為: 221.002702 秒
+2021-03-11 17:59:07,528 - __main__ - INFO - save Epoch5.pth
+2021-03-11 18:02:48,425 - __main__ - INFO - Epoch: 4  Loss at iteration1650:0.518  PSNR: 23.262  SSIM: 0.860  運行時間為: 221.067775 秒
+2021-03-11 18:06:29,051 - __main__ - INFO - Epoch: 4  Loss at iteration1700:0.425  PSNR: 22.549  SSIM: 0.880  運行時間為: 220.626505 秒
+2021-03-11 18:10:09,930 - __main__ - INFO - Epoch: 4  Loss at iteration1750:0.422  PSNR: 24.544  SSIM: 0.913  運行時間為: 220.878363 秒
+2021-03-11 18:13:50,671 - __main__ - INFO - Epoch: 4  Loss at iteration1800:0.437  PSNR: 25.030  SSIM: 0.919  運行時間為: 220.739794 秒
+2021-03-11 18:13:50,826 - __main__ - INFO - save Epoch5.pth
+2021-03-11 18:17:31,589 - __main__ - INFO - Epoch: 4  Loss at iteration1850:0.404  PSNR: 26.563  SSIM: 0.903  運行時間為: 220.917879 秒
+2021-03-11 18:21:12,417 - __main__ - INFO - Epoch: 4  Loss at iteration1900:0.407  PSNR: 25.759  SSIM: 0.882  運行時間為: 220.826187 秒
+2021-03-11 18:24:53,163 - __main__ - INFO - Epoch: 4  Loss at iteration1950:0.381  PSNR: 25.802  SSIM: 0.936  運行時間為: 220.746284 秒
+2021-03-11 18:28:34,114 - __main__ - INFO - Epoch: 4  Loss at iteration2000:0.454  PSNR: 23.634  SSIM: 0.830  運行時間為: 220.951314 秒
+2021-03-11 18:28:34,294 - __main__ - INFO - save Epoch5.pth
+2021-03-11 18:32:15,160 - __main__ - INFO - Epoch: 4  Loss at iteration2050:0.371  PSNR: 26.840  SSIM: 0.864  運行時間為: 221.045891 秒
+2021-03-11 18:35:56,123 - __main__ - INFO - Epoch: 4  Loss at iteration2100:0.418  PSNR: 23.484  SSIM: 0.807  運行時間為: 220.963244 秒
+2021-03-11 18:39:36,886 - __main__ - INFO - Epoch: 4  Loss at iteration2150:0.346  PSNR: 27.038  SSIM: 0.844  運行時間為: 220.762525 秒
+2021-03-11 18:43:17,538 - __main__ - INFO - Epoch: 4  Loss at iteration2200:0.364  PSNR: 22.384  SSIM: 0.896  運行時間為: 220.651866 秒
+2021-03-11 18:43:17,690 - __main__ - INFO - save Epoch5.pth
+2021-03-11 18:46:58,480 - __main__ - INFO - Epoch: 4  Loss at iteration2250:0.442  PSNR: 23.779  SSIM: 0.809  運行時間為: 220.941986 秒
+2021-03-11 18:50:39,400 - __main__ - INFO - Epoch: 4  Loss at iteration2300:0.328  PSNR: 27.592  SSIM: 0.918  運行時間為: 220.919205 秒
+2021-03-11 18:54:20,355 - __main__ - INFO - Epoch: 4  Loss at iteration2350:0.343  PSNR: 24.875  SSIM: 0.909  運行時間為: 220.955345 秒
+2021-03-11 18:58:01,357 - __main__ - INFO - Epoch: 4  Loss at iteration2400:0.455  PSNR: 25.462  SSIM: 0.894  運行時間為: 221.000284 秒
+2021-03-11 18:58:01,528 - __main__ - INFO - save Epoch5.pth
+2021-03-11 19:01:42,409 - __main__ - INFO - Epoch: 4  Loss at iteration2450:0.406  PSNR: 24.180  SSIM: 0.900  運行時間為: 221.050578 秒
+2021-03-11 19:05:23,117 - __main__ - INFO - Epoch: 4  Loss at iteration2500:0.405  PSNR: 24.904  SSIM: 0.895  運行時間為: 220.707860 秒
+2021-03-11 19:09:03,895 - __main__ - INFO - Epoch: 4  Loss at iteration2550:0.409  PSNR: 24.057  SSIM: 0.880  運行時間為: 220.777996 秒
+2021-03-11 19:12:44,614 - __main__ - INFO - Epoch: 4  Loss at iteration2600:0.281  PSNR: 27.019  SSIM: 0.917  運行時間為: 220.717876 秒
+2021-03-11 19:12:44,767 - __main__ - INFO - save Epoch5.pth
+2021-03-11 19:16:25,476 - __main__ - INFO - Epoch: 4  Loss at iteration2650:0.364  PSNR: 25.912  SSIM: 0.923  運行時間為: 220.862657 秒
+2021-03-11 19:20:06,450 - __main__ - INFO - Epoch: 4  Loss at iteration2700:0.396  PSNR: 23.070  SSIM: 0.851  運行時間為: 220.972747 秒
+2021-03-11 19:23:47,439 - __main__ - INFO - Epoch: 4  Loss at iteration2750:0.339  PSNR: 25.628  SSIM: 0.865  運行時間為: 220.987599 秒
+2021-03-11 19:27:28,571 - __main__ - INFO - Epoch: 4  Loss at iteration2800:0.502  PSNR: 23.429  SSIM: 0.917  運行時間為: 221.132095 秒
+2021-03-11 19:27:28,741 - __main__ - INFO - save Epoch5.pth
+2021-03-11 20:11:22,124 - __main__ - INFO - Epoch 運行時間為: 15002.496382 秒
+2021-03-11 20:15:09,230 - __main__ - INFO - Epoch: 5  Loss at iteration50:0.320  PSNR: 25.084  SSIM: 0.909  運行時間為: 227.105903 秒
+2021-03-11 20:18:51,995 - __main__ - INFO - Epoch: 5  Loss at iteration100:0.469  PSNR: 23.467  SSIM: 0.908  運行時間為: 222.765145 秒
+2021-03-11 20:22:34,558 - __main__ - INFO - Epoch: 5  Loss at iteration150:0.462  PSNR: 23.539  SSIM: 0.869  運行時間為: 222.562814 秒
+2021-03-11 20:26:17,371 - __main__ - INFO - Epoch: 5  Loss at iteration200:0.399  PSNR: 23.773  SSIM: 0.840  運行時間為: 222.813675 秒
+2021-03-11 20:26:17,521 - __main__ - INFO - save Epoch6.pth
+2021-03-11 20:30:00,844 - __main__ - INFO - Epoch: 5  Loss at iteration250:0.374  PSNR: 26.101  SSIM: 0.877  運行時間為: 223.472196 秒
+2021-03-11 20:33:43,365 - __main__ - INFO - Epoch: 5  Loss at iteration300:0.425  PSNR: 25.145  SSIM: 0.868  運行時間為: 222.520344 秒
+2021-03-11 20:37:25,847 - __main__ - INFO - Epoch: 5  Loss at iteration350:0.456  PSNR: 25.602  SSIM: 0.880  運行時間為: 222.481183 秒
+2021-03-11 20:41:09,398 - __main__ - INFO - Epoch: 5  Loss at iteration400:0.411  PSNR: 25.066  SSIM: 0.891  運行時間為: 223.551142 秒
+2021-03-11 20:41:09,579 - __main__ - INFO - save Epoch6.pth
+2021-03-11 20:44:54,527 - __main__ - INFO - Epoch: 5  Loss at iteration450:0.598  PSNR: 21.361  SSIM: 0.866  運行時間為: 225.127769 秒
+2021-03-11 20:48:39,464 - __main__ - INFO - Epoch: 5  Loss at iteration500:0.402  PSNR: 23.948  SSIM: 0.895  運行時間為: 224.935688 秒
+2021-03-11 20:52:24,495 - __main__ - INFO - Epoch: 5  Loss at iteration550:0.306  PSNR: 27.349  SSIM: 0.915  運行時間為: 225.031162 秒
+2021-03-11 20:56:09,596 - __main__ - INFO - Epoch: 5  Loss at iteration600:0.405  PSNR: 24.629  SSIM: 0.885  運行時間為: 225.099983 秒
+2021-03-11 20:56:09,754 - __main__ - INFO - save Epoch6.pth
+2021-03-11 20:59:57,313 - __main__ - INFO - Epoch: 5  Loss at iteration650:0.332  PSNR: 26.873  SSIM: 0.891  運行時間為: 227.715694 秒
+2021-03-11 21:03:45,092 - __main__ - INFO - Epoch: 5  Loss at iteration700:0.470  PSNR: 23.598  SSIM: 0.892  運行時間為: 227.778610 秒
+2021-03-11 21:07:31,506 - __main__ - INFO - Epoch: 5  Loss at iteration750:0.434  PSNR: 23.798  SSIM: 0.853  運行時間為: 226.413585 秒
+2021-03-11 21:11:17,083 - __main__ - INFO - Epoch: 5  Loss at iteration800:0.431  PSNR: 25.931  SSIM: 0.920  運行時間為: 225.577389 秒
+2021-03-11 21:11:17,258 - __main__ - INFO - save Epoch6.pth
+2021-03-11 21:15:02,100 - __main__ - INFO - Epoch: 5  Loss at iteration850:0.416  PSNR: 25.373  SSIM: 0.919  運行時間為: 225.016562 秒
+2021-03-11 21:18:47,600 - __main__ - INFO - Epoch: 5  Loss at iteration900:0.474  PSNR: 24.217  SSIM: 0.824  運行時間為: 225.499631 秒
+2021-03-11 21:22:33,494 - __main__ - INFO - Epoch: 5  Loss at iteration950:0.433  PSNR: 25.923  SSIM: 0.922  運行時間為: 225.892175 秒
+2021-03-11 21:26:23,666 - __main__ - INFO - Epoch: 5  Loss at iteration1000:0.359  PSNR: 26.336  SSIM: 0.845  運行時間為: 230.172161 秒
+2021-03-11 21:26:23,842 - __main__ - INFO - save Epoch6.pth
+2021-03-11 21:30:13,162 - __main__ - INFO - Epoch: 5  Loss at iteration1050:0.425  PSNR: 23.923  SSIM: 0.880  運行時間為: 229.496261 秒
+2021-03-11 21:34:00,047 - __main__ - INFO - Epoch: 5  Loss at iteration1100:0.454  PSNR: 23.329  SSIM: 0.808  運行時間為: 226.885359 秒
+2021-03-11 21:37:48,569 - __main__ - INFO - Epoch: 5  Loss at iteration1150:0.433  PSNR: 25.446  SSIM: 0.912  運行時間為: 228.521904 秒
+2021-03-11 21:41:40,800 - __main__ - INFO - Epoch: 5  Loss at iteration1200:0.309  PSNR: 27.625  SSIM: 0.874  運行時間為: 232.231203 秒
+2021-03-11 21:41:40,975 - __main__ - INFO - save Epoch6.pth
+2021-03-11 21:45:34,388 - __main__ - INFO - Epoch: 5  Loss at iteration1250:0.435  PSNR: 25.278  SSIM: 0.912  運行時間為: 233.586674 秒
+2021-03-11 21:49:29,398 - __main__ - INFO - Epoch: 5  Loss at iteration1300:0.323  PSNR: 27.127  SSIM: 0.925  運行時間為: 235.008863 秒
+2021-03-11 21:53:18,092 - __main__ - INFO - Epoch: 5  Loss at iteration1350:0.318  PSNR: 26.407  SSIM: 0.931  運行時間為: 228.694192 秒
+2021-03-11 21:57:06,079 - __main__ - INFO - Epoch: 5  Loss at iteration1400:0.347  PSNR: 28.276  SSIM: 0.918  運行時間為: 227.986372 秒
+2021-03-11 21:57:06,252 - __main__ - INFO - save Epoch6.pth
+2021-03-11 22:00:53,287 - __main__ - INFO - Epoch: 5  Loss at iteration1450:0.426  PSNR: 23.994  SSIM: 0.859  運行時間為: 227.208499 秒
+2021-03-11 22:04:39,299 - __main__ - INFO - Epoch: 5  Loss at iteration1500:0.493  PSNR: 23.484  SSIM: 0.850  運行時間為: 226.011553 秒
+2021-03-11 22:08:29,446 - __main__ - INFO - Epoch: 5  Loss at iteration1550:0.390  PSNR: 25.718  SSIM: 0.919  運行時間為: 230.147568 秒
+2021-03-11 22:12:14,464 - __main__ - INFO - Epoch: 5  Loss at iteration1600:0.466  PSNR: 22.137  SSIM: 0.842  運行時間為: 225.017368 秒
+2021-03-11 22:12:14,617 - __main__ - INFO - save Epoch6.pth
+2021-03-11 22:15:59,438 - __main__ - INFO - Epoch: 5  Loss at iteration1650:0.470  PSNR: 24.896  SSIM: 0.894  運行時間為: 224.974491 秒
+2021-03-11 22:19:44,469 - __main__ - INFO - Epoch: 5  Loss at iteration1700:0.441  PSNR: 23.552  SSIM: 0.864  運行時間為: 225.030601 秒
+2021-03-11 22:23:29,544 - __main__ - INFO - Epoch: 5  Loss at iteration1750:0.401  PSNR: 24.603  SSIM: 0.871  運行時間為: 225.074661 秒
+2021-03-11 22:27:14,515 - __main__ - INFO - Epoch: 5  Loss at iteration1800:0.397  PSNR: 24.807  SSIM: 0.828  運行時間為: 224.970250 秒
+2021-03-11 22:27:14,668 - __main__ - INFO - save Epoch6.pth
+2021-03-11 22:30:59,494 - __main__ - INFO - Epoch: 5  Loss at iteration1850:0.329  PSNR: 26.081  SSIM: 0.929  運行時間為: 224.979277 秒
+2021-03-11 22:34:44,449 - __main__ - INFO - Epoch: 5  Loss at iteration1900:0.381  PSNR: 26.200  SSIM: 0.866  運行時間為: 224.954093 秒
+2021-03-11 22:38:29,478 - __main__ - INFO - Epoch: 5  Loss at iteration1950:0.410  PSNR: 24.866  SSIM: 0.903  運行時間為: 225.028947 秒
+2021-03-11 22:42:14,455 - __main__ - INFO - Epoch: 5  Loss at iteration2000:0.341  PSNR: 27.958  SSIM: 0.900  運行時間為: 224.976722 秒
+2021-03-11 22:42:14,616 - __main__ - INFO - save Epoch6.pth
+2021-03-11 22:45:59,516 - __main__ - INFO - Epoch: 5  Loss at iteration2050:0.354  PSNR: 28.508  SSIM: 0.943  運行時間為: 225.060941 秒
+2021-03-11 22:49:44,488 - __main__ - INFO - Epoch: 5  Loss at iteration2100:0.388  PSNR: 24.886  SSIM: 0.853  運行時間為: 224.972476 秒
+2021-03-11 22:53:29,464 - __main__ - INFO - Epoch: 5  Loss at iteration2150:0.417  PSNR: 24.194  SSIM: 0.898  運行時間為: 224.974513 秒
+2021-03-11 22:57:14,495 - __main__ - INFO - Epoch: 5  Loss at iteration2200:0.372  PSNR: 26.832  SSIM: 0.944  運行時間為: 225.030379 秒
+2021-03-11 22:57:14,654 - __main__ - INFO - save Epoch6.pth
+2021-03-11 23:00:59,544 - __main__ - INFO - Epoch: 5  Loss at iteration2250:0.379  PSNR: 27.096  SSIM: 0.894  運行時間為: 225.049168 秒
+2021-03-11 23:04:44,424 - __main__ - INFO - Epoch: 5  Loss at iteration2300:0.399  PSNR: 26.972  SSIM: 0.856  運行時間為: 224.879612 秒
+2021-03-11 23:08:29,491 - __main__ - INFO - Epoch: 5  Loss at iteration2350:0.384  PSNR: 26.089  SSIM: 0.915  運行時間為: 225.066930 秒
+2021-03-11 23:12:14,447 - __main__ - INFO - Epoch: 5  Loss at iteration2400:0.361  PSNR: 23.641  SSIM: 0.920  運行時間為: 224.956719 秒
+2021-03-11 23:12:14,601 - __main__ - INFO - save Epoch6.pth
+2021-03-11 23:15:59,473 - __main__ - INFO - Epoch: 5  Loss at iteration2450:0.525  PSNR: 23.772  SSIM: 0.882  運行時間為: 225.024943 秒
+2021-03-11 23:19:37,590 - __main__ - INFO - Epoch: 5  Loss at iteration2500:0.430  PSNR: 24.471  SSIM: 0.894  運行時間為: 218.115753 秒
+2021-03-11 23:23:15,857 - __main__ - INFO - Epoch: 5  Loss at iteration2550:0.367  PSNR: 23.938  SSIM: 0.830  運行時間為: 218.264956 秒
+2021-03-11 23:26:55,306 - __main__ - INFO - Epoch: 5  Loss at iteration2600:0.424  PSNR: 26.760  SSIM: 0.865  運行時間為: 219.448868 秒
+2021-03-11 23:26:55,498 - __main__ - INFO - save Epoch6.pth
+2021-03-11 23:30:33,695 - __main__ - INFO - Epoch: 5  Loss at iteration2650:0.361  PSNR: 25.350  SSIM: 0.842  運行時間為: 218.388921 秒
+2021-03-11 23:34:10,387 - __main__ - INFO - Epoch: 5  Loss at iteration2700:0.430  PSNR: 24.665  SSIM: 0.860  運行時間為: 216.692464 秒
+2021-03-11 23:37:46,881 - __main__ - INFO - Epoch: 5  Loss at iteration2750:0.394  PSNR: 24.658  SSIM: 0.879  運行時間為: 216.493502 秒
+2021-03-11 23:41:23,383 - __main__ - INFO - Epoch: 5  Loss at iteration2800:0.394  PSNR: 25.280  SSIM: 0.904  運行時間為: 216.501904 秒
+2021-03-11 23:41:23,540 - __main__ - INFO - save Epoch6.pth

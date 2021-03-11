@@ -23,6 +23,8 @@ parser.add_argument('--datastes', default='not_real') #test dataset有GT 選"not
 parser.add_argument('--gpu_id', type=int, default=0)
 parser.add_argument('--indir', default='test_input/')
 parser.add_argument('--outdir', default='test_output/')
+parser.add_argument('--ss_ori_data_path', type=str, default='C:\\Users\\ian\\Desktop\\ss_GT',  help='Semantic Segmentation origin image path')
+parser.add_argument('--ss_haze_data_path', type=str, default='C:\\Users\\ian\\Desktop\\ss_h',  help='Semantic Segmentation haze image path')
 config = parser.parse_args()
 #assert config.task in ['dehaze']
 

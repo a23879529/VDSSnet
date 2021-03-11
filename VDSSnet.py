@@ -105,6 +105,8 @@ class VDSSNet(nn.Module):
         self.ssconv9 = SmoothDilatedResidualBlock(512, 3, 2, 1, 512)
         self.ssconv10 = SmoothDilatedResidualBlock(512, 3, 2, 1, 512)
         self.ssconv11 = SmoothDilatedResidualBlock(512, 3, 2, 1, 512) #From semantic-segmentation
+        self.ss_conv01 = nn.Conv2d(3, 512, 1)
+        self.pooling01 = nn.MaxPool2d(8)
 
 
         #Decoder
@@ -133,7 +135,7 @@ class VDSSNet(nn.Module):
         self.ssconv17 = SmoothDilatedResidualBlock(64, 3, 2, 1, 64)
         self.ssconv18 = nn.Conv2d(64, out_c, 1)
 
-    def forward(self, x):
+    def forward(self, x, ss):
         #Encoder
         #print("input: ", x.size())
         #skip1 = self.ssconv1(x, x[2], x[3], 'E')
@@ -166,6 +168,11 @@ class VDSSNet(nn.Module):
         #print("ssconv10: ", output.size())
         output = self.ssconv11(output, 'E')
         #print("ssconv11: ", output.size())
+        ss = self.pooling01(self.ss_conv01(ss))
+        # print("pooling01: ", ss.size())
+        output = F.relu(ss + output)
+        # print("output: ", output.size())
+
 
         #Decoder
         # Up_conv1  from ssconv7

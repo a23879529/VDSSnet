@@ -9,6 +9,7 @@ class HazeDataset(torch.utils.data.Dataset):
     def __init__(self, ori_root, haze_root, transforms):
         self.haze_root = haze_root
         self.ori_root = ori_root
+        # self.ss_root = ss_root
         self.image_name_list = glob.glob(os.path.join(self.haze_root, '*.jpg'))
         self.matching_dict = {}
         self.file_list = []
@@ -24,6 +25,7 @@ class HazeDataset(torch.utils.data.Dataset):
         ori_image_name, haze_image_name = self.file_list[item]
         ori_image = self.transforms(Image.open(ori_image_name))
         haze_image = self.transforms(Image.open(haze_image_name))
+        # ss_image_name = self.transforms(Image.open(ss_image_name))
         return ori_image, haze_image
 
     def __len__(self):
@@ -39,23 +41,11 @@ class HazeDataset(torch.utils.data.Dataset):
             else:
                 self.matching_dict[key] = []
                 self.matching_dict[key].append(image)
-            #print(self.matching_dict[key])
+            # print(self.matching_dict[key])
 
         for key in list(self.matching_dict.keys()):
             for hazy_image in self.matching_dict[key]:
                 self.file_list.append([os.path.join(self.ori_root, key), os.path.join(self.haze_root, hazy_image)])
-                #print(self.file_list)
+                # print(self.file_list)
 
         random.shuffle(self.file_list)
-
-def make_dataset(dir):
-    images = []
-    assert os.path.isdir(dir), '%s is not a valid directory' % dir
-
-    for root, _, fnames in sorted(os.walk(dir)):
-        for fname in fnames:
-            if is_image_file(fname):
-                path = os.path.join(root, fname)
-                images.append(path)
-
-    return images
