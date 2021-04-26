@@ -78,7 +78,7 @@ def train(config):
 
     optimizer = torch.optim.Adam(dehaze_net.parameters(), lr=config.lr, weight_decay=config.weight_decay)
 
-    # checkpoint = torch.load('./snapshots/conv135_full_IN_EP3.pth')
+    # checkpoint = torch.load('./snapshots/5in_135_full_IN_EP1.pth')
     # dehaze_net.load_state_dict(checkpoint['model_state_dict'])
     # optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
     # epoch = checkpoint['epoch']

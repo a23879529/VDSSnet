@@ -115,30 +115,30 @@ class VDSSNet(nn.Module):
     def __init__(self, in_c=9, out_c=3):
         super(VDSSNet, self).__init__()
         #Encoder
-        self.ssconv1 = nn.Conv2d(in_c, 64, 5, 1, 2) #To up_conv3
+        self.ssconv1 = nn.Conv2d(in_c, 64, 5, 1, 1) #To up_conv3
 
         # Down_conv1
         #依序為input_channel, kernel_size, dilated_factor, stride, output_channel
         # self.ssconv2 = nn.Conv2d(64, 128, 3, 2, 2, 2)
         self.ssconv2 = SmoothDilatedResidualBlock(64, 3, 2, 2, 128)
         self.ssconv3 = SmoothDilatedResidualBlock(128, 3, 1, 1, 128)
-        self.addictionssconv1 = SmoothDilatedResidualBlock(128, 3, 3, 1, 128)
-        self.ssconv4 = SmoothDilatedResidualBlock(128, 3, 5, 1, 128) #To up_conv2
+        self.addictionssconv1 = SmoothDilatedResidualBlock(128, 3, 2, 1, 128)
+        self.ssconv4 = SmoothDilatedResidualBlock(128, 3, 3, 1, 128) #To up_conv2
         self.Attention1 = DepthwiseBlock(128, 3, 2, 1, 128)
 
         # Down_conv2
         self.ssconv5 = SmoothDilatedResidualBlock(128, 3, 2, 2, 256)
         self.ssconv6 = SmoothDilatedResidualBlock(256, 3, 1, 1, 256)
-        self.addictionssconv2 = SmoothDilatedResidualBlock(256, 3, 3, 1, 256)
-        self.ssconv7 = SmoothDilatedResidualBlock(256, 3, 5, 1, 256) #To up_conv1
+        self.addictionssconv2 = SmoothDilatedResidualBlock(256, 3, 2, 1, 256)
+        self.ssconv7 = SmoothDilatedResidualBlock(256, 3, 3, 1, 256) #To up_conv1
         self.Attention2 = DepthwiseBlock(256, 3, 2, 1, 256)
 
         #中間層
         # Down_conv3
         self.ssconv8 = SmoothDilatedResidualBlock(256, 3, 2, 2, 512)
         self.ssconv9 = SmoothDilatedResidualBlock(512, 3, 1, 1, 512)
-        self.ssconv10 = SmoothDilatedResidualBlock(512, 3, 3, 1, 512)
-        self.ssconv11 = SmoothDilatedResidualBlock(512, 3, 5, 1, 512) #From semantic-segmentation
+        self.ssconv10 = SmoothDilatedResidualBlock(512, 3, 2, 1, 512)
+        self.ssconv11 = SmoothDilatedResidualBlock(512, 3, 3, 1, 512) #From semantic-segmentation
         self.Attention3 = DepthwiseBlock(512, 3, 2, 1, 512)
 
 
@@ -150,8 +150,8 @@ class VDSSNet(nn.Module):
         self.norm1 = nn.InstanceNorm2d(256, affine=True)
         self.ssconv12 = SmoothDilatedResidualBlock(256, 3, 2, 1, 256)
         self.ssconv13 = SmoothDilatedResidualBlock(256, 3, 1, 1, 256)
-        self.addictionssconv3 = SmoothDilatedResidualBlock(256, 3, 3, 1, 256)
-        self.ssconv14 = SmoothDilatedResidualBlock(256, 3, 5, 1, 256)
+        self.addictionssconv3 = SmoothDilatedResidualBlock(256, 2, 3, 1, 256)
+        self.ssconv14 = SmoothDilatedResidualBlock(256, 3, 3, 1, 256)
         self.Attention4 = DepthwiseBlock(256, 3, 2, 1, 256)
 
 
@@ -161,8 +161,8 @@ class VDSSNet(nn.Module):
         self.norm2 = nn.InstanceNorm2d(128, affine=True)
         self.ssconv15 = SmoothDilatedResidualBlock(128, 3, 2, 1, 128)
         self.ssconv16 = SmoothDilatedResidualBlock(128, 3, 1, 1, 128)
-        self.addictionssconv4 = SmoothDilatedResidualBlock(128, 3, 3, 1, 128)
-        self.ssconv17 = SmoothDilatedResidualBlock(128, 3, 5, 1, 128)
+        self.addictionssconv4 = SmoothDilatedResidualBlock(128, 2, 3, 1, 128)
+        self.ssconv17 = SmoothDilatedResidualBlock(128, 3, 3, 1, 128)
         self.Attention5 = DepthwiseBlock(128, 3, 2, 1, 128)
 
 

@@ -56,32 +56,32 @@ class SmoothDilatedResidualBlock(nn.Module):
         super(SmoothDilatedResidualBlock, self).__init__()
 
         # 在膨脹卷積之前先使用SS convolution进行局部信息融合
-        self.pre_conv1 = ShareSepConv(kernel_size)
+        # self.pre_conv1 = ShareSepConv(kernel_size)
         #膨脹卷積
         #Conv2d(in_channels, out_channels, kernel_size, stride=1,padding=0, dilation=1, groups=1,bias=True, padding_mode=‘zeros’)
         self.conv1 = nn.Conv2d(input_channel_num, output_channel_num, kernel_size, stride=stride, padding=dilated_factor, dilation=dilated_factor, groups=group, bias=False)
-        self.norm1 = nn.InstanceNorm2d(output_channel_num, affine=True)
-        # self.norm1 = nn.BatchNorm2d(output_channel_num, affine=True)
+        # self.norm1 = nn.InstanceNorm2d(output_channel_num, affine=True)
+        self.norm1 = nn.BatchNorm2d(output_channel_num, affine=True)
 
 
-        self.pre_conv2 = ShareSepConv(kernel_size)
+        # self.pre_conv2 = ShareSepConv(kernel_size)
         self.conv2 = nn.Conv2d(input_channel_num, output_channel_num, kernel_size, stride=stride, padding=dilated_factor, dilation=dilated_factor, groups=group, bias=False)
-        self.norm2 = nn.InstanceNorm2d(output_channel_num, affine=True)
-        # self.norm2 = nn.BatchNorm2d(output_channel_num, affine=True)
+        # self.norm2 = nn.InstanceNorm2d(output_channel_num, affine=True)
+        self.norm2 = nn.BatchNorm2d(output_channel_num, affine=True)
 
 
     def forward(self, x, type):
         # 残差连接
         #print (x.size())
         if type == 'E': #LeakyReLU使用在encoder
-            y =F.leaky_relu(self.norm1(self.conv1(self.pre_conv1(x))))
-            # y =F.leaky_relu(self.norm1(self.conv1(x)))
+            # y =F.leaky_relu(self.norm1(self.conv1(self.pre_conv1(x))))
+            y =F.leaky_relu(self.norm1(self.conv1(x)))
             #print(y.size())
             # y = self.norm2(self.conv2(self.pre_conv2(y)))
             return y
         elif type == 'D': #relu使用在decoder
-            y = F.relu(self.norm1(self.conv1(self.pre_conv1(x))))
-            # y =F.leaky_relu(self.norm2(self.conv2(x)))
+            # y = F.relu(self.norm1(self.conv1(self.pre_conv1(x))))
+            y =F.leaky_relu(self.norm2(self.conv2(x)))
             #y = self.norm2(self.conv2(self.pre_conv2(y)))
             return y
 
@@ -124,14 +124,14 @@ class VDSSNet(nn.Module):
         self.ssconv3 = SmoothDilatedResidualBlock(128, 3, 1, 1, 128)
         self.addictionssconv1 = SmoothDilatedResidualBlock(128, 3, 3, 1, 128)
         self.ssconv4 = SmoothDilatedResidualBlock(128, 3, 5, 1, 128) #To up_conv2
-        self.Attention1 = DepthwiseBlock(128, 3, 2, 1, 128)
+        # self.Attention1 = DepthwiseBlock(128, 3, 2, 1, 128)
 
         # Down_conv2
         self.ssconv5 = SmoothDilatedResidualBlock(128, 3, 2, 2, 256)
         self.ssconv6 = SmoothDilatedResidualBlock(256, 3, 1, 1, 256)
         self.addictionssconv2 = SmoothDilatedResidualBlock(256, 3, 3, 1, 256)
         self.ssconv7 = SmoothDilatedResidualBlock(256, 3, 5, 1, 256) #To up_conv1
-        self.Attention2 = DepthwiseBlock(256, 3, 2, 1, 256)
+        # self.Attention2 = DepthwiseBlock(256, 3, 2, 1, 256)
 
         #中間層
         # Down_conv3
@@ -139,7 +139,7 @@ class VDSSNet(nn.Module):
         self.ssconv9 = SmoothDilatedResidualBlock(512, 3, 1, 1, 512)
         self.ssconv10 = SmoothDilatedResidualBlock(512, 3, 3, 1, 512)
         self.ssconv11 = SmoothDilatedResidualBlock(512, 3, 5, 1, 512) #From semantic-segmentation
-        self.Attention3 = DepthwiseBlock(512, 3, 2, 1, 512)
+        # self.Attention3 = DepthwiseBlock(512, 3, 2, 1, 512)
 
 
         #Decoder
@@ -147,29 +147,32 @@ class VDSSNet(nn.Module):
         #nn.functional.interpolate(input, size=None, scale_factor=None, mode='nearest', align_corners=None)
         self.Up_conv1 = nn.ConvTranspose2d(512, 256, 4, stride=2, padding=1)     
         #self.Up_conv1 = nn.Conv2d(512, 256, 1, bias=False)
-        self.norm1 = nn.InstanceNorm2d(256, affine=True)
+        # self.norm1 = nn.InstanceNorm2d(256, affine=True)
+        self.norm1 = nn.BatchNorm2d(256, affine=True)
         self.ssconv12 = SmoothDilatedResidualBlock(256, 3, 2, 1, 256)
         self.ssconv13 = SmoothDilatedResidualBlock(256, 3, 1, 1, 256)
         self.addictionssconv3 = SmoothDilatedResidualBlock(256, 3, 3, 1, 256)
         self.ssconv14 = SmoothDilatedResidualBlock(256, 3, 5, 1, 256)
-        self.Attention4 = DepthwiseBlock(256, 3, 2, 1, 256)
+        # self.Attention4 = DepthwiseBlock(256, 3, 2, 1, 256)
 
 
         # Up_conv2  from ssconv4
         self.Up_conv2 = nn.ConvTranspose2d(256, 128, 4, stride=2, padding=1)
         #self.Up_conv2 = nn.Conv2d(256, 128, 1, bias=False)
-        self.norm2 = nn.InstanceNorm2d(128, affine=True)
+        # self.norm2 = nn.InstanceNorm2d(128, affine=True)
+        self.norm2 = nn.BatchNorm2d(128, affine=True)
         self.ssconv15 = SmoothDilatedResidualBlock(128, 3, 2, 1, 128)
         self.ssconv16 = SmoothDilatedResidualBlock(128, 3, 1, 1, 128)
         self.addictionssconv4 = SmoothDilatedResidualBlock(128, 3, 3, 1, 128)
         self.ssconv17 = SmoothDilatedResidualBlock(128, 3, 5, 1, 128)
-        self.Attention5 = DepthwiseBlock(128, 3, 2, 1, 128)
+        # self.Attention5 = DepthwiseBlock(128, 3, 2, 1, 128)
 
 
         # Up_conv3  from ssconv1
         self.Up_conv3 = nn.ConvTranspose2d(128, 64, 4, stride=2, padding=1) 
         #self.Up_conv3 = nn.Conv2d(128, 64, 1, bias=False) 
-        self.norm3 = nn.InstanceNorm2d(64, affine=True)
+        # self.norm3 = nn.InstanceNorm2d(64, affine=True)
+        self.norm3 = nn.BatchNorm2d(64, affine=True)
         # self.ssconv18 = SmoothDilatedResidualBlock(64, 3, 2, 1, 64)
         # self.ssconv19 = SmoothDilatedResidualBlock(64, 3, 2, 1, 64)
         # self.ssconv20 = SmoothDilatedResidualBlock(64, 3, 2, 1, 64)
@@ -192,7 +195,7 @@ class VDSSNet(nn.Module):
         output = self.addictionssconv1(output, 'E')
         skip2 = self.ssconv4(output, 'E')
         # print("ssconv4: ", skip2.size())
-        output = self.Attention1(output, 'E')
+        # output = self.Attention1(output, 'E')
 
         # Down_conv2
         output = self.ssconv5(output, 'E')
@@ -202,7 +205,7 @@ class VDSSNet(nn.Module):
         output = self.addictionssconv2(output, 'E')
         skip3 = self.ssconv7(output, 'E')
         # print("ssconv7: ", skip3.size())
-        output = self.Attention2(output, 'E')
+        # output = self.Attention2(output, 'E')
 
         #中間層
         # Down_conv3
@@ -214,7 +217,7 @@ class VDSSNet(nn.Module):
         #print("ssconv10: ", output.size())
         output = self.ssconv11(output, 'E')
         # print("ssconv11: ", output.size())
-        output = self.Attention3(output, 'E')
+        # output = self.Attention3(output, 'E')
 
         #Decoder
         # Up_conv1  from ssconv7
@@ -234,7 +237,7 @@ class VDSSNet(nn.Module):
         output = self.addictionssconv3(output, 'D')
         output = self.ssconv14(output, 'D')
         #print("ssconv14: ", output.size())
-        output = self.Attention4(output, 'D')
+        # output = self.Attention4(output, 'D')
         #print("Attention1: ", output.size())
 
         # Up_conv2  from ssconv4
@@ -252,7 +255,7 @@ class VDSSNet(nn.Module):
         output = self.addictionssconv4(output, 'D')
         output = self.ssconv17(output, 'D')
         #print("ssconv17: ", output.size())
-        output = self.Attention5(output, 'D')
+        # output = self.Attention5(output, 'D')
         # print("Attention2: ", output.size())
 
         # Up_conv3  from ssconv1
