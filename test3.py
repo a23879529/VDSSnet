@@ -24,12 +24,13 @@ from input_test3 import test_data
 parser = argparse.ArgumentParser()
 #parser.add_argument('--network', default='VDSSNet')
 #parser.add_argument('--task', default='dehaze')
-parser.add_argument('--datastes_type', default='real') #test dataset有GT 選"not_real"，沒有GT 選"real"
+parser.add_argument('--datastes_type', default='not_real') #test dataset有GT 選"not_real"，沒有GT 選"real"
 parser.add_argument('--input_type', default='video') #test daraset是video 選"video"，單張選"singel_image"
 parser.add_argument('--gpu_id', type=int, default=0)
 parser.add_argument('--gtdir', default='F:\\NYU-2')
-parser.add_argument('--hazedir', default='C:\\Users\\ian\\Pictures\\FreeVideoToJPGConverter\\')
-parser.add_argument('--outdir', default='H:\\proposed\\video\\Crossroad\\')
+parser.add_argument('--hazedir', default='H:\\NYU_v2_test\\')
+parser.add_argument('--outdir', default='H:\\測試\\conv135_full_IN_EP3\\furniture_store_0002c\\')
+parser.add_argument('--txtoutdir', default='furniture_store_0002c')
 # parser.add_argument('--gtdir', default='D:\\論文\\proposed\\VDSSnet\\test_input\\outdoor\\gt')
 # parser.add_argument('--hazedir', default='D:\\論文\\proposed\\VDSSnet\\test_input\\outdoor\\hazy')
 # parser.add_argument('--outdir', default='test_output/attention_full_Leaky_relu_EP1/outdoor/')
@@ -54,7 +55,7 @@ config.use_cuda = config.gpu_id >= 0
 if not os.path.exists(config.outdir):
     os.makedirs(config.outdir)
 
-test_dataset = test_data(config.gtdir, config.hazedir, config.datastes_type, config.input_type) # data.py
+test_dataset = test_data(config.gtdir, config.hazedir, config.datastes_type, config.input_type, config.txtoutdir) # data.py
 
 # 初始化模型
 # 输入通道：3（RGB）；输出通道：3（RGB)
@@ -63,7 +64,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 dehaze_net = VDSSNet().to(device)
 
 # 加载参数
-checkpoint = torch.load('./snapshots/Attention_EP2.pth')
+checkpoint = torch.load('./snapshots/conv135_full_IN_EP3.pth')
 dehaze_net.load_state_dict(checkpoint['model_state_dict'])
 # dehaze_net.load_state_dict(torch.load(config.model, map_location='cpu'))
 dehaze_net.eval()
@@ -216,6 +217,9 @@ for iter_test in range(itre):
         total_ssim += ssim
 if config.datastes_type == 'not_real':
     print("Average PSNR = %.3f" % (total_psnr / itre), "  Averge SSIM = %.3f" % (total_ssim / itre))
+t = open("H:\\測試\\conv135_full_IN_EP3\\新文字文件.txt","a+")
+t.write(config.txtoutdir + "  Average PSNR = %.3f" % (total_psnr / itre) + "  Averge SSIM = %.3f" % (total_ssim / itre) + "\n")
+t.close()
 
 print("Done.")
 

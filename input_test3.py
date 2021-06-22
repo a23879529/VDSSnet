@@ -67,7 +67,7 @@ def train_data():
 	return t_set, v_set
 	
 
-def test_data(source, hazy, datastes_type, input_type):
+def test_data(source, hazy, datastes_type, input_type, txtoutdir):
 
 	output = []
 
@@ -75,7 +75,8 @@ def test_data(source, hazy, datastes_type, input_type):
 		if input_type == 'video':
 			# for dirs in os.listdir(hazy):
 			files = []
-			dirs = 'study_room_0005b'
+			# dirs = 'computer_lab_0002'
+			dirs = txtoutdir
 			# number = random.randint(1, 5)		
 			for file in os.listdir(source + '\\' + dirs):
 				name = file.split('.')[0]
@@ -121,7 +122,7 @@ def test_data(source, hazy, datastes_type, input_type):
 		if input_type == 'video':
 			# for dirs in os.listdir(hazy):
 			files = []
-			dirs = 'Crossroad'
+			dirs = txtoutdir
 			for file in os.listdir(hazy + '\\' + dirs):
 				name = file.split('.')[0]
 				back = '.' + file.split('.')[-1]

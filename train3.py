@@ -18,7 +18,7 @@ import pytorch_ssim
 from PIL import Image
 # import cv2
 # from VDSSnet import VDSSNet
-from VDSSnet_3 import VDSSNet
+from VDSSnet_3_old import VDSSNet
 from torchvision import transforms
 # from data import HazeDataset
 #from tools import Smooth_l1_loss
@@ -78,11 +78,11 @@ def train(config):
 
     optimizer = torch.optim.Adam(dehaze_net.parameters(), lr=config.lr, weight_decay=config.weight_decay)
 
-    # checkpoint = torch.load('./snapshots/conv135_full_IN_EP3.pth')
-    # dehaze_net.load_state_dict(checkpoint['model_state_dict'])
-    # optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
-    # epoch = checkpoint['epoch']
-    # loss = checkpoint['loss']
+    checkpoint = torch.load('./snapshots/kernel123_back3_EP2.pth')
+    dehaze_net.load_state_dict(checkpoint['model_state_dict'])
+    optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+    epoch = checkpoint['epoch']
+    loss = checkpoint['loss']
 
     # dehaze_net.eval()
 
