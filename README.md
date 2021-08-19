@@ -1,16 +1,16 @@
 Master thesis program: VDSSnet.
 
-Use input_test3 to check your input frames name,dir,path,etc is correct.
+1.Use input_test3 to check your input frames name,dir,path,etc is correct.
 
-Use train3.py to train.
+2.Use train3.py to train.
 
-Use test3_ok.py to test.
+3.Use test3_ok.py to test.
 
-Use 生成霧度圖.py to generate synthetic frames.
+4.Use 生成霧度圖.py to generate synthetic frames.
 
-Use 把圖接在一起.py to concate frames togather.
+5.Use 把圖接在一起.py to concate frames togather.
 
-Use frames轉video.py to turn frames into video.
+6.Use frames轉video.py to turn frames into video.
 
 If you find this codes helpful, plese cite this paper when you use our codes.
 ```
