@@ -16,22 +16,13 @@ import logging
 import numpy as np
 import pytorch_ssim
 from PIL import Image
-# import cv2
-# from VDSSnet import VDSSNet
 from VDSSnet_3_old import VDSSNet
 from torchvision import transforms
-# from data import HazeDataset
-#from tools import Smooth_l1_loss
 from tools import FFT
 from math import log10
 
-# from semantic_segmentation import *
-# from semantic_segmentation import demo
 from input_test3 import train_data
-# from input_test5 import train_data
-# from semantic_segmentation.util import config
-# from util import config
-# from semantic_segmentation.util.util import colorize
+
 
 def weights_init(m):
     classname = m.__class__.__name__
@@ -52,33 +43,12 @@ def train(config):
     dehaze_net = VDSSNet().to(device)
     dehaze_net.apply(weights_init)
 
-    #config.model = './snapshots/Epoch9.pth'
-    #dehaze_net.load_state_dict(torch.load(config.model, map_location='cpu'))
-    #dehaze_net.eval()
-
-    # model = demo.main() #創建語意分割網路模型
-
-    # data_transform = transforms.Compose([
-    #     transforms.Resize([240, 320]),
-    #     transforms.ToTensor()
-    # ])
-
-    # train_dataset = HazeDataset(config.ori_data_path, config.haze_data_path, data_transform)
-    # train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=config.train_batch_size, shuffle=True,
-    #                                            num_workers=config.num_workers, pin_memory=True)
-
-    # val_dataset = HazeDataset(config.val_ori_data_path, config.val_haze_data_path, data_transform)
-    # val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=config.val_batch_size, shuffle=True,
-    #                                          num_workers=config.num_workers, pin_memory=True)
-
-    criterion = nn.L1Loss().cuda()
-    # criterion = nn.SmoothL1Loss().cuda()
-    # criterion1 = FFT().cuda()
+    criterion = nn.SmoothL1Loss().cuda()
     criterion2 = nn.MSELoss(reduction='mean').cuda()
 
     optimizer = torch.optim.Adam(dehaze_net.parameters(), lr=config.lr, weight_decay=config.weight_decay)
 
-    checkpoint = torch.load('./snapshots/kernel123_back3_EP2.pth')
+    checkpoint = torch.load('./snapshots/f2.pth')
     dehaze_net.load_state_dict(checkpoint['model_state_dict'])
     optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
     epoch = checkpoint['epoch']
@@ -105,10 +75,9 @@ def train(config):
 
         epoch_start = time.time()
         iteration_start = time.time()
-        #print("epoch: ", epoch)
-        # for iteration, (img_orig, img_haze) in enumerate(train_loader):
+
         A = np.array(train_dataset)
-        # print(A.shape)
+
         if A.shape[0] % config.train_batch_size != 0:
             itre = A.shape[0] // config.train_batch_size + 1
         else:
@@ -116,10 +85,10 @@ def train(config):
 
         remaining_num = A.shape[0]
         total_count = 0
-        # aaa = 0
+
 
         for iteration in range(itre):
-            # print("----------------  iteration: ", iteration)
+
 
             if remaining_num - config.train_batch_size < 0:
                 bz = remaining_num
@@ -131,7 +100,7 @@ def train(config):
             final_gt = torch.tensor([])
             final_haze = torch.tensor([])
 
-            # startstart = time.time()
+
 
             for batch in range(bz):
 
@@ -139,26 +108,6 @@ def train(config):
                 img1 = Image.open(train_dataset[total_count][1]).convert("RGB")
                 img2 = Image.open(train_dataset[total_count][2]).convert("RGB")
                 img3 = Image.open(train_dataset[total_count][3]).convert("RGB")
-
-                # gt = cv2.imread(train_dataset[total_count][0])
-                # img1 = cv2.imread(train_dataset[total_count][1])
-                # img2 = cv2.imread(train_dataset[total_count][2])
-                # img3 = cv2.imread(train_dataset[total_count][3])
-
-                # gt = cv2.cvtColor(gt, cv2.COLOR_BGR2RGB)
-                # img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2RGB)
-                # img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)
-                # img3 = cv2.cvtColor(img3, cv2.COLOR_BGR2RGB)
-
-                # print(gt.shape)
-
-                # gt = cv2.resize(gt, (320, 240), interpolation=cv2.INTER_AREA)
-                # img1 = cv2.resize(img1, (320, 240), interpolation=cv2.INTER_AREA)
-                # img2 = cv2.resize(img2, (320, 240), interpolation=cv2.INTER_AREA)
-                # img3 = cv2.resize(img3, (320, 240), interpolation=cv2.INTER_AREA)
-
-                # print(type(gt))
-                # print(gt.shape)
 
                 my_transforms = transforms.Compose([
                 transforms.Resize([240, 320]),
@@ -175,7 +124,6 @@ def train(config):
                     final_haze = torch.cat((img1, img2, img3), 0)
                     final_gt = final_gt.unsqueeze(0)
                     final_haze = final_haze.unsqueeze(0)
-                    # print(final.shape, "0")
                 else:
                     temp1 = gt
                     temp1 = temp1.unsqueeze(0)
@@ -183,28 +131,18 @@ def train(config):
 
                     temp2 = torch.cat((img1, img2, img3), 0)
                     temp2 = temp2.unsqueeze(0)
-                    # print(temp1.shape, "temp1")
                     final_haze = torch.cat([final_haze, temp2], 0)
-                    # print(final.shape, "final")
-                # count+=1
+
                 total_count+=1
-                # print(final.shape)
-                # import matplotlib.pyplot as plt
-            # endend = time.time()
-            # aaa += (endend-startstart)
+
 
             img_orig = final_gt.cuda()
             img_haze = final_haze.cuda()
-            # print (img_haze.shape)
-            # print (ss_image.shape)
-            # print(img_haze.type())
-            # torchvision.utils.save_image(img_haze, config.sample_output_folder + "output.jpg")
-            # clean_image = dehaze_net(img_haze, ss_image)
-            clean_image = dehaze_net(img_haze)
-            #print(criterion1(clean_image, img_orig))
-            #print(criterion(clean_image, img_orig))
 
-            loss = 1.0 * criterion(clean_image, img_orig)# + 0.2 * criterion1(clean_image, img_orig) #L1_loss + FFT_loss 倍率都為
+            clean_image = dehaze_net(img_haze)
+
+
+            loss = 1.0 * criterion(clean_image, img_orig) #L1_loss
 
             optimizer.zero_grad()
             loss.backward()
@@ -235,55 +173,6 @@ def train(config):
                 # print(final_gt.shape, final_haze.shape)
             remaining_num -= config.train_batch_size
             # print("----------------  iteration: ", iteration)
-
-            # print (img_haze)
-
-            # temp = torch.tensor([])
-            # print(temp.type())
-            # ss_image_start = time.time()
-            # for i in range(0, img_haze.shape[0]):
-                # temp = torch.cat((temp, demo.demo(model, img_haze[i])), 0)
-            # ss_image_end = time.time()
-            # print("ss_image 運行時間為: %f 秒" % (ss_image_end - ss_image_start))
-            # ss_image = temp.cuda()
-            """
-            img_orig = img_orig.cuda()
-            img_haze = img_haze.cuda()
-            # print (img_haze.shape)
-            # print (ss_image.shape)
-            # print(img_haze.type())
-            # torchvision.utils.save_image(img_haze, config.sample_output_folder + "output.jpg")
-            # clean_image = dehaze_net(img_haze, ss_image)
-            clean_image = dehaze_net(img_haze)
-            #print(criterion1(clean_image, img_orig))
-            #print(criterion(clean_image, img_orig))
-
-            loss = criterion(clean_image, img_orig)# + 0.2 * criterion1(clean_image, img_orig) #L1_loss + FFT_loss 倍率都為0.5
-
-            optimizer.zero_grad()
-            loss.backward()
-            torch.nn.utils.clip_grad_norm(dehaze_net.parameters(), config.grad_clip_norm)
-            optimizer.step()
-
-            if ((iteration + 1) % config.display_iter) == 0:
-                
-                mse = criterion2(clean_image, img_orig)
-                psnr = 10 * log10(1 / mse)
-                #psnr = pytorch_ssim.ssim(clean_image, img_orig)
-                ssim = pytorch_ssim.ssim(clean_image, img_orig)
-                ssim = ssim.item()
-                #print("PSNR: %.3f" % psnr, "  SSIM: %.3f" % ssim)
-
-                iteration_end = time.time()
-
-                #print("Loss at iteration", iteration + 1, ":", loss.item())
-                print("Epoch: ", epoch, "  Loss at iteration", iteration + 1, ":%.3f" % loss.item(),"  PSNR: %.3f" % psnr, "  SSIM: %.3f" % ssim, "  運行時間為: %f 秒" % (iteration_end - iteration_start))
-                logger.info("Epoch: " + str(epoch) + "  Loss at iteration" + str(iteration + 1) + ":%.3f" % loss.item() + "  PSNR: %.3f" % psnr + "  SSIM: %.3f" % ssim + "  運行時間為: %f 秒" % (iteration_end - iteration_start))
-                iteration_start = time.time()
-
-            if ((iteration + 1) % config.snapshot_iter) == 0:
-                torch.save(dehaze_net.state_dict(), config.snapshots_folder + "Epoch" + str(epoch + 1) + '.pth')
-                logger.info("save Epoch" + str(epoch + 1) + '.pth')"""
 
         # Validation Stage
 
@@ -345,18 +234,9 @@ def train(config):
                     # print(final.shape, "final")
                 # count+=1
                 total_count+=1
-            # temp = torch.tensor([])
-            # for i in range(0, img_haze.shape[0]):
-            #     temp = torch.cat((temp, demo.demo(model, img_haze[i])), 0)
-                
-            # ss_image = temp.cuda()
+
             img_orig = final_gt.cuda()
             img_haze = final_haze.cuda()
-            #print (img_haze.shape)
-            # ss_image = demo.demo(model, img_haze)
-            # ss_image = ss_image.cuda()
-
-            # clean_image = dehaze_net(img_haze, ss_image)
             clean_image = dehaze_net(img_haze)
 
             temp1 = []
@@ -375,6 +255,11 @@ def train(config):
             mse = criterion2(clean_image, img_orig)
             psnr = 10 * log10(1 / mse)
             #psnr = pytorch_ssim.ssim(clean_image, img_orig)
+            }, config.snapshots_folder + "dehazer.pth")
+
+        epoch_end = time.time()
+        print("Epoch 運行時間為: %.3f 秒" % (epoch_end - epoch_start))
+        logger.info("Epoch 運行時間為: %.3f 秒" % (epoch_end - epoch_start))
             ssim = pytorch_ssim.ssim(clean_image, img_orig)
             ssim = ssim.item()
             #print("PSNR: %.3f" % psnr, "  SSIM: %.3f" % ssim)
@@ -393,11 +278,6 @@ def train(config):
             'model_state_dict':dehaze_net.state_dict(),
             'optimizer_state_dict':optimizer.state_dict(),
             'loss':loss,
-            }, config.snapshots_folder + "dehazer.pth")
-
-        epoch_end = time.time()
-        print("Epoch 運行時間為: %.3f 秒" % (epoch_end - epoch_start))
-        logger.info("Epoch 運行時間為: %.3f 秒" % (epoch_end - epoch_start))
 
     logger.info("End training.")
 

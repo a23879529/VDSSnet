@@ -9,16 +9,7 @@ import torch.nn.functional as F
 import kornia
 import os
 import glob
-# use sub directories names as classes
-#classes = [i.split(os.path.sep)[1] for i in glob.glob('videos\\*')]
-#classes.sort()
-# some global params
-#SIZE = (640, 480) #自己設成Dataset的Size
-#CHANNELS = 3
-#NBFRAME = 5
-#BS = 8
 
-#glob_pattern='videos\\{classname}\\*.mp4'
 
 
 
@@ -120,14 +111,14 @@ class VDSSNet(nn.Module):
         # Down_conv1
         #依序為input_channel, kernel_size, dilated_factor, stride, output_channel
         # self.ssconv2 = nn.Conv2d(64, 128, 3, 2, 2, 2)
-        self.ssconv2 = SmoothDilatedResidualBlock(64, 3, 2, 2, 128)
+        self.ssconv2 = SmoothDilatedResidualBlock(64, 3, 2, 2, 128)#Down_conv1
         self.ssconv3 = SmoothDilatedResidualBlock(128, 3, 1, 1, 128)
         self.addictionssconv1 = SmoothDilatedResidualBlock(128, 3, 2, 1, 128)
         self.ssconv4 = SmoothDilatedResidualBlock(128, 3, 3, 1, 128) #To up_conv2
         self.Attention1 = DepthwiseBlock(128, 3, 2, 1, 128)
 
         # Down_conv2
-        self.ssconv5 = SmoothDilatedResidualBlock(128, 3, 2, 2, 256)
+        self.ssconv5 = SmoothDilatedResidualBlock(128, 3, 2, 2, 256)#Down_conv2
         self.ssconv6 = SmoothDilatedResidualBlock(256, 3, 1, 1, 256)
         self.addictionssconv2 = SmoothDilatedResidualBlock(256, 3, 2, 1, 256)
         self.ssconv7 = SmoothDilatedResidualBlock(256, 3, 3, 1, 256) #To up_conv1
@@ -136,7 +127,7 @@ class VDSSNet(nn.Module):
         #中間層
 
         # Down_conv3
-        self.ssconv8 = SmoothDilatedResidualBlock(256, 3, 2, 2, 512)
+        self.ssconv8 = SmoothDilatedResidualBlock(256, 3, 2, 2, 512)#Down_conv3
         self.ssconv9 = SmoothDilatedResidualBlock(512, 3, 1, 1, 512)
         self.ssconv10 = SmoothDilatedResidualBlock(512, 3, 2, 1, 512)
         self.ssconv11 = SmoothDilatedResidualBlock(512, 3, 3, 1, 512) #From semantic-segmentation
@@ -145,7 +136,7 @@ class VDSSNet(nn.Module):
 
         #Decoder
         # Up_conv1  from ssconv7
-        #nn.functional.interpolate(input, size=None, scale_factor=None, mode='nearest', align_corners=None)
+        #nn.functional.interpolate(input, size=None, scale_factor=None, mode='nearest', align_corners=None) 沒用這個公式
         self.Up_conv1 = nn.ConvTranspose2d(512, 256, 4, stride=2, padding=1)     
         #self.Up_conv1 = nn.Conv2d(512, 256, 1, bias=False)
         self.norm1 = nn.InstanceNorm2d(256, affine=True)

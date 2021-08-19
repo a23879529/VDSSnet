@@ -12,9 +12,6 @@ def train_data():
 	source_video = "F:\\NYU-2"
 	hazy_video = "H:\\NYU_v2_hazy"
 
-	source_image = 'H:\\image'
-	hazy_image = 'H:\\data'
-
 	output = []
 	fuck = 0
 
@@ -38,24 +35,7 @@ def train_data():
 					output.append([root + str(files[i][0]) + back, hazy + str(files[i-2][0]) + back, hazy + str(files[i-1][0]) + back, hazy + str(files[i][0]) + back])
 				else:
 					output.append([root + str(files[i][0]) + back, hazy + str(files[i-1][0]) + back, hazy + str(files[i][0]) + back, hazy + str(files[i+1][0]) + back])
-	# print(fuck)
-		# print(files)
-		# break
-	# 	files = []
-	# for file in os.listdir(hazy_image):
-	# 	# print(file)
-	# 	files.append([file])
-	# for i in range(len(files)):
-	# 	# root = source + '\\'
-	# 	# hazy_image = hazy + '\\'
-	# 	# print(files[i][0])
-	# 	if files[i][0] != 'Thumbs.db':
-	# 		name = files[i][0].split('_')[0] + '_' + files[i][0].split('_')[1]
-	# 		back = '.' + files[i][0].split('.')[-1]
-	# 		output.append([source_image + '\\' + name + back, hazy_image + '\\' + files[i][0], hazy_image + '\\' + files[i][0], hazy_image + '\\' + files[i][0]])
-	# print(len(output))
-	random.shuffle(output)
-	# print(output)
+
 	A = np.array(output)
 	t_num = round(A.shape[0]//10*(9.9))
 
